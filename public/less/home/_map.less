@@ -1,0 +1,220 @@
+.maps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagepin {
+    position: relative;
+    display: block;
+    height: max-content;
+    width: 100%;
+    max-width: 360px;
+    margin: 64px auto 32px;
+
+    .circuitTitle {
+        position: absolute;
+        top: -64px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #fff;
+        box-sizing: border-box;
+
+        .circuitThumbnail {
+            width: 64px;
+            margin-right: 16px;
+        }
+    }
+    
+    .pins {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .pin {
+        width: 44px;
+        height: 44px;
+        transform:translate(-50%,-50%);
+        z-index: 9;
+        border-radius: 100%;
+        position: absolute;
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(1px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid transparent;
+        text-decoration: none;
+        
+        span {
+            position: absolute;
+            top: -10px;
+            font-size: clamp(12px, 2vw, 13px);
+            display:block;
+            width: fit-content;
+            white-space: nowrap;
+            text-align: center;
+            background: rgba(255,255,255,0.5);
+            color: #111;
+            backdrop-filter: blur(4px);
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 10;
+            line-height: 1;
+            opacity: 0;
+            transition: .2s all ease-in-out;
+        }
+
+        &:hover {
+            border-color: #fff;
+            
+            &:after {
+                width: 7px;
+                height: 7px;
+            }
+            
+            span {
+                opacity: 1;
+                top: -20px;
+                width: fit-content;
+            }
+        }
+        
+        &:active {
+            border-color: #ffaa67;
+            &:after {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &:after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            transition: .2s all ease-in-out;
+            background: #fff;
+            position: relative;
+            display: block;
+            border-radius: 100%;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 50%;
+            animation: shockwave 2s 0.5s ease-out infinite;
+        }
+
+        @keyframes shockwave {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px #fff;
+            }
+
+            95% {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0), inset 0 0 30px rgba(0, 0, 0, 0);
+            }
+
+            100% {
+                -webkit-transform: scale(1.8);
+                transform: scale(1.8);
+            }
+        }
+
+     /*   &.shortcut {
+            background: rgba(255,215,0,0.2);
+        
+            span {
+                background: rgba(255,215,0,0.5);
+            }
+    
+            &:hover {
+                border-color: #FFD700;
+            }
+    
+            &:after {
+                background: #FFD700;
+            }
+        }
+
+        &.bug {
+            background: rgba(0,0,255,0.2);
+        
+            span {
+                background: rgba(0,0,255,0.5);
+            }
+    
+            &:hover {
+                border-color: #0000FF;
+            }
+    
+            &:after {
+                background: #0000FF;
+            }
+        }
+
+        &.shortcutbug {
+            background: rgba(0,128,0,0.2);
+        
+            span {
+                background: rgba(0,128,0,0.5);
+            }
+    
+            &:hover {
+                border-color: #008000;
+            }
+    
+            &:after {
+                background: #008000;
+            }
+        } */
+        
+        &:nth-of-type(1):before {
+        animation-delay: .2s;
+        }
+        &:nth-of-type(2):before {
+        animation-delay: .4s;
+        }
+        &:nth-of-type(3):before {
+        animation-delay: .6s;
+        }
+        &:nth-of-type(4):before {
+        animation-delay: .9s;
+        }
+        &:nth-of-type(5):before {
+        animation-delay: 1.3s;
+        }
+        &:nth-of-type(6):before {
+        animation-delay: 1.6s;
+        }
+        &:nth-of-type(7):before {
+        animation-delay: 1.8s;
+        }
+        &:nth-of-type(8):before {
+        animation-delay: 2s;
+        }
+        &:nth-of-type(9):before {
+        animation-delay: 2.2s;
+        }
+    }
+}

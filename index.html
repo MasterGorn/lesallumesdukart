@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Les allumés du kart - Fans de Mario Kart 64</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="public/images/favicon.png" type="image/png">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Les allumés du kart - Fans de Mario Kart 64">
+    <meta property="og:description" content="Retrouvez tous les allumés du kart de Mario Kart 64, avec leurs descriptions, vidéos, modes et gains.">
+    <meta property="og:image" content="public/images/favicon.png">
+    <meta property="og:url" content="https://lesallumes.fr">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Les allumés du kart</a>
+    </header>
+    <section class="legendWrapper">
+        <button class="legendToggle">
+            <span class="toggleText">Afficher la légende</span>
+            <span class="toggleIcon">▼</span>
+        </button>
+        <section class="legend">
+            <!--<div class="legendType">
+                <div class="legendTitle">Type</div>
+                <ul class="imagepin">
+                    <li class="legendTypeItem"><span class="pin"><span>Secret</span></span><span>Secret</span>></li>
+                    <li class="legendTypeItem"><span class="pin shortcut"><span>Short Cut</span></span><span>Short Cut</span></li>
+                    <li class="legendTypeItem"><span class="pin bug"><span>Bug</span></span><span>Bug</span></li>
+                    <li class="legendTypeItem"><span class="pin shortcutbug"><span>Short Cut - Bug</span></span><span>Short Cut - Bug</span></li>
+                    <li class="legendTypeItem"><span class="pin pin-5"><span>Short cut</span></span> : Très difficile</li>
+                </ul>
+            </div>-->
+            <div class="legendDifficulty">
+                <div class="legendTitle">Difficulté</div>
+                <ul class="legendList">
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Très facile</div> <div class="bar"><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Facile</div> <div class="bar"><span class="star"></span><span class="star "></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Moyen</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Difficile</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Très Difficile</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="legendGain">
+                <div class="legendTitle">Gain</div>
+                <ul class="legendList">
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars positive"><div class="titleItem">Une mini portion</div> <div class="bar"><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars positive"><div class="titleItem">⅛ de tour</div> <div class="bar"><span class="star"></span><span class="star "></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars positive"><div class="titleItem">¼ de tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars positive"><div class="titleItem">½ tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span></div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars positive"><div class="titleItem">1 tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="legendMode">
+                <div class="legendTitle">Modes</div>
+                <ul class="legendList">
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Time Trial</div> <div class="bar">⏱️</div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Grand Prix</div> <div class="bar">🥇</div></span>
+                    </li>
+                    <li class="legendItem">
+                        <span class="pinPopinLevel stars"><div class="titleItem">Multijoueurs</div> <div class="bar">🎮 x 4</div></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <div class="sizeControls">
+        <button class="sizeBtn" data-action="decrease">-</button>
+        <span class="sizeIndicator">100%</span>
+        <button class="sizeBtn" data-action="increase">+</button>
+    </div>
+
+    <section class="maps" id="mapsContainer">
+        <!-- Le contenu sera injecté via JavaScript -->
+    </section>
+
+    <script src="public/data/circuitsData.js"></script>
+    <script src="public/js/script.js"></script>
+
+    <!-- Todo 
+    1) mettre le projet sur github
+    2) ajouter l'auteur des passages secrets
+    3) ajouter la date de découverte du passages secret
+    4) remplir les datas des circuits
+    5) mettre la version anglaise
+    -->
+</body>
+
+

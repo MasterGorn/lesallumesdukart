@@ -1,0 +1,12 @@
+{
+    "name": "les-allumes-du-kart",
+    "version": "1.0.0",
+    "scripts": {
+      "watch-less": "less-watch-compiler",
+      "build-less": "lessc public/less/styles.less public/css/styles.css"
+    },
+    "devDependencies": {
+      "less": "^4.2.0",
+      "less-watch-compiler": "^1.16.3"
+    }
+  }

@@ -1,0 +1,643 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-VariableFont_wdthwght.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Italic-VariableFont_wdthwght.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Light-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-CondBold.woff') format('woff');
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #072531;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #0a506b;
+  background-image: url('../images/design/bg-header.png');
+  background-size: cover;
+  background-position: 240px center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32px;
+  width: 160px;
+  height: 80px;
+  font-size: 0;
+  background-image: url('../images/design/logo-n64-mk.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.legendWrapper {
+  background-color: #0a506b;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.legendWrapper .legendToggle {
+  width: 100%;
+  padding: 15px;
+  background: #023c53;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.legendWrapper .legendToggle:hover {
+  background: #011b25;
+}
+.legendWrapper .legendToggle .toggleIcon {
+  transition: transform 0.3s ease;
+}
+.legendWrapper .legendToggle.active .toggleIcon {
+  transform: rotate(180deg);
+}
+.legend {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+  box-sizing: border-box;
+  /*.legendType {
+        .imagepin {
+            display: flex;
+
+            .legendTypeItem {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                position: relative;
+                width: 96px;
+                height: 96px;
+            }
+        
+            .pin {
+                top: 48px;
+                left: 48px;
+                background: rgba(255, 255, 255, 0.2);
+                
+                span {
+                    background: rgba(255,255,255,0.5);
+                }
+        
+                &:hover {
+                    border-color: #fff;
+                }
+        
+                &:after {
+                    background: #fff;
+                }
+        
+                @keyframes shockwave {
+                    0% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px #fff;
+                    }
+        
+                    95% {
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0), inset 0 0 30px rgba(0, 0, 0, 0);
+                    }
+        
+                    100% {
+                        -webkit-transform: scale(1.8);
+                        transform: scale(1.8);
+                    }
+                }
+                
+                &:nth-of-type(1):before {
+                animation-delay: .2s;
+                }
+                &:nth-of-type(2):before {
+                animation-delay: .4s;
+                }
+                &:nth-of-type(3):before {
+                animation-delay: .6s;
+                }
+                &:nth-of-type(4):before {
+                animation-delay: .9s;
+                }
+                &:nth-of-type(5):before {
+                animation-delay: 1.3s;
+                }
+                &:nth-of-type(6):before {
+                animation-delay: 1.6s;
+                }
+                &:nth-of-type(7):before {
+                animation-delay: 1.8s;
+                }
+                &:nth-of-type(8):before {
+                animation-delay: 2s;
+                }
+                &:nth-of-type(9):before {
+                animation-delay: 2.2s;
+                }
+            }
+        }
+    } */
+}
+.legend.active {
+  max-height: 800px;
+  padding: 15px;
+}
+@media screen and (max-width: 560px) {
+  .legend.active {
+    max-height: 1000px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .legend.active {
+    max-height: 1400px;
+  }
+}
+.legend .legendTitle {
+  margin: 24px;
+  color: white;
+  text-decoration: underline;
+}
+.legend .legendList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  .legend .legendList {
+    padding-left: 0;
+  }
+}
+.legend .legendItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  height: 96px;
+  margin: 0 24px;
+  color: white;
+}
+.sizeControls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  padding: 8px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.sizeControls .sizeBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #555;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.sizeControls .sizeBtn:hover {
+  background: #666;
+}
+.sizeControls .sizeBtn:disabled {
+  background: #444;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.sizeControls .sizeIndicator {
+  color: white;
+  font-size: 14px;
+  min-width: 50px;
+  text-align: center;
+}
+/* Classes pour les différentes tailles de cartes */
+.imagepin {
+  transition: width 0.3s ease;
+}
+.imagepin.size-xs {
+  max-width: 180px;
+}
+.imagepin.size-xs .circuitTitle {
+  font-size: 0.8rem;
+}
+.imagepin.size-xs .circuitTitle .circuitThumbnail {
+  width: 48px;
+  margin-right: 8px;
+}
+.imagepin.size-sm {
+  max-width: 240px;
+}
+.imagepin.size-sm .circuitTitle {
+  font-size: 1rem;
+}
+.imagepin.size-md {
+  max-width: 360px;
+}
+.imagepin.size-md .circuitTitle {
+  font-size: 1.2rem;
+}
+.imagepin.size-lg {
+  max-width: 480px;
+}
+.imagepin.size-lg .circuitTitle {
+  font-size: 1.4rem;
+}
+.imagepin.size-xl {
+  max-width: 680px;
+}
+.imagepin.size-xl .circuitTitle {
+  font-size: 1.6rem;
+}
+.maps {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagepin {
+  position: relative;
+  display: block;
+  height: max-content;
+  width: 100%;
+  max-width: 360px;
+  margin: 64px auto 32px;
+}
+.imagepin .circuitTitle {
+  position: absolute;
+  top: -64px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+.imagepin .circuitTitle .circuitThumbnail {
+  width: 64px;
+  margin-right: 16px;
+}
+.imagepin .pins {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.imagepin img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.imagepin .pin {
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  text-decoration: none;
+  /*   &.shortcut {
+            background: rgba(255,215,0,0.2);
+        
+            span {
+                background: rgba(255,215,0,0.5);
+            }
+    
+            &:hover {
+                border-color: #FFD700;
+            }
+    
+            &:after {
+                background: #FFD700;
+            }
+        }
+
+        &.bug {
+            background: rgba(0,0,255,0.2);
+        
+            span {
+                background: rgba(0,0,255,0.5);
+            }
+    
+            &:hover {
+                border-color: #0000FF;
+            }
+    
+            &:after {
+                background: #0000FF;
+            }
+        }
+
+        &.shortcutbug {
+            background: rgba(0,128,0,0.2);
+        
+            span {
+                background: rgba(0,128,0,0.5);
+            }
+    
+            &:hover {
+                border-color: #008000;
+            }
+    
+            &:after {
+                background: #008000;
+            }
+        } */
+}
+.imagepin .pin span {
+  position: absolute;
+  top: -10px;
+  font-size: clamp(12px, 2vw, 13px);
+  display: block;
+  width: fit-content;
+  white-space: nowrap;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  backdrop-filter: blur(4px);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 10;
+  line-height: 1;
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+}
+.imagepin .pin:hover {
+  border-color: #fff;
+}
+.imagepin .pin:hover:after {
+  width: 7px;
+  height: 7px;
+}
+.imagepin .pin:hover span {
+  opacity: 1;
+  top: -20px;
+  width: fit-content;
+}
+.imagepin .pin:active {
+  border-color: #ffaa67;
+}
+.imagepin .pin:active:after {
+  width: 20px;
+  height: 20px;
+}
+.imagepin .pin:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transition: 0.2s all ease-in-out;
+  background: #fff;
+  position: relative;
+  display: block;
+  border-radius: 100%;
+}
+.imagepin .pin:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: shockwave 2s 0.5s ease-out infinite;
+}
+@keyframes shockwave {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px #fff;
+  }
+  95% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0), inset 0 0 30px rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+  }
+}
+.imagepin .pin:nth-of-type(1):before {
+  animation-delay: 0.2s;
+}
+.imagepin .pin:nth-of-type(2):before {
+  animation-delay: 0.4s;
+}
+.imagepin .pin:nth-of-type(3):before {
+  animation-delay: 0.6s;
+}
+.imagepin .pin:nth-of-type(4):before {
+  animation-delay: 0.9s;
+}
+.imagepin .pin:nth-of-type(5):before {
+  animation-delay: 1.3s;
+}
+.imagepin .pin:nth-of-type(6):before {
+  animation-delay: 1.6s;
+}
+.imagepin .pin:nth-of-type(7):before {
+  animation-delay: 1.8s;
+}
+.imagepin .pin:nth-of-type(8):before {
+  animation-delay: 2s;
+}
+.imagepin .pin:nth-of-type(9):before {
+  animation-delay: 2.2s;
+}
+.pin-popin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.pin-popin-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 640px;
+  width: 90%;
+}
+.pinPopinTitle {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: center;
+}
+.videoIframe {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.pinPopinDescription {
+  margin: 24px 0;
+}
+.pin-popin-close {
+  padding: 8px 16px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pin-popin-close:hover {
+  background: #555;
+}
+.pinPopinInfos {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 480px) {
+  .pinPopinInfos {
+    flex-direction: column;
+  }
+  .pinPopinInfos .pinPopinMode,
+  .pinPopinInfos .pinPopinGain,
+  .pinPopinInfos .pinPopinLevel {
+    margin-bottom: 10px;
+  }
+}
+.pinPopinInfos .pinPopinMode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stars .bar {
+  display: flex;
+  gap: 2px;
+  margin-top: 5px;
+}
+.stars .star {
+  width: 24px;
+  height: 12px;
+  background: #FFD700;
+}
+.stars .star:first-child {
+  border-radius: 6px 0 0 6px;
+}
+.stars .star:last-child {
+  border-radius: 0 6px 6px 0;
+}
+.stars .starEmpty {
+  background: #ccc;
+}
+.stars.positive .star {
+  background: #008000;
+}
+.stars.positive .starEmpty {
+  background: #ccc;
+}

@@ -1,0 +1,60 @@
+.pinPopinInfos {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+
+        .pinPopinMode,
+        .pinPopinGain,
+        .pinPopinLevel {
+            margin-bottom: 10px;
+        }
+    }
+
+    .pinPopinMode {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .bar {
+        display: flex;
+        gap: 2px;
+        margin-top: 5px;
+    }
+    
+    .star {
+        width: 24px;
+        height: 12px;
+        background: #FFD700;
+
+        &:first-child {
+            border-radius: 6px 0 0 6px;
+        }
+
+        &:last-child {
+            border-radius: 0 6px 6px 0;
+        }
+    }
+    
+    .starEmpty {
+        background: #ccc;
+    }
+
+    &.positive {
+        .star {
+            background: #008000;
+        }
+        
+        .starEmpty {
+            background: #ccc;
+        }
+    }
+}
