@@ -307,10 +307,22 @@ const circuitsData = [
             {
                 top: "81%",
                 left: "42%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                title: "La caverne de la chance",
+                description: `
+                    <div>
+                        <p>Un bug astucieux qui te permet de rattraper ton retard ! 🚀 Voici comment procéder :</p>
+                        <ol>
+                            <li><strong>Fonce dans le coin du mur</strong> : Percute le mur de manière à ce que Lakitu te replace à l'entrée de la caverne. Cela te fait gagner un tour complet.</li>
+                            <li><strong>Attention au placement</strong> : Si Lakitu te dépose simplement sur la route, c'est que le bug n'a pas fonctionné. 🛑</li>
+                            <li><strong>Petite difficulté</strong> : Ce passage est délicat à réussir, mais il devient plus simple si tu utilises un 🍄.</li>
+                            <li><strong>Gains optimaux</strong> : Avec un peu de chance, tu peux retomber directement dans la caverne sans passer par l'eau, économisant ainsi un temps précieux.</li>
+                        </ol>
+                        <p>🎲 <strong>C'est le quitte ou double parfait</strong> à tenter en cas de mauvaise posture. Bonne chance ! ✨</p>
+                    </div>
+                    `,
+                video: "SIoDOcJB4i8",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "5",
                 difficulty: "4",
                 text: "Short cut - Bug"
             },

@@ -145,7 +145,7 @@ function initPinPopins() {
             const gain = parseInt(pin.getAttribute('data-gain')) || 0;
             const difficulty = parseInt(pin.getAttribute('data-difficulty')) || 0;
             popinTitle.textContent = title;
-            popinDescription.textContent = description;
+            popinDescription.innerHTML = description;
             popinMode.innerHTML = `<div class="title">Mode</div> ${mode}`;
             popinGain.innerHTML = `<div class="title">Gain</div> ${createStarRating(gain).outerHTML}`;
             popinLevel.innerHTML = `<div class="title">Difficulté</div> ${createStarRating(difficulty).outerHTML}`;
