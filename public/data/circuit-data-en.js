@@ -1,4 +1,4 @@
-const circuitsData = [
+const circuitsDataEN = [
     {
         image: "luigi-raceway.jpg",
         alt: "Circuit Luigi Raceway",
@@ -9,7 +9,7 @@ const circuitsData = [
                 left: "79%",
                 type: "shortcutbug",
                 title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                description: "description in English",
                 video: "yzgzKIlijqQ",
                 mode: "⏱️ / 🎮 x 4",
                 gain: "5",
@@ -310,14 +310,14 @@ const circuitsData = [
                 title: "La caverne de la chance",
                 description: `
                     <div>
-                        <p>Un bug astucieux qui te permet de rattraper ton retard ! 🚀 Voici comment procéder :</p>
+                        <p>A clever glitch that lets you catch up! 🚀 Here's how to do it:</p>
                         <ol>
-                            <li><strong>Fonce dans le coin du mur</strong> : Percute le mur de manière à ce que Lakitu te replace à l'entrée de la caverne. Cela te fait gagner un tour complet.</li>
-                            <li><strong>Attention au placement</strong> : Si Lakitu te dépose simplement sur la route, c'est que le bug n'a pas fonctionné. 🛑</li>
-                            <li><strong>Petite difficulté</strong> : Ce passage est délicat à réussir, mais il devient plus simple si tu utilises un 🍄.</li>
-                            <li><strong>Gains optimaux</strong> : Avec un peu de chance, tu peux retomber directement dans la caverne sans passer par l'eau, économisant ainsi un temps précieux.</li>
+                            <li><strong>Dash into the corner of the wall</strong>: Crash into the wall so that Lakitu places you back at the cave entrance. This gives you a full lap advantage.</li>
+                            <li><strong>Mind your positioning</strong>: If Lakitu drops you back on the road, the glitch didn't work. 🛑</li>
+                            <li><strong>Tricky execution</strong>: This trick is hard to pull off, but it gets easier if you use a 🍄.</li>
+                            <li><strong>Optimal gains</strong>: With some luck, you can land directly in the cave without falling into the water, saving valuable time.</li>
                         </ol>
-                        <p>🎲 <strong>C'est le quitte ou double parfait</strong> à tenter en cas de mauvaise posture. Bonne chance ! ✨</p>
+                        <p>🎲 <strong>It's the perfect all-or-nothing move</strong> to try when you're in a tough spot. Good luck! ✨</p>
                     </div>
                     `,
                 video: "SIoDOcJB4i8",

@@ -34,6 +34,7 @@ const translations = {
             decrease: "Réduire",
             increase: "Agrandir"
         },
+        circuitsData: circuitsDataFR,
         footer: {
             copyright: {
                 year: "2025 Les Allumés du Kart. © ",
@@ -74,6 +75,7 @@ const translations = {
             decrease: "Decrease",
             increase: "Increase"
         },
+        circuitsData: circuitsDataEN,
         footer: {
             copyright: {
                 year: "2025 The Kart Fanatics. © ",
@@ -233,21 +235,26 @@ function generatePins(pins) {
 
 function renderCircuits() {
     const container = document.getElementById('mapsContainer');
-    container.innerHTML = circuitsData.map(circuit => `
+    const currentLang = window.languageManager.currentLang;
+
+    //console.log("currentLang", currentLang)
+    circuitsData = currentLang === 'fr' ? circuitsDataFR : circuitsDataEN
+    container.innerHTML = circuitsData.map((circuit, index) => {
+        const circuitTranslation = translations[currentLang].circuitsData[index] || {};
+console.log("circuitTranslation", circuitTranslation)
+        return `
         <div class="imagepin">
-            <h2 class="circuitTitle"><img class="circuitThumbnail" src="public/images/thumbnails/${circuit.thumbnail}" alt="Miniature de${circuit.alt}" />${circuit.alt}</h2>
+            <h2 class="circuitTitle"><img class="circuitThumbnail" src="public/images/thumbnails/${circuit.thumbnail}" alt="Miniature de${circuit.alt}" data-i18n="circuitsData.${index}.alt"/>${circuit.alt}</h2>
             <img src="public/images/circuits/${circuit.image}" alt="${circuit.alt}" />
             <div class="pins">
                 ${generatePins(circuit.pins)}
             </div>
         </div>
-    `).join('');
+    `
+    }).join('');
 }
 
-// Appeler la fonction au chargement
-renderCircuits();
-
-function initPinPopins() {
+function renderPinPopins() {
     // Créer la popin une seule fois
     const popinHTML = `
         <div class="pin-popin" style="display: none;">
@@ -258,7 +265,6 @@ function initPinPopins() {
                     <span class="pinPopinMode"></span>
                     <span class="pinPopinGain stars positive"></span>
                     <span class="pinPopinLevel stars"></span>
-                    <span class="pinPopinItem"></span>
                 </div>
                 <p class="pinPopinDescription"></p>
                 <button class="pin-popin-close">Fermer</button>
@@ -325,6 +331,14 @@ function createStarRating(difficulty) {
 
 // Initialiser au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
-    new LanguageManager()
-    initPinPopins()
+    window.languageManager = new LanguageManager()
+    renderCircuits()
+    renderPinPopins()
+
+    document.querySelectorAll('.langBtn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            renderCircuits()
+            renderPinPopins()
+        });
+    });
 });
