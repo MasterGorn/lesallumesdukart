@@ -33,6 +33,14 @@ const translations = {
         size: {
             decrease: "Réduire",
             increase: "Agrandir"
+        },
+        footer: {
+            copyright: {
+                year: "2025 Les Allumés du Kart. © ",
+                company: "Culture Games",
+                rights: ". - Tous droits réservés.",
+                nintendo: "Les personnages et éléments des jeux de ce site sont les propriétés de la société Nintendo."
+            }
         }
     },
     en: {
@@ -65,6 +73,14 @@ const translations = {
         size: {
             decrease: "Decrease",
             increase: "Increase"
+        },
+        footer: {
+            copyright: {
+                year: "2025 The Kart Fanatics. © ",
+                company: "Culture Games",
+                rights: ". - All rights reserved.",
+                nintendo: "The characters and elements of the games on this site are the properties of the Nintendo company."
+            }
         }
     }
 }
@@ -105,7 +121,7 @@ class LanguageManager {
             } else {
                 element.textContent = value;
             }
-        });
+        })
     }
 
     addLanguageSwitch() {
@@ -144,14 +160,6 @@ document.addEventListener('DOMContentLoaded', function() {
     legendToggle.addEventListener('click', function() {
         legend.classList.toggle('active');
         legendToggle.classList.toggle('active');
-        
-        // Change le texte du bouton
-       /* const toggleText = legendToggle.querySelector('.toggleText');
-        if (legend.classList.contains('active')) {
-            toggleText.textContent = 'Masquer la légende';
-        } else {
-            toggleText.textContent = 'Afficher la légende';
-        }*/
     });
 });
 
