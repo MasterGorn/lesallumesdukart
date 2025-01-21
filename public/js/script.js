@@ -1,3 +1,137 @@
+/********
+ * Gestion de la langue
+ */
+
+const translations = {
+    fr: {
+        legend: {
+            show: "Afficher la légende",
+            hide: "Masquer la légende",
+            difficulty: {
+                titleDifficulty: "Difficulté",
+                veryEasy: "Très facile",
+                easy: "Facile",
+                medium: "Moyen",
+                hard: "Difficile",
+                veryHard: "Très difficile"
+            },
+            gain: {
+                titleGain: "Gain",
+                veryLittle: "Une mini portion",
+                little: "⅛ de tour",
+                medium: "¼ de tour",
+                aLot: "½ tour",
+                reallyALot: "1 tour"
+            },
+            mode: {
+                titleMode: "Modes",
+                time: "Time Trial",
+                GrandPrix: "Grand Prix",
+                Multiplayers: "Multijoueurs",
+            }
+        },
+        size: {
+            decrease: "Réduire",
+            increase: "Agrandir"
+        }
+    },
+    en: {
+        legend: {
+            show: "Show legend",
+            hide: "Hide legend",
+            difficulty: {
+                titleDifficulty: "Difficulty",
+                veryEasy: "Very easy",
+                easy: "Easy",
+                medium: "Medium",
+                hard: "Hard",
+                veryHard: "Very hard"
+            },
+            gain: {
+                titleGain: "Gain",
+                veryLittle: "A tiny portion",
+                little: "⅛ of a lap",
+                medium: "¼ of a lap",
+                aLot: "½ of a lap",
+                reallyALot: "1 lap"
+            },
+            mode: {
+                titleMode: "Modes",
+                time: "Time Trial",
+                GrandPrix: "Grand Prix",
+                Multiplayers: "Multiplayers",
+            }
+        },
+        size: {
+            decrease: "Decrease",
+            increase: "Increase"
+        }
+    }
+}
+
+class LanguageManager {
+    constructor() {
+        this.currentLang = this.detectLanguage();
+        this.init();
+    }
+
+    detectLanguage() {
+        // Vérifie d'abord le localStorage
+        const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang) return savedLang;
+
+        // Sinon utilise la langue du navigateur
+        const browserLang = navigator.language.split('-')[0];
+        return translations[browserLang] ? browserLang : 'en';
+    }
+
+    init() {
+        this.translate();
+        this.addLanguageSwitch();
+    }
+
+    translate() {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const keys = key.split('.');
+            let value = translations[this.currentLang];
+            
+            for (const k of keys) {
+                value = value[k];
+            }
+            
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = value;
+            } else {
+                element.textContent = value;
+            }
+        });
+    }
+
+    addLanguageSwitch() {
+        const switchHtml = `
+            <div class="langSwitch">
+                <button class="langBtn fr ${this.currentLang === 'fr' ? 'active' : ''}" data-lang="fr">FR</button>
+                <button class="langBtn en ${this.currentLang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
+            </div>
+        `;
+
+        document.body.insertAdjacentHTML('beforeend', switchHtml);
+
+        document.querySelectorAll('.langBtn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.currentLang = btn.dataset.lang;
+                localStorage.setItem('preferredLanguage', this.currentLang);
+                this.translate();
+                
+                document.querySelectorAll('.langBtn').forEach(b => {
+                    b.classList.toggle('active', b === btn);
+                });
+            });
+        });
+    }
+}
+
 
 /********
  * Gestion de la légende
@@ -12,12 +146,12 @@ document.addEventListener('DOMContentLoaded', function() {
         legendToggle.classList.toggle('active');
         
         // Change le texte du bouton
-        const toggleText = legendToggle.querySelector('.toggleText');
+       /* const toggleText = legendToggle.querySelector('.toggleText');
         if (legend.classList.contains('active')) {
             toggleText.textContent = 'Masquer la légende';
         } else {
             toggleText.textContent = 'Afficher la légende';
-        }
+        }*/
     });
 });
 
@@ -156,30 +290,33 @@ function initPinPopins() {
 
     // Fermeture de la popin
     closeButton.addEventListener('click', () => {
-        popin.style.display = 'none';
+        popin.style.display = 'none'
     });
 
     // Fermeture en cliquant en dehors
     popin.addEventListener('click', (e) => {
         if (e.target === popin) {
-            popin.style.display = 'none';
+            popin.style.display = 'none'
         }
     });
 }
 
 function createStarRating(difficulty) {
     const maxStars = 5;
-    const starsContainer = document.createElement('div');
-    starsContainer.className = 'bar';
+    const starsContainer = document.createElement('div')
+    starsContainer.className = 'bar'
     
     for (let i = 1; i <= maxStars; i++) {
-        const star = document.createElement('span');
-        star.className = `star ${i <= difficulty ? '' : 'starEmpty'}`;
-        starsContainer.appendChild(star);
+        const star = document.createElement('span')
+        star.className = `star ${i <= difficulty ? '' : 'starEmpty'}`
+        starsContainer.appendChild(star)
     }
     
     return starsContainer;
 }
 
 // Initialiser au chargement de la page
-document.addEventListener('DOMContentLoaded', initPinPopins);
+document.addEventListener('DOMContentLoaded', () => {
+    new LanguageManager()
+    initPinPopins()
+});

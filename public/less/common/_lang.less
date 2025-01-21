@@ -1,0 +1,33 @@
+.langSwitch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    padding: 5px;
+    border-radius: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 5px;
+
+    .langBtn {
+        border: none;
+        background: transparent;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &.active {
+            background: #e60012;
+
+            &.fr {
+                background: #000fe6;
+            }
+        }
+
+        &:hover:not(.active) {
+            background: #555;
+        }
+    }
+}

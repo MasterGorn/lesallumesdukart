@@ -18,12 +18,30 @@
             background: #011b25;
         }
 
+        .showLegend {
+            display: block;
+        }
+    
+        .hideLegend {
+            display: none;
+        }
+
         .toggleIcon {
             transition: transform 0.3s ease;
         }
         
-        &.active .toggleIcon {
-            transform: rotate(180deg);
+        &.active {
+            .showLegend {
+                display: none;
+            }
+    
+            .hideLegend {
+                display: block;
+            }
+
+            .toggleIcon {
+                transform: rotate(180deg);
+            }
         }
     }
 }

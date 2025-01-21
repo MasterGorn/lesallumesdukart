@@ -45,6 +45,35 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.langSwitch {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  padding: 5px;
+  border-radius: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 5px;
+}
+.langSwitch .langBtn {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.langSwitch .langBtn.active {
+  background: #e60012;
+}
+.langSwitch .langBtn.active.fr {
+  background: #000fe6;
+}
+.langSwitch .langBtn:hover:not(.active) {
+  background: #555;
+}
 .legendWrapper {
   background-color: #0a506b;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -64,8 +93,20 @@ body {
 .legendWrapper .legendToggle:hover {
   background: #011b25;
 }
+.legendWrapper .legendToggle .showLegend {
+  display: block;
+}
+.legendWrapper .legendToggle .hideLegend {
+  display: none;
+}
 .legendWrapper .legendToggle .toggleIcon {
   transition: transform 0.3s ease;
+}
+.legendWrapper .legendToggle.active .showLegend {
+  display: none;
+}
+.legendWrapper .legendToggle.active .hideLegend {
+  display: block;
 }
 .legendWrapper .legendToggle.active .toggleIcon {
   transform: rotate(180deg);
