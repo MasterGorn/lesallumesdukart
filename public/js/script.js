@@ -183,7 +183,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const decreaseBtn = document.querySelector('[data-action="decrease"]');
     const increaseBtn = document.querySelector('[data-action="increase"]');
     const sizeIndicator = document.querySelector('.sizeIndicator');
-    const imagePins = document.querySelectorAll('.imagepin');
     
     function updateSize() {
         // Mettre à jour l'indicateur
@@ -192,7 +191,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Mettre à jour les boutons
         decreaseBtn.disabled = currentSizeIndex === 0;
         increaseBtn.disabled = currentSizeIndex === sizes.length - 1;
-        
+
+        let imagePins = document.querySelectorAll('.imagepin')
+  
         // Mettre à jour la taille des cartes
         imagePins.forEach(pin => {
             // Retirer toutes les classes de taille
@@ -215,9 +216,6 @@ document.addEventListener('DOMContentLoaded', function() {
             updateSize();
         }
     });
-    
-    // Initialisation
-    updateSize();
 });
 
 /********
@@ -334,11 +332,13 @@ document.addEventListener('DOMContentLoaded', () => {
     window.languageManager = new LanguageManager()
     renderCircuits()
     renderPinPopins()
+    updateSize()
 
     document.querySelectorAll('.langBtn').forEach(btn => {
         btn.addEventListener('click', () => {
             renderCircuits()
             renderPinPopins()
+            updateSize()
         });
     });
 });
