@@ -234,9 +234,46 @@ const circuitsDataFR = [
         alt: "Circuit Wario Stadium",
         thumbnail: "wario-stadium-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            {
+                top: "49%",
+                left: "81%",
+                title: "Profitez des bosses",
+                description: `<div>
+                    <p>2 passages secrets dans cette vidéo ! 🕵️‍♂️</p>
+                    <p><strong>Wario Stadium</strong> est l’endroit idéal pour tricher, regorgeant de passages secrets ! Voici le premier :</p>
+                    <ol>
+                        <li><strong>📍 Dès le départ</strong> : Sautez au niveau de la première bosse pour cogner le mur et passer de l’autre côté.</li>
+                        <li><strong>💡 Astuce</strong> : Le haut de la bosse réduit la hauteur du mur à sauter, ce qui rend ce passage facile à prendre.</li>
+                        <li><strong>⚠️ Attention</strong> : Ne faites pas de super départ ! Bien que cela soit possible, c’est beaucoup plus compliqué. Prendre un saut sur la première bosse est plus simple, mais cela fonctionne aussi avec les suivantes.</li>
+                    </ol>
+                    <p>Bientôt, vous ne vous rappellerez même plus du début du circuit ! 🏎️ Et même si les passages secrets suivants sont difficiles, vous pouvez toujours terminer la course de manière semi-loyale. 🎮</p>
+                </div>`,
+                video: "cdjHtNqGCPI",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "4",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "55%",
+                left: "80%",
+                title: "Vers la ligne d'arrivée",
+                description: `<div>
+                    <p>Comme vous aurez très certainement pris le premier passage secret de ce circuit, pourquoi s’arrêter en si bon chemin ? 🚀</p>
+                    <p>Pour ce deuxième passage secret :</p>
+                    <ol>
+                        <li><strong>⚡ Assurez-vous d’avoir suffisamment de vitesse</strong> : Enchaînez-le directement après le premier passage secret ou prenez un peu d’élan.</li>
+                        <li><strong>💥 Taper contre le mur</strong> : Visez le mur, appuyez sur <strong>R</strong> pour sauter par-dessus et atteindre l’autre côté.</li>
+                        <li><strong>⚠️ Attention à l’angle</strong> : Si vous sautez avec un mauvais angle, vous risquez de franchir la ligne d’arrivée du mauvais côté et de perdre les bénéfices du premier passage secret.</li>
+                    </ol>
+                    <p>Avec un peu de maîtrise, ce combo vous fera gagner un temps précieux ! 🏎️</p>
+                </div>`,
+                video: "cdjHtNqGCPI",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "4",
+                text: "Short cut - Bug"
+            },
         ]
     },
     {
@@ -254,9 +291,28 @@ const circuitsDataFR = [
         alt: "Circuit Autodrome Royal",
         thumbnail: "royal-raceway-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            {
+                top: "45%",
+                left: "40%",
+                title: "Les champignons font la différence",
+                description: `<div>
+                    <p>Sur l’Autodrome Royal, la course ne se fait plus de façon classique, et un facteur chance y est important ! 🎲</p>
+                    <p>Voici comment exploiter ce glitch :</p>
+                    <ol>
+                        <li><strong>📍 Repérez le tiers du circuit</strong> : À cet endroit, un bon saut vers l’autre rive peut faire croire au jeu que vous êtes tombé depuis le haut du pont.</li>
+                        <li><strong>⚡ Gagnez un demi-tour</strong> : Si cela fonctionne, le jeu vous replace directement au niveau du tremplin, vous faisant économiser un demi-tour complet.</li>
+                        <li><strong>🍄 Utilisez un boost</strong> : Il est nécessaire d’avoir l’une des options suivantes : un 🍄, 3 🍄 ou un 🍄 atomique.</li>
+                        <li><strong>🎯 Attention à la précision</strong> : Par rapport à la ligne de démarcation entre la terre gauche et droite, visez impérativement à droite pour tromper le jeu.</li>
+                        <li><strong>⚔️ Contre pour les adversaires</strong> : Les joueurs adverses n’ont que les objets 👻 ou ⚡ pour contrer cette stratégie chanceuse.</li>
+                    </ol>
+                    <p>Avec un peu de pratique et de chance, ce glitch peut faire toute la différence dans la course ! 🏎️✨</p>
+                </div>`,
+                video: "BkPfHH3oLsI",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "4",
+                text: "Short cut - Bug"
+            },
         ]
     },
     {
@@ -383,12 +439,22 @@ const circuitsDataFR = [
             {
                 top: "63%",
                 left: "61.5%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                title: "Le rebond des carapaces vertes",
+                description: `<div>
+                    <p>Pourquoi se contenter d'un demi tour alors que les barrières offrent plus de possibilités ! 🚀 Voici comment l’exploiter :</p>
+                    <ol>
+                        <li><strong>🎯 Prenez des carapaces vertes</strong> : Trouvez-en au moins une 🐢 juste avant la ligne d’arrivée pour vous offrir l'opportunité en or d'effectuer ce glitch.</li>
+                        <li><strong>💥 Prenez la carapace de plein fouet</strong> : Positionnez-vous pour que la carapace vous touche et vous projette au-dessus de la barrière. 🛑</li>
+                        <li><strong>✨ Effet magique</strong> : Vous dépasserez la ligne d’arrivée 🏁 pour finir votre tour et serez replacé par Lakitu 🪂 devant la ligne, avec un tour entier de gagné ! 🎉</li>
+                        <li><strong>🛠️ Astuces pratiques</strong> : Il est plus facile d’exécuter cette manœuvre avec 3 carapaces vertes 🐢, en les tirant contre la barrière pour que l’une d’elles vous touche en rebond. 🔄</li>
+                    </ol>
+                    <p>🎲 <strong>C’est une stratégie pas évidente mais payante</strong> idéale pour les situations désespérées. Bonne chance, champion ! 🏆✨</p>
+                </div>`,
+                video: "nUaqdgB5v4Q",
+                mode: " 🥇 / 🎮 x 4",
                 difficulty: "4",
-                text: "Short cut"
+                gain: "5",
+                text: "Short cut - Bug"
             }
         ]
     }
