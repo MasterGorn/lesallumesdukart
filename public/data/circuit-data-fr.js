@@ -369,6 +369,7 @@ const circuitsDataFR = [
         alt: "Circuit Autodrome Royal",
         thumbnail: "royal-raceway-thumbnail.png",
         pins: [
+            { top: "46%", left: "61%", text: "A FAIRE" },
             {
                 top: "45%",
                 left: "40%",
@@ -391,6 +392,8 @@ const circuitsDataFR = [
                 gain: "4",
                 text: "Short cut - Bug"
             },
+            { top: "50%", left: "51%", text: "A FAIRE" },
+            { top: "89%", left: "43%", text: "A FAIRE" },
         ]
     },
     {
