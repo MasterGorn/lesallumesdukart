@@ -169,54 +169,54 @@ document.addEventListener('DOMContentLoaded', function() {
  * Gestion de la taille des cartes
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    const sizes = [
-        { name: 'xs', width: 300, percent: '60%' },
-        { name: 'sm', width: 400, percent: '80%' },
-        { name: 'md', width: 500, percent: '100%' },
-        { name: 'lg', width: 600, percent: '120%' },
-        { name: 'xl', width: 700, percent: '140%' }
-    ];
-    
-    let currentSizeIndex = 2; // Commence à 'md' (100%)
-    
-    const decreaseBtn = document.querySelector('[data-action="decrease"]');
-    const increaseBtn = document.querySelector('[data-action="increase"]');
-    const sizeIndicator = document.querySelector('.sizeIndicator');
-    
-    function updateSize() {
-        // Mettre à jour l'indicateur
-        sizeIndicator.textContent = sizes[currentSizeIndex].percent;
-        
-        // Mettre à jour les boutons
-        decreaseBtn.disabled = currentSizeIndex === 0;
-        increaseBtn.disabled = currentSizeIndex === sizes.length - 1;
+const sizes = [
+    { name: 'xs', width: 300, percent: '60%' },
+    { name: 'sm', width: 400, percent: '80%' },
+    { name: 'md', width: 500, percent: '100%' },
+    { name: 'lg', width: 600, percent: '120%' },
+    { name: 'xl', width: 700, percent: '140%' }
+];
 
-        let imagePins = document.querySelectorAll('.imagepin')
-  
-        // Mettre à jour la taille des cartes
-        imagePins.forEach(pin => {
-            // Retirer toutes les classes de taille
-            sizes.forEach(size => pin.classList.remove(`size-${size.name}`));
-            // Ajouter la classe de taille actuelle
-            pin.classList.add(`size-${sizes[currentSizeIndex].name}`);
-        });
+let currentSizeIndex = 2; // Commence à 'md' (100%)
+
+const decreaseBtn = document.querySelector('[data-action="decrease"]');
+const increaseBtn = document.querySelector('[data-action="increase"]');
+
+
+
+decreaseBtn.addEventListener('click', () => {
+    if (currentSizeIndex > 0) {
+        currentSizeIndex--;
+        updateSize();
     }
-    
-    decreaseBtn.addEventListener('click', () => {
-        if (currentSizeIndex > 0) {
-            currentSizeIndex--;
-            updateSize();
-        }
-    });
-    
-    increaseBtn.addEventListener('click', () => {
-        if (currentSizeIndex < sizes.length - 1) {
-            currentSizeIndex++;
-            updateSize();
-        }
-    });
 });
+
+increaseBtn.addEventListener('click', () => {
+    if (currentSizeIndex < sizes.length - 1) {
+        currentSizeIndex++;
+        updateSize();
+    }
+});
+
+function updateSize() {
+    // Mettre à jour l'indicateur
+    const sizeIndicator = document.querySelector('.sizeIndicator');
+    sizeIndicator.textContent = sizes[currentSizeIndex].percent;
+    
+    // Mettre à jour les boutons
+    decreaseBtn.disabled = currentSizeIndex === 0;
+    increaseBtn.disabled = currentSizeIndex === sizes.length - 1;
+
+    let imagePins = document.querySelectorAll('.imagepin')
+
+    // Mettre à jour la taille des cartes
+    imagePins.forEach(pin => {
+        // Retirer toutes les classes de taille
+        sizes.forEach(size => pin.classList.remove(`size-${size.name}`));
+        // Ajouter la classe de taille actuelle
+        pin.classList.add(`size-${sizes[currentSizeIndex].name}`);
+    });
+}
 
 /********
  * Création des maps avec les points d'intérêts et les popins
@@ -326,6 +326,7 @@ function createStarRating(difficulty) {
     
     return starsContainer;
 }
+
 
 // Initialiser au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {

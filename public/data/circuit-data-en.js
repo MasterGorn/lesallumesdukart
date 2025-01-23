@@ -20,10 +20,19 @@ const circuitsDataEN = [
                 top: "14%",
                 left: "73%",
                 type: "shortcut",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Take a shortcut 1",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the grass! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
                 text: "Short cut"
@@ -32,12 +41,21 @@ const circuitsDataEN = [
                 top: "87%",
                 left: "35%",
                 type: "shortcut",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Take a shortcut 2",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the grass! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area. The box under the bridge is therefore very important.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "1",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
+                difficulty: "1",
                 text: "Short cut"
             },
             {
@@ -89,12 +107,34 @@ const circuitsDataEN = [
             {
                 top: "62%",
                 left: "51%",
+                title: "Obvious stepping stone",
+                description: `<div>
+                    <p>One of the most obvious and visible shortcuts! 🌟</p>
+                    <p>However, it’s not the easiest one, especially in multiplayer mode.</p>
+                    <ol>
+                        <li><strong>⚠️ Watch your angle</strong>: Make sure to approach at the correct angle to successfully make the jump.</li>
+                        <li><strong>🎯 Avoid traps</strong>: Beware of bananas and fake crates of objects placed on the springboard but also of ⚡️ and 👻 thrown by your competitors during the jump.</li>
+                        <li><strong>🏎️ No-item technique</strong>: This shortcut can be taken without any items by jumping at the very last moment using <strong>R</strong>.</li>
+                        <li><strong>🍄 Easier with a boost</strong>: It’s much easier to pull off with a 🍄 or a 🌟.</li>
+                        <li><strong>🌲 Watch out for trees</strong>: As you exit the cave, avoid crashing into the trees in your path. 😉</li>
+                    </ol>
+                    <p>This shortcut often makes the difference. Good luck! 🎮✨</p>
+                </div>`,
+                video: "ghUCyIOjp8E",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "3",
+                text: "Short cut "
+            },
+            {
+                top: "65%",
+                left: "52%",
                 title: "Luigi Raceway Sign",
                 description: "Ce panneau emblématique marque l'entrée du circuit",
                 video: "yzgzKIlijqQ",
                 mode: "Solo et Versus",
-                difficulty: "2",
-                text: "Short cut"
+                difficulty: "1",
+                text: "Short cut - Bug"
             },
             {
                 top: "64%",
@@ -320,9 +360,27 @@ const circuitsDataEN = [
         alt: "Circuit Bowser's Castle",
         thumbnail: "bowsers-castle-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            {
+                top: "72%",
+                left: "16.2%",
+                title: "La double victoire",
+                description: `<div>
+                    <p>The double victory is truly a game changer! 🏆✨</p>
+                    <p>This completely improbable bug works only on <strong>Bowser’s Castle</strong> and allows the winning player to secure <strong>an additional victory</strong> if they cross the finish line backward. 🚗🔄</p>
+                    <ol>
+                        <li><strong>📍 Get ready</strong>: Make sure you have enough of a lead in this fast-paced race to pull off the maneuver.</li>
+                        <li><strong>↩️ Turn around</strong>: Just before the finish line, turn around and reverse to cross the line backward.</li>
+                        <li><strong>🎯 Bug activation</strong>: When the game takes control after you cross the line, your character will automatically turn around and cross the finish line again.</li>
+                        <li><strong>🏆 Double victory</strong>: This will grant you two wins in a single race, but note that it only works in first place!</li>
+                    </ol>
+                    <p>With a bit of practice, this glitch can turn an ordinary race into an epic moment! 🎮🔥</p>
+                </div>`,
+                video: "HCOKOa-8K7w",
+                mode: "🎮 x 4",
+                difficulty: "2",
+                gain: "5",
+                text: "Bug"
+            },
         ]
     },
     {
@@ -402,10 +460,21 @@ const circuitsDataEN = [
             {
                 top: "58%",
                 left: "35%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "The star-shaped hole",
+                description: `<div>
+                    <p>The only shortcut on this track is quite risky compared to its reward, making it less appealing. ⚠️</p>
+                    <p>While it’s crucial in <strong>time trials</strong> to achieve a good time ⏱️, in <strong>multiplayer mode</strong>, it requires careful consideration. 🤔</p>
+                    <ol>
+                        <li><strong>🌟 Shortcut location</strong>: This shortcut is found in the abandoned ruins.</li>
+                        <li><strong>🛠️ Technique</strong>: You need to jump to the left of the pole and over the star-shaped hole to succeed.</li>
+                        <li><strong>💡 Tip</strong>: Keep in mind that the risk might not be worth it, especially in multiplayer. Choose wisely whether you want to take it based on your place and situation!</li>
+                    </ol>
+                    <p>This shortcut is perfect for solo perfectionists but remains a gamble in competitive play. Good luck! 🏎️✨</p>
+                </div>
+                `,
                 video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
                 difficulty: "3",
                 text: "Short cut"
             },

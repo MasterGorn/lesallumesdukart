@@ -8,10 +8,11 @@ const circuitsDataFR = [
                 top: "61.3%",
                 left: "79%",
                 type: "shortcutbug",
-                title: "Autodrome Luigi",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Tremplin évident",
+                description: `<div>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "⏱️ / 🎮 x 4",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "5",
                 difficulty: "5",
                 text: "Short cut - Bug"
@@ -20,10 +21,19 @@ const circuitsDataFR = [
                 top: "14%",
                 left: "73%",
                 type: "shortcut",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Couper le fromage 1",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
                 text: "Short cut"
@@ -32,22 +42,32 @@ const circuitsDataFR = [
                 top: "87%",
                 left: "35%",
                 type: "shortcut",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Couper le fromage 2",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone. La caisse sous le pont est donc très importante.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "1",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
+                difficulty: "1",
                 text: "Short cut"
             },
             {
                 top: "75%",
                 left: "66%",
                 type: "shortcutbug",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Tremplin évident",
+                description: `<div>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "2",
                 difficulty: "4",
                 text: "Short cut - Bug"
@@ -62,10 +82,11 @@ const circuitsDataFR = [
             {
                 top: "55%",
                 left: "70%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Tremplin évident",
+                description: `<div>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 text: "Short cut"
             }
@@ -89,12 +110,34 @@ const circuitsDataFR = [
             {
                 top: "62%",
                 left: "51%",
+                title: "Tremplin évident",
+                description: `<div>
+                    <p>L’un des passages secrets les plus évidents et visibles ! 🌟</p>
+                    <p>Mais ce n’est pas pour autant l’un des plus faciles, surtout en mode multi-joueurs.</p>
+                    <ol>
+                        <li><strong>⚠️ Faites attention à l’angle</strong> : Assurez-vous de prendre le bon angle pour réussir le saut.</li>
+                        <li><strong>🎯 Évitez les pièges</strong> : Méfiez-vous des bananes et fausses caisses d’objets déposés sur le tremplin mais aussi des ⚡️ et 👻 lancés par vos concurrents au moment du saut.</li>
+                        <li><strong>🏎️ Technique sans option</strong> : Ce passage peut être pris sans aucun objet en sautant au dernier moment avec <strong>R</strong>.</li>
+                        <li><strong>🍄 Option facilitatrice</strong> : Il est cependant beaucoup plus simple avec un 🍄 ou une 🌟.</li>
+                        <li><strong>🌲 Attention aux arbres</strong> : À la sortie de la grotte, veillez à ne pas percuter les arbres qui se trouvent sur votre chemin. 😉</li>
+                    </ol>
+                    <p>Ce passage secret fait souvent la différence. Bonne chance ! 🎮✨</p>
+                </div>`,
+                video: "ghUCyIOjp8E",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "3",
+                text: "Short cut "
+            },
+            {
+                top: "65%",
+                left: "52%",
                 title: "Luigi Raceway Sign",
                 description: "Ce panneau emblématique marque l'entrée du circuit",
                 video: "yzgzKIlijqQ",
                 mode: "Solo et Versus",
-                difficulty: "2",
-                text: "Short cut"
+                difficulty: "1",
+                text: "Short cut - Bug"
             },
             {
                 top: "64%",
@@ -320,9 +363,27 @@ const circuitsDataFR = [
         alt: "Circuit Château de Bowser",
         thumbnail: "bowsers-castle-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            {
+                top: "72%",
+                left: "16.2%",
+                title: "La double victoire",
+                description: `<div>
+                    <p>La double victoire, c’est vraiment un game changer ! 🏆✨</p>
+                    <p>Ce bug complètement improbable ne fonctionne que sur le <strong>Château de Bowser</strong> et permet au joueur vainqueur de décrocher <strong>une victoire supplémentaire</strong> s’il passe la ligne d’arrivée en arrière. 🚗🔄</p>
+                    <ol>
+                        <li><strong>📍 Préparez-vous</strong> : Assurez-vous d’avoir suffisamment d’avance dans cette course très rapide pour exécuter la manœuvre.</li>
+                        <li><strong>↩️ Faites demi-tour</strong> : Avant la ligne d’arrivée, faites demi-tour puis reculez pour passer la ligne à l’envers.</li>
+                        <li><strong>🎯 Le bug s’active</strong> : Lorsque le jeu reprend le contrôle après avoir passé la ligne, votre personnage se retournera automatiquement et repassera la ligne d’arrivée.</li>
+                        <li><strong>🏆 Double victoire</strong> : Cela vous attribuera deux victoires d’un coup, mais attention, cela ne fonctionne qu’en première position !</li>
+                    </ol>
+                    <p>Avec un peu de pratique, ce glitch peut transformer une course classique en un moment épique et retourner la situation du championnat ! 🎮🔥</p>
+                </div>`,
+                video: "HCOKOa-8K7w",
+                mode: "🎮 x 4",
+                difficulty: "2",
+                gain: "5",
+                text: "Bug"
+            },
         ]
     },
     {
@@ -402,10 +463,21 @@ const circuitsDataFR = [
             {
                 top: "58%",
                 left: "35%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Le trou en forme d’étoile",
+                description: `<div>
+                    <p>Le seul raccourci de ce circuit est assez risqué par rapport à son gain, ce qui le rend peu intéressant. ⚠️</p>
+                    <p>S’il est important en <strong>time trial</strong> pour obtenir un bon temps ⏱️, en mode <strong>multi-joueur</strong>, cela mérite réflexion. 🤔</p>
+                    <ol>
+                        <li><strong>🌟 Localisation du raccourci</strong> : Ce passage se trouve dans les ruines abandonnées.</li>
+                        <li><strong>🛠️ Technique</strong> : Il faut sauter à gauche du poteau et au-dessus du trou en forme d’étoile pour le réussir.</li>
+                        <li><strong>💡 Astuce</strong> : Gardez à l’esprit que le risque peut ne pas valoir la peine, surtout si vous jouez en multi. Choisissez judicieusement si vous voulez le prendre en fonction de votre place et de la situation !</li>
+                    </ol>
+                    <p>Ce raccourci est idéal pour les perfectionnistes en solo, mais reste une prise de risque en compétition. Bonne chance ! 🏎️✨</p>
+                </div>
+                `,
                 video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
                 difficulty: "3",
                 text: "Short cut"
             },
