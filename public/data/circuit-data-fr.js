@@ -100,11 +100,21 @@ const circuitsDataFR = [
             {
                 top: "23%",
                 left: "49%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Objet contre vitesse",
+                description: `<div>
+                    <p>Ce passage secret de la <strong>plage Koopa</strong> échange objet contre vitesse. 🌊🐢</p>
+                    <p>En effet, prendre le passage de gauche est un raccourci, mais les caisses d’objets se trouvent dans l’embranchement de droite. 🎁➡️</p>
+                    <ol>
+                        <li><strong>🌟 Avantage</strong> : Le passage de gauche permet de gagner du temps si vous priorisez la vitesse.</li>
+                        <li><strong>🛠️ Technique</strong> : Pour en profiter pleinement, faites un dérapage en tournant à gauche, puis un deuxième en tournant à droite et enfin un troisième en tournant à gauche. 🚗💨</li>
+                        <li><strong>💡 Astuce</strong> : Réfléchissez bien à votre stratégie : préférez-vous un gain de temps immédiat ou des objets pour le long terme ? 🤔</li>
+                    </ol>
+                    <p>Ce raccourci est idéal pour le Time Trial où la question de le prendre ou non ne se pose même pas ! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
+                gain: "1",
                 text: "Short cut"
             },
             {
@@ -142,11 +152,22 @@ const circuitsDataFR = [
             {
                 top: "64%",
                 left: "30%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Attention aux crabes !",
+                description: `<div>
+                    <p>Encore un passage évident mais qui demande de faire un choix ! ⚠️</p>
+                    <p>L’emprunter empêche de prendre un passage secret plus avantageux. Mais celui-ci est moins risqué, et surtout l’autre passage peut être obstrué par des objets. 🎁🛑</p>
+                    <ol>
+                        <li><strong>🌟 Avantage</strong> : Ce passage est sûr et offre une alternative quand l’autre est trop dangereux.</li>
+                        <li><strong>🛠️ Technique</strong> : Roulez bien sur la partie émergée de la route pour éviter de ralentir.</li>
+                        <li><strong>🦀 Attention aux crabes</strong> : Ils n’hésiteront pas à vous ralentir si vous croisez leur chemin. 🐾</li>
+                        <li><strong>🏁 Intérêt</strong> : Il n'a évidemment aucun intérêt en mode Time Trial.</li>
+                    </ol>
+                    <p>Ce passage est idéal pour jouer la sécurité et garder une bonne position dans la course. Bonne chance ! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
+                gain: "2",
                 text: "Short cut"
             },
             {
@@ -168,6 +189,16 @@ const circuitsDataFR = [
                 mode: "Solo et Versus",
                 difficulty: "1",
                 text: "Secret !"
+            },
+            {
+                top: "50%",
+                left: "73%",
+                title: "La marée basse",
+                description: "Ce panneau emblématique marque l'entrée du circuit",
+                video: "yzgzKIlijqQ",
+                mode: "Solo et Versus",
+                difficulty: "1",
+                text: "Shorcut"
             }
         ]
     },
@@ -267,9 +298,13 @@ const circuitsDataFR = [
         alt: "Circuit Autodrome Mario",
         thumbnail: "mario-raceway-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            { top: "35%", left: "17%", text: "Nice sign!" },
+            { top: "42%", left: "73%", text: "Beautiful." },
+            { top: "30%", left: "82%", text: "Exit." },
+            { top: "38%", left: "87%", text: "Exit." },
+            { top: "83%", left: "73%", text: "Exit." },
+            { top: "71%", left: "66%", text: "Exit." },
+            { top: "57%", left: "20%", text: "Exit." }
         ]
     },
     {
@@ -324,9 +359,9 @@ const circuitsDataFR = [
         alt: "Circuit Royaume Sorbet",
         thumbnail: "sherbet-land-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            { top: "89%", left: "18%", text: "A FAIRE" },
+            { top: "23%", left: "37%", text: "A FAIRE" },
+            { top: "38%", left: "95%", text: "A FAIRE" }
         ]
     },
     {

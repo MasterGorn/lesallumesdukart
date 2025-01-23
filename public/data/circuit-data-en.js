@@ -97,11 +97,21 @@ const circuitsDataEN = [
             {
                 top: "23%",
                 left: "49%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Item versus speed",
+                description: `<div>
+                    <p>This secret shortcut on <strong>Koopa Beach</strong> trades items for speed. 🌊🐢</p>
+                    <p>Indeed, taking the left path is a shortcut, but the item boxes are located in the right branch. 🎁➡️</p>
+                    <ol>
+                        <li><strong>🌟 Advantage</strong>: The left path saves time if you prioritize speed.</li>
+                        <li><strong>🛠️ Technique</strong>: To make the most of it, perform a drift by turning left, then another by turning right and finally a third by turning left. 🚗💨</li>
+                        <li><strong>💡 Tip</strong>: Think carefully about your strategy: do you prefer immediate time savings or items for the long run? 🤔</li>
+                    </ol>
+                    <p>This shortcut is ideal for the Time Trial where the question of taking it or not does not even arise! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
+                gain: "1",
                 text: "Short cut"
             },
             {
@@ -139,11 +149,22 @@ const circuitsDataEN = [
             {
                 top: "64%",
                 left: "30%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Watch out for crabs!",
+                description: `<div>
+                    <p>Another obvious shortcut, but one that requires a decision! ⚠️</p>
+                    <p>Taking it prevents you from using a more advantageous secret path. However, this one is less risky, and the other path may be blocked by items. 🎁🛑</p>
+                    <ol>
+                        <li><strong>🌟 Advantage</strong>: This shortcut is safe and provides an alternative when the other is too dangerous.</li>
+                        <li><strong>🛠️ Technique</strong>: Stick to the elevated part of the road to avoid slowing down.</li>
+                        <li><strong>🦀 Watch out for crabs</strong>: They’ll happily slow you down if you get in their way. 🐾</li>
+                        <li><strong>🏁 Purpose</strong>: It obviously has no use in Time Trial mode.</li>
+                        </ol>
+                    <p>This shortcut is perfect for playing it safe and maintaining a good position in the race. Good luck! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
+                gain: "2",
                 text: "Short cut"
             },
             {
@@ -165,6 +186,16 @@ const circuitsDataEN = [
                 mode: "Solo et Versus",
                 difficulty: "1",
                 text: "Secret !"
+            },
+            {
+                top: "50%",
+                left: "73%",
+                title: "La marée basse",
+                description: "Ce panneau emblématique marque l'entrée du circuit",
+                video: "yzgzKIlijqQ",
+                mode: "Solo et Versus",
+                difficulty: "1",
+                text: "Shorcut"
             }
         ]
     },
@@ -264,9 +295,13 @@ const circuitsDataEN = [
         alt: "Circuit Mario Raceway",
         thumbnail: "mario-raceway-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            { top: "35%", left: "17%", text: "Nice sign!" },
+            { top: "42%", left: "73%", text: "Beautiful." },
+            { top: "30%", left: "82%", text: "Exit." },
+            { top: "38%", left: "87%", text: "Exit." },
+            { top: "83%", left: "73%", text: "Exit." },
+            { top: "71%", left: "66%", text: "Exit." },
+            { top: "57%", left: "20%", text: "Exit." }
         ]
     },
     {
@@ -321,9 +356,9 @@ const circuitsDataEN = [
         alt: "Circuit Sherbet Land",
         thumbnail: "sherbet-land-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            { top: "89%", left: "18%", text: "A FAIRE" },
+            { top: "23%", left: "37%", text: "A FAIRE" },
+            { top: "38%", left: "95%", text: "A FAIRE" }
         ]
     },
     {
