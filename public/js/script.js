@@ -262,6 +262,12 @@ function syncPinsSize() {
         // Crée un ResizeObserver pour surveiller les changements de taille de l'image
         const observer = new ResizeObserver(updatePinsSize);
         observer.observe(img);
+        // Observer les changements de style
+        const mutationObserver = new MutationObserver(updatePinsSize);
+        mutationObserver.observe(img, {
+            attributes: true,
+            attributeFilter: ['style', 'class']
+        });
     });
 }
 
@@ -378,4 +384,8 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSize()
         });
     });
+
+    // Écouteurs d'événements pour la synchronisation des pins
+    document.addEventListener('DOMContentLoaded', syncPinsSize);
+    window.addEventListener('resize', syncPinsSize);
 });
