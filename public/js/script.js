@@ -216,6 +216,8 @@ function updateSize() {
         // Ajouter la classe de taille actuelle
         pin.classList.add(`size-${sizes[currentSizeIndex].name}`);
     });
+
+    syncPinsSize()
 }
 
 /********
@@ -231,9 +233,41 @@ function generatePins(pins) {
     }).join('');
 }
 
+// Fonction pour synchroniser la taille des pins avec l'image
+function syncPinsSize() {
+    const imagePins = document.querySelectorAll('.imagepin');
+    
+    imagePins.forEach(container => {
+        const img = container.querySelector('.circuitImage');
+        const pinsDiv = container.querySelector('.pins');
+        
+        // Synchronise la taille initiale et les marges
+        function updatePinsSize() {
+            const rect = img.getBoundingClientRect();
+            const computedStyles = window.getComputedStyle(img);
+            console.log("rect", rect)
+            pinsDiv.style.width = rect.width + 'px';
+            pinsDiv.style.height = rect.height + 'px';
+            pinsDiv.style.marginLeft = computedStyles.marginLeft;
+            pinsDiv.style.marginTop = computedStyles.marginTop;
+        }
+
+        // Gérer le chargement initial de l'image
+        if (img.complete) {
+            updatePinsSize();
+        } else {
+            img.addEventListener('load', updatePinsSize);
+        }
+        
+        // Crée un ResizeObserver pour surveiller les changements de taille de l'image
+        const observer = new ResizeObserver(updatePinsSize);
+        observer.observe(img);
+    });
+}
+
 function renderCircuits() {
-    const container = document.getElementById('mapsContainer');
-    const currentLang = window.languageManager.currentLang;
+    const container = document.getElementById('mapsContainer')
+    const currentLang = window.languageManager.currentLang
 
     //console.log("currentLang", currentLang)
     circuitsData = currentLang === 'fr' ? circuitsDataFR : circuitsDataEN
@@ -243,13 +277,15 @@ console.log("circuitTranslation", circuitTranslation)
         return `
         <div class="imagepin">
             <h2 class="circuitTitle"><img class="circuitThumbnail" src="public/images/thumbnails/${circuit.thumbnail}" alt="Miniature de${circuit.alt}" data-i18n="circuitsData.${index}.alt"/>${circuit.alt}</h2>
-            <img src="public/images/circuits/${circuit.image}" alt="${circuit.alt}" />
+            <img src="public/images/circuits/${circuit.image}" alt="${circuit.alt}" class="circuitImage" />
             <div class="pins">
                 ${generatePins(circuit.pins)}
             </div>
         </div>
     `
-    }).join('');
+    }).join('')
+
+    syncPinsSize()
 }
 
 function renderPinPopins() {
