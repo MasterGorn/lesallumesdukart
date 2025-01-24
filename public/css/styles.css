@@ -236,85 +236,6 @@ body {
   margin: 0 24px;
   color: white;
 }
-.sizeControls {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #333;
-  padding: 8px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-.sizeControls .sizeBtn {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: none;
-  background: #555;
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-.sizeControls .sizeBtn:hover {
-  background: #666;
-}
-.sizeControls .sizeBtn:disabled {
-  background: #444;
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-.sizeControls .sizeIndicator {
-  color: white;
-  font-size: 14px;
-  min-width: 50px;
-  text-align: center;
-}
-/* Classes pour les différentes tailles de cartes */
-.imagepin {
-  transition: width 0.3s ease;
-}
-.imagepin.size-xs {
-  max-width: 180px;
-}
-.imagepin.size-xs .circuitTitle {
-  font-size: 0.8rem;
-}
-.imagepin.size-xs .circuitTitle .circuitThumbnail {
-  width: 48px;
-  margin-right: 8px;
-}
-.imagepin.size-sm {
-  max-width: 240px;
-}
-.imagepin.size-sm .circuitTitle {
-  font-size: 1rem;
-}
-.imagepin.size-md {
-  max-width: 360px;
-}
-.imagepin.size-md .circuitTitle {
-  font-size: 1.2rem;
-}
-.imagepin.size-lg {
-  max-width: 480px;
-}
-.imagepin.size-lg .circuitTitle {
-  font-size: 1.4rem;
-}
-.imagepin.size-xl {
-  max-width: 680px;
-}
-.imagepin.size-xl .circuitTitle {
-  font-size: 1.6rem;
-}
 .maps {
   display: flex;
   flex-wrap: wrap;
@@ -327,6 +248,7 @@ body {
   width: 100%;
   max-width: 360px;
   margin: 64px auto 32px;
+  background: #000;
 }
 .imagepin .circuitTitle {
   position: absolute;
@@ -334,7 +256,6 @@ body {
   left: 0;
   display: flex;
   align-items: center;
-  padding: 0 0 0 16px;
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
@@ -345,6 +266,8 @@ body {
 .imagepin .circuitTitle .circuitThumbnail {
   width: 64px;
   margin-right: 16px;
+  margin-left: 16px;
+  border-radius: 6px;
 }
 .imagepin .pins {
   position: absolute;
@@ -355,10 +278,10 @@ body {
 }
 .imagepin img {
   display: block;
-  margin: 0;
-  width: 100%;
+  margin: auto;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  border-radius: 6px;
 }
 .imagepin .pin {
   width: 44px;
@@ -529,16 +452,26 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
-  align-items: center;
   justify-content: center;
   z-index: 1000;
 }
+@media (min-width: 768px) {
+  .pin-popin {
+    align-items: center;
+  }
+}
 .pin-popin-content {
-  background: white;
   padding: 20px;
-  border-radius: 10px;
   max-width: 640px;
-  width: 90%;
+  width: 100%;
+  background: white;
+  overflow: auto;
+}
+@media (min-width: 768px) {
+  .pin-popin-content {
+    width: 90%;
+    border-radius: 10px;
+  }
 }
 .pinPopinTitle {
   margin: 0 0 10px 0;
@@ -654,4 +587,105 @@ body {
   .footer .sociallink {
     margin: 0 0.5rem;
   }
+}
+.sizeControls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  padding: 8px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.sizeControls .sizeBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #555;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.sizeControls .sizeBtn:hover {
+  background: #666;
+}
+.sizeControls .sizeBtn:disabled {
+  background: #444;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.sizeControls .sizeIndicator {
+  color: white;
+  font-size: 14px;
+  min-width: 50px;
+  text-align: center;
+}
+/* Classes pour les différentes tailles de cartes */
+.imagepin {
+  display: flex;
+  align-items: center;
+  transition: width 0.3s ease;
+}
+.imagepin.size-xs {
+  max-width: 180px;
+  height: 180px;
+}
+.imagepin.size-xs .circuitTitle {
+  font-size: 0.8rem;
+}
+.imagepin.size-xs .circuitTitle .circuitThumbnail {
+  width: 48px;
+  margin-right: 8px;
+}
+.imagepin.size-xs img {
+  max-height: 180px;
+}
+.imagepin.size-sm {
+  max-width: 240px;
+  height: 240px;
+}
+.imagepin.size-sm .circuitTitle {
+  font-size: 1rem;
+}
+.imagepin.size-sm img {
+  max-height: 240px;
+}
+.imagepin.size-md {
+  max-width: 360px;
+  height: 360px;
+}
+.imagepin.size-md .circuitTitle {
+  font-size: 1.2rem;
+}
+.imagepin.size-md img {
+  max-height: 360px;
+}
+.imagepin.size-lg {
+  max-width: 480px;
+  height: 480px;
+}
+.imagepin.size-lg .circuitTitle {
+  font-size: 1.4rem;
+}
+.imagepin.size-lg img {
+  max-height: 480px;
+}
+.imagepin.size-xl {
+  max-width: 680px;
+  height: 680px;
+}
+.imagepin.size-xl .circuitTitle {
+  font-size: 1.6rem;
+}
+.imagepin.size-xl img {
+  max-height: 680px;
 }

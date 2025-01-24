@@ -257,6 +257,7 @@ function renderPinPopins() {
     const popinHTML = `
         <div class="pin-popin" style="display: none;">
             <div class="pin-popin-content">
+                <button class="pin-popin-close">Fermer</button>
                 <h3 class="pinPopinTitle"></h3>
                 <div class="pinPopinVideo"></div>
                 <div class="pinPopinInfos">
@@ -265,7 +266,6 @@ function renderPinPopins() {
                     <span class="pinPopinLevel stars"></span>
                 </div>
                 <p class="pinPopinDescription"></p>
-                <button class="pin-popin-close">Fermer</button>
             </div>
         </div>
     `;

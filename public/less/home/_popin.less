@@ -6,17 +6,25 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
     justify-content: center;
     z-index: 1000;
+
+    @media (min-width: 768px) {
+        align-items: center;
+    }
 }
 
 .pin-popin-content {
-    background: white;
     padding: 20px;
-    border-radius: 10px;
     max-width: 640px;
-    width: 90%;
+    width: 100%;
+    background: white;
+    overflow: auto;
+
+    @media (min-width: 768px) {
+        width: 90%;
+        border-radius: 10px;
+    }
 }
 
 .pinPopinTitle {

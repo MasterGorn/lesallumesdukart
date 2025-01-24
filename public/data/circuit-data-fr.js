@@ -6,9 +6,9 @@ const circuitsDataFR = [
         pins: [
             {
                 top: "61.3%",
-                left: "79%",
+                left: "70%",
                 type: "shortcutbug",
-                title: "Tremplin évident",
+                title: "Tour express",
                 description: `<div>
                 </div>`,
                 video: "yzgzKIlijqQ",
@@ -18,8 +18,8 @@ const circuitsDataFR = [
                 text: "Short cut - Bug"
             },
             {
-                top: "14%",
-                left: "73%",
+                top: "9%",
+                left: "57%",
                 type: "shortcut",
                 title: "Couper le fromage 1",
                 description: `<div>
@@ -39,8 +39,8 @@ const circuitsDataFR = [
                 text: "Short cut"
             },
             {
-                top: "87%",
-                left: "35%",
+                top: "90%",
+                left: "42%",
                 type: "shortcut",
                 title: "Couper le fromage 2",
                 description: `<div>
@@ -60,10 +60,10 @@ const circuitsDataFR = [
                 text: "Short cut"
             },
             {
-                top: "75%",
-                left: "66%",
+                top: "74%",
+                left: "61%",
                 type: "shortcutbug",
-                title: "Tremplin évident",
+                title: "Foncer dans le mur",
                 description: `<div>
                 </div>`,
                 video: "yzgzKIlijqQ",
@@ -142,11 +142,21 @@ const circuitsDataFR = [
             {
                 top: "65%",
                 left: "52%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "1",
+                title: "Deuxième chance du tremplin",
+                description: `<div>
+                    <p>Même si le saut du tremplin est accessible, l’erreur est humaine, surtout en multi-joueurs. 😅</p>
+                    <p>Heureusement, une deuxième chance se propose à vous !</p>
+                    <ul>
+                        <li><strong>💥 Technique</strong> : Foncez sur le mur (plutôt sur la gauche) et sautez au moment de l’impact pour entrer dans la grotte sans option. C’est assez facile à réaliser.</li>
+                        <li><strong>🏎️ Élan</strong> : Prenez un petit peu d’élan, mais pas trop, sinon votre kart sautera plus haut que le sommet de l’entrée de la grotte. 🎯</li>
+                        <li><strong>🔧 Astuce</strong> : L’idéal est de démarrer votre course au niveau du tremplin.</li>
+                    </ul>
+                    <p>Maintenant, vous n’avez plus d’excuses pour ne pas passer par la grotte sur la plage Koopa ! 🏖️✨</p>
+                </div>`,
+                video: "JJUlmZlvLbQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "3",
                 text: "Short cut - Bug"
             },
             {
@@ -174,10 +184,19 @@ const circuitsDataFR = [
                 top: "78%",
                 left: "67%",
                 title: "Une carapace bleue assurée !",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "2",
+                description: `<div>
+                    <p>Avec tous les passages secrets de cette course, il n’est pas rare de voir un joueur prendre de l’avance. 🏎️💨</p>
+                    <p>Quoi de mieux qu’une carapace bleue pour le ralentir ? 🐢💥</p>
+                    <ul>
+                        <li><strong>🎯 Positionnement</strong> : Sur ce tremplin un peu exigu, il est possible d’atteindre la caisse d’objets située au-dessus de la colline.</li>
+                        <li><strong>💎 Récompense</strong> : Cette caisse d’objets donne obligatoirement une carapace bleue. 🐢✨</li>
+                    </ul>
+                    <p>Maintenant, faites-vous plaisir ! Le premier n’a plus qu’à rager. 😈</p>
+                </div>`,
+                video: "AsT3Gt4JvBY",
+                mode: "🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "2",
                 text: "Secret !"
             },
             {
@@ -257,11 +276,22 @@ const circuitsDataFR = [
             {
                 top: "47%",
                 left: "43%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "3",
+                title: "Allez au dela de la barrière",
+                description: `<div>
+                    <p><strong>L’autoroute Toad</strong> fait un grand 8. À l’intersection, il est fort probable qu’il y ait moyen de gagner du temps. Et c’est le cas ! 🛣️✨</p>
+                    <p>Pour ce passage secret :</p>
+                    <ol>
+                        <li><strong>🚀 Turbo au départ</strong> : Faites un turbo dès le démarrage.</li>
+                        <li><strong>🔄 Dérapez</strong> : Dérapez à gauche et sautez juste au moment de percuter la barrière, au niveau de l’intersection des routes sur la map.</li>
+                        <li><strong>🚉 Checkpoint</strong> : Vous vous planterez dans la barrière et Lakitu vous repositionnera sur la route.</li>
+                        <li><strong>🔁 Deuxième étape</strong> : Faites un virage à droite et foncez dans la barrière suivante. Cette fois, Lakitu vous replacera sur le niveau inférieur, avec un demi-tour de gagné ! 🎉</li>
+                    </ol>
+                    <p>C’est donc un passage en deux temps qui peut faire la différence dans la course ! 🏎️💨</p>
+                </div>`,
+                video: "31yy4fi_l7Q",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "4",
                 text: "Short cut - Bug"
             },
         ]
@@ -360,7 +390,26 @@ const circuitsDataFR = [
         thumbnail: "sherbet-land-thumbnail.png",
         pins: [
             { top: "89%", left: "18%", text: "A FAIRE" },
-            { top: "23%", left: "37%", text: "A FAIRE" },
+            { 
+                top: "23%", 
+                left: "37%", 
+                title: "Tranquilité assurée",
+                description: `<div>
+                    <p>On ne peut pas vraiment parler de passage secret ici. 🤷‍♂️</p>
+                    <p>Il allonge même un peu le tracé, mais il offre une sécurité tout autre en multi-joueurs :</p>
+                    <ul>
+                        <li><strong>🎁 Caisse d’objets</strong> : Facile à prendre puisqu’elle est dans un endroit exigu.</li>
+                        <li><strong>💥 Pas de bob-ombs</strong> : Vous ne serez pas gêné par ces satanés bob-ombs.</li>
+                        <li><strong>🏁 Intérêt</strong> : Il n'a évidemment aucun intérêt en mode Time Trial.</li>
+                    </ul>
+                    <p>Un choix stratégique pour rester hors de portée des attaques en multi-joueurs ! 🏎️✨</p>
+                </div>`,
+                video: "ZrYmcXAE-k0",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
+            },
             { top: "38%", left: "95%", text: "A FAIRE" }
         ]
     },

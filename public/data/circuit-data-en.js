@@ -139,11 +139,21 @@ const circuitsDataEN = [
             {
                 top: "65%",
                 left: "52%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "1",
+                title: "Springboard second chance",
+                description: `<div>
+                    <p>Even though the ramp jump is accessible, mistakes happen—especially in multiplayer. 😅</p>
+                    <p>Luckily, a second chance is available!</p>
+                    <ul>
+                        <li><strong>💥 Technique</strong>: Charge toward the wall (preferably on the left) and jump at the moment of impact to enter the cave without any items. It’s fairly easy to do.</li>
+                        <li><strong>🏎️ Momentum</strong>: Get a bit of momentum, but not too much, or your kart will jump higher than the cave entrance. 🎯</li>
+                        <li><strong>🔧 Tip</strong>: The best starting point is from the ramp.</li>
+                    </ul>
+                    <p>Now you have no excuses for skipping the cave on Koopa Troopa Beach! 🏖️✨</p>
+                </div>`,
+                video: "JJUlmZlvLbQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "3",
                 text: "Short cut - Bug"
             },
             {
@@ -170,11 +180,20 @@ const circuitsDataEN = [
             {
                 top: "78%",
                 left: "67%",
-                title: "Une carapace bleue assurée !",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "2",
+                title: "A blue shell guaranteed!",
+                description: `<div>
+                    <p>With all the shortcuts in this race, it’s not uncommon to see a player taking the lead. 🏎️💨</p>
+                    <p>What better way to slow them down than with a blue shell? 🐢💥</p>
+                    <ul>
+                        <li><strong>🎯 Positioning</strong>: On this narrow ramp, it’s possible to reach the item box located above the hill.</li>
+                        <li><strong>💎 Reward</strong>: This item box always gives you a blue shell. 🐢✨</li>
+                    </ul>
+                    <p>Now, have fun! The first-place player has no choice but to rage. 😈</p>
+                </div>`,
+                video: "AsT3Gt4JvBY",
+                mode: "🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "2",
                 text: "Secret !"
             },
             {
@@ -254,11 +273,22 @@ const circuitsDataEN = [
             {
                 top: "47%",
                 left: "43%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "3",
+                title: "Go beyond the barrier",
+                description: `<div>
+                    <p><strong>Toad’s Turnpike</strong> is shaped like a figure-eight. At the intersection, there’s a good chance to save time—and it’s true! 🛣️✨</p>
+                    <p>Here’s how to use this secret shortcut:</p>
+                    <ol>
+                        <li><strong>🚀 Boost at the start</strong>: Perform a turbo boost right from the start.</li>
+                        <li><strong>🔄 Drift</strong>: Drift to the left and jump just as you hit the barrier at the road intersection on the map.</li>
+                        <li><strong>🚉 Checkpoint</strong>: You’ll crash into the barrier, and Lakitu will reposition you on the road.</li>
+                        <li><strong>🔁 Second step</strong>: Turn right and crash into the next barrier. This time, Lakitu will place you on the lower level of the track, saving you half a lap! 🎉</li>
+                    </ol>
+                    <p>It’s a two-step shortcut that can make all the difference in the race! 🏎️💨</p>
+                </div>`,
+                video: "31yy4fi_l7Q",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "4",
                 text: "Short cut - Bug"
             },
         ]
@@ -344,7 +374,7 @@ const circuitsDataEN = [
                     <p>With a bit of practice, this combo will save you precious time! 🏎️</p>
                 </div>`,
                 video: "cdjHtNqGCPI",
-                mode: " 🥇 / 🎮 x 4",
+                mode: " ⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "4",
                 text: "Short cut - Bug"
@@ -357,7 +387,26 @@ const circuitsDataEN = [
         thumbnail: "sherbet-land-thumbnail.png",
         pins: [
             { top: "89%", left: "18%", text: "A FAIRE" },
-            { top: "23%", left: "37%", text: "A FAIRE" },
+            { 
+                top: "23%", 
+                left: "37%", 
+                title: "Tranquility assured",
+                description: `<div>
+                    <p>You can’t really call this a secret shortcut. 🤷‍♂️</p>
+                    <p>It even slightly lengthens the track, but it offers a completely different level of safety in multiplayer mode:</p>
+                    <ul>
+                        <li><strong>🎁 Item box</strong>: Easy to grab as it’s in a narrow spot.</li>
+                        <li><strong>💥 No bob-ombs</strong>: You won't be bothered by those pesky bob-ombs.</li>
+                        <li><strong>🏁 Purpose</strong>: It obviously has no use in Time Trial mode.</li>
+                    </ul>
+                    <p>A strategic choice to stay safe from attacks in multiplayer mode! 🏎️✨</p>
+                </div>`,
+                video: "ZrYmcXAE-k0",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
+            },
             { top: "38%", left: "95%", text: "A FAIRE" }
         ]
     },
