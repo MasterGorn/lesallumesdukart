@@ -4,6 +4,11 @@
 
 const translations = {
     fr: {
+        subnav: {
+            maps: "Secrets des maps",
+            tips: "Astuces",
+            beta: "Beta"
+        },
         legend: {
             show: "Afficher la légende",
             hide: "Masquer la légende",
@@ -35,6 +40,14 @@ const translations = {
             increase: "Agrandir"
         },
         circuitsData: circuitsDataFR,
+        tips: {
+            title: "Astuces",
+            content: `<ul>
+                <li><strong>🏎️ Carapace rouge en première position</strong> : Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯</li>
+                <li><strong>🌬️ Aspiration</strong> : Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀</li>
+                <li><strong>🍌 Éviter de glisser sur une banane</strong> : Si vous touchez une banane, appuyez rapidement sur le bouton de frein pour ne pas perdre le contrôle de votre véhicule. Une petite note de musique 🎵 s’affichera si la manipulation est réussie !</li>
+            </ul>`
+        },
         footer: {
             copyright: {
                 year: "2025 Les Allumés du Kart. © ",
@@ -45,6 +58,11 @@ const translations = {
         }
     },
     en: {
+        subnav: {
+            maps: "Map Secrets",
+            tips: "Tips",
+            beta: "Beta"
+        },
         legend: {
             show: "Show legend",
             hide: "Hide legend",
@@ -76,6 +94,14 @@ const translations = {
             increase: "Increase"
         },
         circuitsData: circuitsDataEN,
+        tips: {
+            title: "Astuces",
+            content: `<ul>
+                <li><strong>🏎️ Carapace rouge en première position</strong> : Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯</li>
+                <li><strong>🌬️ Aspiration</strong> : Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀</li>
+                <li><strong>🍌 Éviter de glisser sur une banane</strong> : Si vous touchez une banane, appuyez rapidement sur le bouton de frein pour ne pas perdre le contrôle de votre véhicule. Une petite note de musique 🎵 s’affichera si la manipulation est réussie !</li>
+            </ul>`
+        },
         footer: {
             copyright: {
                 year: "2025 The Kart Fanatics. © ",
@@ -299,7 +325,7 @@ function renderPinPopins() {
     const popinHTML = `
         <div class="pin-popin" style="display: none;">
             <div class="pin-popin-content">
-                <button class="pin-popin-close">Fermer</button>
+                <button class="pin-popin-close">ⓧ</button>
                 <h3 class="pinPopinTitle"></h3>
                 <div class="pinPopinVideo"></div>
                 <div class="pinPopinInfos">
@@ -369,6 +395,44 @@ function createStarRating(difficulty) {
     return starsContainer;
 }
 
+
+// Gestion de la navigation
+document.addEventListener('DOMContentLoaded', function() {
+    const subNavLinks = document.querySelectorAll('.subNavigationLink');
+    const sections = document.querySelectorAll('.sectionContent');
+    
+    // Gestion du scroll et activation des liens
+    function updateActiveLink() {
+        const scrollPosition = window.scrollY;
+        
+        sections.forEach((section, index) => {
+            const sectionTop = section.offsetTop - 100; // Offset pour la navigation
+            const sectionBottom = sectionTop + section.offsetHeight;
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                subNavLinks.forEach(link => link.classList.remove('active'));
+                subNavLinks[index].classList.add('active');
+            }
+        });
+    }
+    
+    // Écouteur de scroll
+    window.addEventListener('scroll', updateActiveLink);
+    
+    // Scroll fluide pour les ancres
+    subNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+});
 
 // Initialiser au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {

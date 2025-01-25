@@ -16,93 +16,123 @@
     <meta property="og:url" content="https://lesallumes.fr">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <a href="index.html" class="logo">Les allumés du kart</a>
     </header>
-    <section class="legendWrapper">
-        <button class="legendToggle">
-            <span class="toggleText">
-                <span class="showLegend" data-i18n="legend.show">Afficher la légende</span>
-                <span class="hideLegend" data-i18n="legend.hide">Masquer la légende</span>
-            </span>
-            <span class="toggleIcon">▼</span>
-        </button>
-        <section class="legend">
-            <!--<div class="legendType">
-                <div class="legendTitle">Type</div>
-                <ul class="imagepin">
-                    <li class="legendTypeItem"><span class="pin"><span>Secret</span></span><span>Secret</span>></li>
-                    <li class="legendTypeItem"><span class="pin shortcut"><span>Short Cut</span></span><span>Short Cut</span></li>
-                    <li class="legendTypeItem"><span class="pin bug"><span>Bug</span></span><span>Bug</span></li>
-                    <li class="legendTypeItem"><span class="pin shortcutbug"><span>Short Cut - Bug</span></span><span>Short Cut - Bug</span></li>
-                    <li class="legendTypeItem"><span class="pin pin-5"><span>Short cut</span></span> : Très difficile</li>
-                </ul>
-            </div>-->
-            <div class="legendDifficulty">
-                <div class="legendTitle" data-i18n="legend.difficulty.titleDifficulty">Difficulté</div>
-                <ul class="legendList">
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.veryEasy">Très facile</div> <div class="bar"><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.easy">Facile</div> <div class="bar"><span class="star"></span><span class="star "></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.medium">Moyen</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.hard">Difficile</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.veryHard">Très Difficile</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="legendGain">
-                <div class="legendTitle" data-i18n="legend.gain.titleGain">Gain</div>
-                <ul class="legendList">
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.veryLittle">Une mini portion</div> <div class="bar"><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.little">⅛ de tour</div> <div class="bar"><span class="star"></span><span class="star "></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.medium">¼ de tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.aLot">½ tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span></div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.reallyALot">1 tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="legendMode">
-                <div class="legendTitle" data-i18n="legend.mode.titleMode">Modes</div>
-                <ul class="legendList">
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.mode.time">Time Trial</div> <div class="bar">⏱️</div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.mode.GrandPrix">Grand Prix</div> <div class="bar">🥇</div></span>
-                    </li>
-                    <li class="legendItem">
-                        <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.mode.Multiplayers">Multijoueurs</div> <div class="bar">🎮 x 4</div></span>
-                    </li>
-                </ul>
-            </div>
+    <!-- Sub navigation -->
+    <nav class="subNavigation">
+        <div class="subNavigationWrapper">
+            <a href="#mapSecrets" class="subNavigationLink active">
+                <i class="fas fa-map-marked-alt"></i>
+                <span data-i18n="subnav.maps">Secrets des maps</span>
+            </a>
+            <a href="#tips" class="subNavigationLink">
+                <i class="fas fa-lightbulb"></i>
+                <span data-i18n="subnav.tips">Astuces</span>
+            </a>
+            <a href="#beta" class="subNavigationLink">
+                <i class="fas fa-code-branch"></i>
+                <span data-i18n="subnav.beta">Beta</span>
+            </a>
+        </div>
+    </nav>
+    <!-- Section map secrets -->
+    <section id="mapSecrets" class="sectionContent">
+        <section class="legendWrapper">
+            <button class="legendToggle">
+                <span class="toggleText">
+                    <span class="showLegend" data-i18n="legend.show">Afficher la légende</span>
+                    <span class="hideLegend" data-i18n="legend.hide">Masquer la légende</span>
+                </span>
+                <span class="toggleIcon">▼</span>
+            </button>
+            <section class="legend">
+                <!--<div class="legendType">
+                    <div class="legendTitle">Type</div>
+                    <ul class="imagepin">
+                        <li class="legendTypeItem"><span class="pin"><span>Secret</span></span><span>Secret</span>></li>
+                        <li class="legendTypeItem"><span class="pin shortcut"><span>Short Cut</span></span><span>Short Cut</span></li>
+                        <li class="legendTypeItem"><span class="pin bug"><span>Bug</span></span><span>Bug</span></li>
+                        <li class="legendTypeItem"><span class="pin shortcutbug"><span>Short Cut - Bug</span></span><span>Short Cut - Bug</span></li>
+                        <li class="legendTypeItem"><span class="pin pin-5"><span>Short cut</span></span> : Très difficile</li>
+                    </ul>
+                </div>-->
+                <div class="legendDifficulty">
+                    <div class="legendTitle" data-i18n="legend.difficulty.titleDifficulty">Difficulté</div>
+                    <ul class="legendList">
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.veryEasy">Très facile</div> <div class="bar"><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.easy">Facile</div> <div class="bar"><span class="star"></span><span class="star "></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.medium">Moyen</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.hard">Difficile</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.difficulty.veryHard">Très Difficile</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="legendGain">
+                    <div class="legendTitle" data-i18n="legend.gain.titleGain">Gain</div>
+                    <ul class="legendList">
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.veryLittle">Une mini portion</div> <div class="bar"><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.little">⅛ de tour</div> <div class="bar"><span class="star"></span><span class="star "></span><span class="star starEmpty"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.medium">¼ de tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.aLot">½ tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star starEmpty"></span></div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars positive"><div class="titleItem" data-i18n="legend.gain.reallyALot">1 tour</div> <div class="bar"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="legendMode">
+                    <div class="legendTitle" data-i18n="legend.mode.titleMode">Modes</div>
+                    <ul class="legendList">
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.mode.time">Time Trial</div> <div class="bar">⏱️</div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.mode.GrandPrix">Grand Prix</div> <div class="bar">🥇</div></span>
+                        </li>
+                        <li class="legendItem">
+                            <span class="pinPopinLevel stars"><div class="titleItem" data-i18n="legend.mode.Multiplayers">Multijoueurs</div> <div class="bar">🎮 x 4</div></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    
+        <div class="sizeControls">
+            <button class="sizeBtn" data-action="decrease">-</button>
+            <span class="sizeIndicator">100%</span>
+            <button class="sizeBtn" data-action="increase">+</button>
+        </div>
+    
+        <section class="maps" id="mapsContainer">
+            <!-- Le contenu sera injecté via JavaScript -->
         </section>
     </section>
-
-    <div class="sizeControls">
-        <button class="sizeBtn" data-action="decrease">-</button>
-        <span class="sizeIndicator">100%</span>
-        <button class="sizeBtn" data-action="increase">+</button>
-    </div>
-
-    <section class="maps" id="mapsContainer">
-        <!-- Le contenu sera injecté via JavaScript -->
+    <!-- Section tips -->
+    <section id="tips" class="sectionContent">
+        <span data-i18n="tips.title"></span>
+        <span data-i18n="tips.content"></span>
+    </section>
+    <!-- Section beta -->
+    <section id="beta" class="sectionContent">
+        <img src="public/images/beta/item-beta.webp" alt="items in beta version">
     </section>
 
     <footer class="footer">
@@ -134,7 +164,6 @@
         - https://www.youtube.com/watch?v=1137tThvLVQ
         - https://www.youtube.com/watch?v=izJ5zGeH7ZY
         - https://www.youtube.com/watch?v=1snEpaeQsak&list=PL1X9DoyWV97ac7uFoNh1kgoHWjGzS8ubp
-    7) mettre la croix de fermeture en haut à droite
     8) Améliorer le design global
     9) Ajouter le titre des grands prix
     -->

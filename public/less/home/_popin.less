@@ -15,6 +15,7 @@
 }
 
 .pin-popin-content {
+    position: relative;
     padding: 20px;
     max-width: 640px;
     width: 100%;
@@ -44,14 +45,17 @@
 }
 
 .pin-popin-close {
-    padding: 8px 16px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
     background: #333;
+    font-size: 24px;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-}
 
-.pin-popin-close:hover {
-    background: #555;
+    &:hover {
+        background: #555;
+    }
 }

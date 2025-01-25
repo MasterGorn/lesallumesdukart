@@ -16,6 +16,10 @@
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/open-sans@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sans@latest/latin-700-normal.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* Animation de scroll fluide */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -25,11 +29,12 @@ body {
   display: flex;
   align-items: center;
   height: 100px;
-  background-color: #0a506b;
+  background-color: #666;
   background-image: url('../images/design/bg-header.png');
   background-size: cover;
   background-position: 240px center;
   background-repeat: no-repeat;
+  border-bottom: 1px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .header .logo {
@@ -44,6 +49,55 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+.subNavigation {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+  background-color: #0a506b;
+  border-bottom: 1px solid #e0e0e0;
+}
+.subNavigation .subNavigationWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .subNavigation .subNavigationWrapper {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+.subNavigation .subNavigationWrapper .subNavigationLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .subNavigation .subNavigationWrapper .subNavigationLink {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+.subNavigation .subNavigationWrapper .subNavigationLink i {
+  font-size: 1.2rem;
+}
+.subNavigation .subNavigationWrapper .subNavigationLink:hover {
+  background: #e60012;
+  color: white;
+}
+.subNavigation .subNavigationWrapper .subNavigationLink.active {
+  background: #e60012;
+  color: white;
 }
 .langSwitch {
   position: fixed;
@@ -461,6 +515,7 @@ body {
   }
 }
 .pin-popin-content {
+  position: relative;
   padding: 20px;
   max-width: 640px;
   width: 100%;
@@ -487,11 +542,14 @@ body {
   margin: 24px 0;
 }
 .pin-popin-close {
-  padding: 8px 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   background: #333;
+  font-size: 24px;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 .pin-popin-close:hover {
@@ -590,7 +648,7 @@ body {
 }
 .sizeControls {
   position: fixed;
-  top: 20px;
+  top: 12px;
   right: 20px;
   background: #333;
   padding: 8px;
