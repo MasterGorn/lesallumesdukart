@@ -527,7 +527,14 @@ body {
   font-weight: 600;
 }
 .beta {
-  padding: 32px;
+  color: white;
+}
+.beta .titleBeta {
+  display: block;
+  margin: 0 auto 64px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
 }
 .beta .itemsImage {
   display: block;
