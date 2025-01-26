@@ -99,23 +99,28 @@ body {
   background: #e60012;
   color: white;
 }
+.sectionContent {
+  padding: 96px 32px 32px;
+}
 .langSwitch {
   position: fixed;
-  bottom: 20px;
+  bottom: 12px;
   right: 20px;
   background: #333;
-  padding: 5px;
-  border-radius: 20px;
+  padding: 8px;
+  border-radius: 25px;
   z-index: 1000;
   display: flex;
   gap: 5px;
 }
 .langSwitch .langBtn {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  color: white;
   border: none;
   background: transparent;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -498,6 +503,37 @@ body {
 .imagepin .pin:nth-of-type(9):before {
   animation-delay: 2.2s;
 }
+.tips {
+  color: white;
+}
+.tips .titleTips {
+  display: block;
+  margin: 0 auto 64px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.tips .tipsList {
+  padding-left: 0;
+  list-style: none;
+}
+.tips .tipsList .tip {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.tips .tipsList .tip .title {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.beta {
+  padding: 32px;
+}
+.beta .itemsImage {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
 .pin-popin {
   position: fixed;
   top: 0;
@@ -648,8 +684,8 @@ body {
 }
 .sizeControls {
   position: fixed;
-  top: 12px;
-  right: 20px;
+  bottom: 12px;
+  left: 20px;
   background: #333;
   padding: 8px;
   border-radius: 25px;
@@ -658,6 +694,14 @@ body {
   gap: 10px;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .sizeControls {
+    top: 12px;
+    right: 20px;
+    bottom: inherit;
+    left: inherit;
+  }
 }
 .sizeControls .sizeBtn {
   width: 30px;

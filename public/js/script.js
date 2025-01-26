@@ -42,11 +42,26 @@ const translations = {
         circuitsData: circuitsDataFR,
         tips: {
             title: "Astuces",
-            content: `<ul>
-                <li><strong>🏎️ Carapace rouge en première position</strong> : Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯</li>
-                <li><strong>🌬️ Aspiration</strong> : Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀</li>
-                <li><strong>🍌 Éviter de glisser sur une banane</strong> : Si vous touchez une banane, appuyez rapidement sur le bouton de frein pour ne pas perdre le contrôle de votre véhicule. Une petite note de musique 🎵 s’affichera si la manipulation est réussie !</li>
-            </ul>`
+            tip1: {
+                title: "🏎️ Carapace rouge en première position",
+                content: "Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯"
+            },
+            tip2: {
+                title: "🌬️ Aspiration",
+                content: "Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀"
+            },
+            tip3: {
+                title: "🍌 Éviter de glisser sur une banane",
+                content: "Si vous touchez une banane, appuyez rapidement sur le bouton de frein pour ne pas perdre le contrôle de votre véhicule. Une petite note de musique 🎵 s’affichera si la manipulation est réussie !"
+            },
+            tip4: {
+                title: "🏎️ Carapace rouge en première position",
+                content: "Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯"
+            },
+            tip5: {
+                title: "🌬️ Aspiration",
+                content: "Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀"
+            }
         },
         footer: {
             copyright: {
@@ -95,12 +110,27 @@ const translations = {
         },
         circuitsData: circuitsDataEN,
         tips: {
-            title: "Astuces",
-            content: `<ul>
-                <li><strong>🏎️ Carapace rouge en première position</strong> : Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯</li>
-                <li><strong>🌬️ Aspiration</strong> : Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀</li>
-                <li><strong>🍌 Éviter de glisser sur une banane</strong> : Si vous touchez une banane, appuyez rapidement sur le bouton de frein pour ne pas perdre le contrôle de votre véhicule. Une petite note de musique 🎵 s’affichera si la manipulation est réussie !</li>
-            </ul>`
+            title: "Tips",
+            tip1: {
+                title: "🏎️ Carapace rouge en première position",
+                content: "Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯"
+            },
+            tip2: {
+                title: "🌬️ Aspiration",
+                content: "Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀"
+            },
+            tip3: {
+                title: "🍌 Éviter de glisser sur une banane",
+                content: "Si vous touchez une banane, appuyez rapidement sur le bouton de frein pour ne pas perdre le contrôle de votre véhicule. Une petite note de musique 🎵 s’affichera si la manipulation est réussie !"
+            },
+            tip4: {
+                title: "🏎️ Carapace rouge en première position",
+                content: "Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯"
+            },
+            tip5: {
+                title: "🌬️ Aspiration",
+                content: "Profitez de l’aspiration derrière un autre joueur pour gagner en vitesse et dépasser facilement. 🚀"
+            }
         },
         footer: {
             copyright: {
