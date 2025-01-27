@@ -181,13 +181,13 @@
     <section id="championship" class="sectionContent championship">
         <span data-i18n="championship.title" class="titleChampionship"></span>
         <div class="contentChampionship">
+            <div data-i18n="championship.content.intro" class="championshipIntro"></div>
             <img src="public/images/championship/mario-kart-championnat-01.jpg" alt="image d'un championnat de Mario Kart 64" class="championshipImage">
-            <div data-i18n="championship.content.rules"></div>
+            <div data-i18n="championship.content.rules" class="championshipRulesSection"></div>
             <a href="https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=39949723#gid=39949723" target="_blank" class="linkChampionship">
                 <img src="public/images/championship/tab-googlesheet-mariokart.jpg" alt="image de la table google sheet" class="GoogleSheetImage">
             </a>
-            <span data-i18n="championship.content.part2"></span>
-            <span data-i18n="championship.content.part3"></span>
+            <div data-i18n="championship.content.googleSheet" class="championshipGoogleSheet"></div>
         </div>
     </section>
     <!-- Section beta -->
@@ -200,7 +200,16 @@
             <img src="public/images/beta/item-beta.webp" alt="items in beta version" class="itemsImage"> 
         </p>
     </section>
-
+    <!-- Section Team -->
+    <section id="team" class="sectionContent team">
+        <span data-i18n="team.title" class="titleTeam"></span>
+        <p class="contentTeam">
+            <span data-i18n="team.content.part1"></span>
+            <span data-i18n="team.content.part2"></span>
+            <span data-i18n="team.content.part3"></span>
+        </p>
+    </section>
+    <!-- Footer -->
     <footer class="footer">
         <div class="socialLinks">
             <a href="https://facebook.com/culturegames" target="_blank" class="socialLink">
@@ -233,7 +242,7 @@
         - https://www.youtube.com/watch?v=1snEpaeQsak&list=PL1X9DoyWV97ac7uFoNh1kgoHWjGzS8ubp
     8) Améliorer le design global
     9) Ajouter le titre des grands prix
-    10) Ajouter une partie championship qui permet de télécharger un excel de tournois
+    10) Mettre le bon lien du Google Sheet en fonction de la langue
     11) Effet de parallaxe sur les images avec des karts qui passent devant
     12) Mettre data par défaut dans le HTML pour le référencement
     13) Retirer tous les console.log

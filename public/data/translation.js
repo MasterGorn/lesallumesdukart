@@ -87,8 +87,11 @@ const translations = {
         championship: {
             title: "🏆 Championnat 🏆",
             content: {
+                intro: `<div class="championshipIntro">
+                    <p>🎮 Avec mon frère jumeau et deux de nos meilleurs potes, nous faisons des soirées <strong>Mario Kart 64</strong> depuis plus de 25 ans, avec des règles très précises qui ont évolué au fil du temps.</p>
+                    <p>🏆 Ces règles ont fini par devenir le cadre parfait pour un <strong>championnat</strong> sur ce jeu mythique.</p>
+                </div>`,
                 rules: `<div>
-                    <h3>🇫🇷 Mario Kart 64 sur le NSO (Nintendo Switch Online)</h3>
                     <p>🏁 <strong>Voici nos règles de jeu depuis 25 ans :</strong></p>
                     <ul class="championshipRules">
                         <li class="championshipRulesItem">🎮 Partie de 4 joueurs :
@@ -121,9 +124,16 @@ const translations = {
                         <li class="championshipRulesItem">⏱️ Comptez environ 1 heure pour faire les 16 courses.</li>
                     </ul>
                 </div>`,
-                link1: "https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=39949723#gid=39949723",
-                part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
-                part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
+                linkGoogleSheet: "https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=39949723#gid=39949723",
+                googleSheet: `<div>
+                    <p>📊 Nous vous proposons ici un <strong>tableau Google Sheet</strong> qui vous permettra :</p>
+                    <ul>
+                        <li>De conserver vos scores au fil du temps. 🕒</li>
+                        <li>De calculer tout un tas de données. 📈</li>
+                        <li>Et de déterminer qui est <strong>le meilleur joueur</strong> de la saison. 🥇</li>
+                    </ul>
+                    <p>Cliquez sur l'image du tableau ci-dessus pour accéder au Google Sheet.</p>
+                </div>`,
             }
         },
         beta: {
@@ -132,6 +142,14 @@ const translations = {
                 part1: "The game is currently in beta. We are working hard to make it perfect for you. ",
                 part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
                 part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
+            }
+        },
+        team: {
+            title: "👥 Le Team 👥",
+            content: {
+                part1: "We are a team of 4 friends who have been playing Mario Kart 64 for over 25 years. We are all passionate about this game and we want to share our passion with you.",
+                part2: "We are all very different, but we share the same passion for this game. We are all very different, but we share the same passion for this game.",
+                part3: "We are all very different, but we share the same passion for this game."
             }
         },
         footer: {
@@ -231,8 +249,11 @@ const translations = {
         championship: {
             title: "🏆 Championship 🏆",
             content: {
+                intro: `<div>
+                    <p>🎮 With my twin brother and two of our best friends, we've been playing <strong>Mario Kart 64</strong> for over 25 years, with very specific rules that have evolved over time.</p>
+                    <p>🏆 These rules have become the perfect framework for a <strong>championship</strong> on this legendary game.</p>
+                </div>`,
                 rules: `<div>
-                    <h2>🇬🇧 Mario Kart 64 on NSO (Nintendo Switch Online)</h2>
                     <p>🏁 <strong>Here are our rules for over 25 years:</strong></p>
                     <ul class="championshipRules">
                         <li class="championshipRulesItem">🎮 4-player matches:
@@ -265,9 +286,16 @@ const translations = {
                         <li class="championshipRulesItem">⏱️ It takes about 1 hour to play all 16 tracks.</li>
                     </ul>
                 </div>`,
-                link1: "https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=1796197462#gid=1796197462",
-                part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
-                part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
+                linkGoogleSheet: "https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=1796197462#gid=1796197462",
+                googleSheet: `<div>
+                    <p>📊 Here, we offer you a <strong>Google Sheet</strong> that allows you to:</p>
+                    <ul>
+                        <li>Keep track of your scores over time. 🕒</li>
+                        <li>Calculate a variety of data. 📈</li>
+                        <li>And determine who is <strong>the best player</strong> of the season. 🥇</li>
+                    </ul>
+                    <p>Click on the table image above to access the Google Sheet.</p>
+                </div>`,
             }
         },
         beta: {
@@ -276,6 +304,14 @@ const translations = {
                 part1: "The game is currently in beta. We are working hard to make it perfect for you. ",
                 part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
                 part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
+            }
+        },
+        team: {
+            title: "👥 The Team 👥",
+            content: {
+                part1: "We are a team of 4 friends who have been playing Mario Kart 64 for over 25 years. We are all passionate about this game and we want to share our passion with you.",
+                part2: "We are all very different, but we share the same passion for this game. We are all very different, but we share the same passion for this game.",
+                part3: "We are all very different, but we share the same passion for this game."
             }
         },
         footer: {
