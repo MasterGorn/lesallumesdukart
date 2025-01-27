@@ -82,10 +82,23 @@ body {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
+.subNavigation .subNavigationWrapper .subNavigationLink .subnavMapsLong {
+  display: block;
+}
+.subNavigation .subNavigationWrapper .subNavigationLink .subnavMapsShort {
+  display: none;
+}
 @media (max-width: 768px) {
   .subNavigation .subNavigationWrapper .subNavigationLink {
+    flex-direction: column;
     padding: 0.5rem;
     font-size: 0.9rem;
+  }
+  .subNavigation .subNavigationWrapper .subNavigationLink .subnavMapsLong {
+    display: none;
+  }
+  .subNavigation .subNavigationWrapper .subNavigationLink .subnavMapsShort {
+    display: block;
   }
 }
 .subNavigation .subNavigationWrapper .subNavigationLink i {
@@ -101,6 +114,120 @@ body {
 }
 .sectionContent {
   padding: 96px 32px 32px;
+}
+.parallaxContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+.parallaxContainer .parallaxLayer {
+  position: absolute;
+  width: 150px;
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.5s ease-in-out;
+}
+.parallaxContainer .parallaxLayer img {
+  width: 100%;
+  height: auto;
+}
+/* Positions initiales des karts */
+.kart1 {
+  left: -150px;
+  top: 30%;
+}
+.kart2 {
+  right: -150px;
+  top: 50%;
+}
+.kart3 {
+  left: -150px;
+  top: 70%;
+}
+.kart4 {
+  right: -150px;
+  top: 20%;
+}
+/* Classes d'animation */
+.kart1.animate {
+  animation: raceRight 2s ease-out forwards;
+}
+.kart2.animate {
+  animation: raceLeft 2s ease-out forwards;
+}
+.kart3.animate {
+  animation: raceDiagonal 2.5s ease-out forwards;
+}
+.kart4.animate {
+  animation: raceDiagonalRight 2s ease-out forwards;
+}
+@keyframes raceRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 150px)) rotate(10deg);
+  }
+}
+@keyframes raceLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 150px)) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-150px) rotate(-10deg);
+  }
+}
+@keyframes raceDiagonal {
+  0% {
+    opacity: 0;
+    transform: translate(-150px, 100px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(100vw + 150px), -100px) rotate(15deg);
+  }
+}
+@keyframes raceDiagonalRight {
+  0% {
+    opacity: 0;
+    transform: translate(-150px, 100px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(100vw - 550px), -100px) rotate(15deg);
+  }
 }
 .langSwitch {
   position: fixed;

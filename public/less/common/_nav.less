@@ -29,9 +29,26 @@
             border-radius: 4px;
             transition: all 0.3s ease;
 
+            .subnavMapsLong {
+                display: block;
+            }
+
+            .subnavMapsShort {
+                display: none;
+            }
+
             @media (max-width: 768px) {
+                flex-direction: column;
                 padding: 0.5rem;
                 font-size: 0.9rem;
+
+                .subnavMapsLong {
+                    display: none;
+                }
+
+                .subnavMapsShort {
+                    display: block;
+                }
             }
 
             i {

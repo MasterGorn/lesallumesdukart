@@ -1,4 +1,65 @@
 /********
+ * Gestion du parallax
+ */
+
+class ParallaxManager {
+    constructor() {
+        this.karts = document.querySelectorAll('.parallaxLayer');
+        this.sections = document.querySelectorAll('.sectionContent');
+        this.lastSection = null;
+        this.animationTimeout = null;
+        this.init();
+    }
+
+    init() {
+        window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
+
+    handleScroll() {
+        const currentScroll = window.scrollY;
+        const windowHeight = window.innerHeight;
+        
+        // Détecter la section courante
+        this.sections.forEach((section, index) => {
+            const sectionTop = section.offsetTop - windowHeight/3;
+            const sectionBottom = sectionTop + section.offsetHeight;
+            
+            if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+                if (this.lastSection !== index) {
+                    this.triggerAnimation();
+                    this.lastSection = index;
+                }
+            }
+        });
+    }
+
+    triggerAnimation() {
+        // Nettoyer l'animation précédente
+        if (this.animationTimeout) {
+            clearTimeout(this.animationTimeout);
+            this.karts.forEach(kart => {
+                kart.classList.remove('animate');
+            });
+        }
+
+        // Déclencher les animations avec un léger décalage
+        this.karts.forEach((kart, index) => {
+            setTimeout(() => {
+                kart.classList.add('animate');
+            }, index * 200);
+        });
+
+        // Nettoyer les classes après l'animation
+        this.animationTimeout = setTimeout(() => {
+            this.karts.forEach(kart => {
+                kart.classList.remove('animate');
+            });
+        }, 3000);
+    }
+}
+
+
+/********
  * Gestion de la langue
  */
 
@@ -357,4 +418,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Écouteurs d'événements pour la synchronisation des pins
     document.addEventListener('DOMContentLoaded', syncPinsSize);
     window.addEventListener('resize', syncPinsSize);
+
+    const parallaxManager = new ParallaxManager();
 });
