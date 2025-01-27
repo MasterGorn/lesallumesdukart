@@ -27,16 +27,32 @@ class LanguageManager {
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             const keys = key.split('.');
-            let value = translations[this.currentLang];
             
-            for (const k of keys) {
-                value = value[k];
-            }
-            
-            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                element.placeholder = value;
-            } else {
-                element.innerHTML = value;
+            try {
+                // Commencer avec l'objet de traduction pour la langue courante
+                let value = translations[this.currentLang];
+                
+                // Parcourir la chaîne de clés de manière sécurisée
+                for (const k of keys) {
+                    if (value === undefined || value === null) {
+                        console.warn(`Translation missing for key: ${key} in language: ${this.currentLang}`);
+                        return; // Sortir si on ne trouve pas la traduction
+                    }
+                    value = value[k];
+                }
+                
+                // Vérifier que la valeur finale est une chaîne
+                if (typeof value === 'string') {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = value;
+                    } else {
+                        element.innerHTML = value;
+                    }
+                } else {
+                    console.warn(`Invalid translation type for key: ${key} in language: ${this.currentLang}`);
+                }
+            } catch (error) {
+                console.warn(`Error translating key: ${key}`, error);
             }
         })
     }
@@ -193,7 +209,7 @@ function renderCircuits() {
     //console.log("currentLang", currentLang)
     circuitsData = currentLang === 'fr' ? circuitsDataFR : circuitsDataEN
     container.innerHTML = circuitsData.map((circuit, index) => {
-        const circuitTranslation = translations[currentLang].circuitsData[index] || {};
+        const circuitTranslation = translations[currentLang]?.mapSecrets?.circuitsData[index] || {};
 console.log("circuitTranslation", circuitTranslation)
         return `
         <div class="imagepin">

@@ -3,42 +3,46 @@ const translations = {
         subnav: {
             maps: "Secrets des maps",
             tips: "Astuces",
-            download: "Téléchargement",
+            championship: "Championnat",
             beta: "Version Beta"
         },
-        legend: {
-            show: "Afficher la légende",
-            hide: "Masquer la légende",
-            difficulty: {
-                titleDifficulty: "Difficulté",
-                veryEasy: "Très facile",
-                easy: "Facile",
-                medium: "Moyen",
-                hard: "Difficile",
-                veryHard: "Très difficile"
+        mapSecrets: {
+            title: "📍 Secrets des maps 📍",
+            content: "Découvrez les secrets des 16 circuits de Mario Kart 64.",
+            legend: {
+                show: "Afficher la légende",
+                hide: "Masquer la légende",
+                difficulty: {
+                    titleDifficulty: "Difficulté",
+                    veryEasy: "Très facile",
+                    easy: "Facile",
+                    medium: "Moyen",
+                    hard: "Difficile",
+                    veryHard: "Très difficile"
+                },
+                gain: {
+                    titleGain: "Gain",
+                    veryLittle: "Une mini portion",
+                    little: "⅛ de tour",
+                    medium: "¼ de tour",
+                    aLot: "½ tour",
+                    reallyALot: "1 tour"
+                },
+                mode: {
+                    titleMode: "Modes",
+                    time: "Time Trial",
+                    GrandPrix: "Grand Prix",
+                    Multiplayers: "Multijoueurs",
+                }
             },
-            gain: {
-                titleGain: "Gain",
-                veryLittle: "Une mini portion",
-                little: "⅛ de tour",
-                medium: "¼ de tour",
-                aLot: "½ tour",
-                reallyALot: "1 tour"
+            size: {
+                decrease: "Réduire",
+                increase: "Agrandir"
             },
-            mode: {
-                titleMode: "Modes",
-                time: "Time Trial",
-                GrandPrix: "Grand Prix",
-                Multiplayers: "Multijoueurs",
-            }
+            circuitsData: circuitsDataFR,
         },
-        size: {
-            decrease: "Réduire",
-            increase: "Agrandir"
-        },
-        circuitsData: circuitsDataFR,
         tips: {
-            title: "Astuces",
+            title: "🛞 Astuces 🛞",
             tip1: {
                 title: "🏎️ Carapace rouge en première position",
                 content: "Une carapace rouge tirée en première position fera le tour du circuit jusqu’à toucher un joueur sur la route. 🎯"
@@ -81,7 +85,7 @@ const translations = {
             }
         },
         championship: {
-            title: "Championnat",
+            title: "🏆 Championnat 🏆",
             content: {
                 rules: `<div>
                     <h3>🇫🇷 Mario Kart 64 sur le NSO (Nintendo Switch Online)</h3>
@@ -123,7 +127,7 @@ const translations = {
             }
         },
         beta: {
-            title: "Version Beta",
+            title: "🏗️ Version Beta 🏗️",
             content: {
                 part1: "The game is currently in beta. We are working hard to make it perfect for you. ",
                 part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
@@ -143,42 +147,46 @@ const translations = {
         subnav: {
             maps: "Map Secrets",
             tips: "Tips",
-            download: "Download",
+            championship: "Championship",
             beta: "Beta"
         },
-        legend: {
-            show: "Show legend",
-            hide: "Hide legend",
-            difficulty: {
-                titleDifficulty: "Difficulty",
-                veryEasy: "Very easy",
-                easy: "Easy",
-                medium: "Medium",
-                hard: "Hard",
-                veryHard: "Very hard"
+        mapSecrets: {
+            title: "📍  Map Secrets 📍",
+            content: "Discover the secrets of the 16 tracks of Mario Kart 64.",
+            legend: {
+                show: "Show legend",
+                hide: "Hide legend",
+                difficulty: {
+                    titleDifficulty: "Difficulty",
+                    veryEasy: "Very easy",
+                    easy: "Easy",
+                    medium: "Medium",
+                    hard: "Hard",
+                    veryHard: "Very hard"
+                },
+                gain: {
+                    titleGain: "Gain",
+                    veryLittle: "A tiny portion",
+                    little: "⅛ of a lap",
+                    medium: "¼ of a lap",
+                    aLot: "½ of a lap",
+                    reallyALot: "1 lap"
+                },
+                mode: {
+                    titleMode: "Modes",
+                    time: "Time Trial",
+                    GrandPrix: "Grand Prix",
+                    Multiplayers: "Multiplayers",
+                }
             },
-            gain: {
-                titleGain: "Gain",
-                veryLittle: "A tiny portion",
-                little: "⅛ of a lap",
-                medium: "¼ of a lap",
-                aLot: "½ of a lap",
-                reallyALot: "1 lap"
+            size: {
+                decrease: "Decrease",
+                increase: "Increase"
             },
-            mode: {
-                titleMode: "Modes",
-                time: "Time Trial",
-                GrandPrix: "Grand Prix",
-                Multiplayers: "Multiplayers",
-            }
+            circuitsData: circuitsDataEN,
         },
-        size: {
-            decrease: "Decrease",
-            increase: "Increase"
-        },
-        circuitsData: circuitsDataEN,
         tips: {
-            title: "Tips",
+            title: "🛞 Tips 🛞",
             tip1: {
                 title: "🏎️ Red shell in first position",
                 content: "A red shell fired while in first position will travel around the track until it hits a player on the road. 🎯"
@@ -221,7 +229,7 @@ const translations = {
             }
         },
         championship: {
-            title: "Championship",
+            title: "🏆 Championship 🏆",
             content: {
                 rules: `<div>
                     <h2>🇬🇧 Mario Kart 64 on NSO (Nintendo Switch Online)</h2>
@@ -241,7 +249,7 @@ const translations = {
                                 <li>1st: 5 points.</li>
                                 <li>2nd: 3 points.</li>
                                 <li>3rd: 1 point.</li>
-                                <li>4th: 0 points.</li>
+                                <li>4th: 0 point.</li>
                             </ul>
                         </li>
                         <li class="championshipRulesItem">📊 At the end of the 16 tracks, add up the points from all races.
@@ -263,7 +271,7 @@ const translations = {
             }
         },
         beta: {
-            title: "Beta version",
+            title: "🏗️ Beta version 🏗️",
             content: {
                 part1: "The game is currently in beta. We are working hard to make it perfect for you. ",
                 part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",

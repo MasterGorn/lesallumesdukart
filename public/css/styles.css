@@ -295,14 +295,28 @@ body {
   margin: 0 24px;
   color: white;
 }
-.maps {
+.mapSecrets .titleMapSecrets {
+  display: block;
+  margin: 0 auto 64px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+.mapSecrets .contentMapSecrets {
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.mapSecrets .maps {
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
 }
 .imagepin {
   position: relative;
-  display: block;
+  display: inline-block;
   height: max-content;
   width: 100%;
   max-width: 360px;
@@ -505,6 +519,7 @@ body {
 }
 .tips {
   color: white;
+  background: #023c53;
 }
 .tips .titleTips {
   display: block;
@@ -546,6 +561,14 @@ body {
 .championship .championshipRules .championshipRulesItem .championshipRulesSublist {
   list-style: none;
 }
+.championship .championshipImage {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 0 auto 32px;
+  border-radius: 16px;
+}
 .championship .linkChampionship {
   display: block;
   margin: 32px auto;
@@ -558,6 +581,7 @@ body {
 }
 .beta {
   color: white;
+  background: #023c53;
 }
 .beta .titleBeta {
   display: block;
