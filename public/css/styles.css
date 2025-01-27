@@ -526,6 +526,36 @@ body {
   margin-bottom: 12px;
   font-weight: 600;
 }
+.championship {
+  color: white;
+}
+.championship .titleChampionship {
+  display: block;
+  margin: 0 auto 64px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.championship .championshipRules {
+  list-style: none;
+  padding: 0;
+}
+.championship .championshipRules .championshipRulesItem {
+  margin-bottom: 16px;
+}
+.championship .championshipRules .championshipRulesItem .championshipRulesSublist {
+  list-style: none;
+}
+.championship .linkChampionship {
+  display: block;
+  margin: 32px auto;
+  max-width: 640px;
+}
+.championship .linkChampionship .GoogleSheetImage {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
 .beta {
   color: white;
 }

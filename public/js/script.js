@@ -36,7 +36,7 @@ class LanguageManager {
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = value;
             } else {
-                element.textContent = value;
+                element.innerHTML = value;
             }
         })
     }

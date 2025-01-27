@@ -3,7 +3,8 @@ const translations = {
         subnav: {
             maps: "Secrets des maps",
             tips: "Astuces",
-            beta: "Beta"
+            download: "Téléchargement",
+            beta: "Version Beta"
         },
         legend: {
             show: "Afficher la légende",
@@ -79,6 +80,48 @@ const translations = {
                 content: "À l’écran titre, appuyez sur Z pour voir les meilleurs temps de Mario Raceway (mode Time Trial)."
             }
         },
+        championship: {
+            title: "Championnat",
+            content: {
+                rules: `<div>
+                    <h3>🇫🇷 Mario Kart 64 sur le NSO (Nintendo Switch Online)</h3>
+                    <p>🏁 <strong>Voici nos règles de jeu depuis 25 ans :</strong></p>
+                    <ul class="championshipRules">
+                        <li class="championshipRulesItem">🎮 Partie de 4 joueurs :
+                            <ul class="championshipRulesSublist">
+                                <li>Martin prend Yoshi.</li>
+                                <li>Romain prend Bowser.</li>
+                                <li>Bryan prend Donkey Kong.</li>
+                                <li>Et je prends Wario, après avoir joué Toad pendant une dizaine d’années.</li>
+                            </ul>
+                        </li>
+                        <li class="championshipRulesItem">🛞 On joue sur les <strong>16 courses</strong> (dans l’ordre) en 150CC.</li>
+                        <li class="championshipRulesItem">🏆 Système de points :
+                            <ul class="championshipRulesSublist">
+                                <li>1er : 5 points.</li>
+                                <li>2ème : 3 points.</li>
+                                <li>3ème : 1 point.</li>
+                                <li>4ème : 0 point.</li>
+                            </ul>
+                        </li>
+                        <li class="championshipRulesItem">📊 À la fin des 16 courses, on additionne les points de toutes les courses. 
+                            <br>💡 Astuce : Pour éviter les déconnexions, vous pouvez prendre des <strong>captures d’écran</strong> sur l’écran des résultats entre chaque course.
+                        </li>
+                        <li class="championshipRulesItem">⚔️ <strong>Égalité :</strong> 
+                            <ul class="championshipRulesSublist">
+                                <li>Si deux joueurs ont un score identique à la fin de la 16ème course, on rejoue les <strong>4 premières courses</strong>, soit 20 courses au total.</li>
+                                <li>Si l’égalité persiste après la 20ème course, on continue avec les 4 suivantes, etc.</li>
+                            </ul>
+                        </li>
+                        <li class="championshipRulesItem">📜 Passages secrets et bugs <strong>autorisés</strong>.</li>
+                        <li class="championshipRulesItem">⏱️ Comptez environ 1 heure pour faire les 16 courses.</li>
+                    </ul>
+                </div>`,
+                link1: "https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=39949723#gid=39949723",
+                part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
+                part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
+            }
+        },
         beta: {
             title: "Version Beta",
             content: {
@@ -100,6 +143,7 @@ const translations = {
         subnav: {
             maps: "Map Secrets",
             tips: "Tips",
+            download: "Download",
             beta: "Beta"
         },
         legend: {
@@ -174,6 +218,48 @@ const translations = {
             tip10: {
                 title: "🏁 View Mario Raceway records",
                 content: "On the title screen, press Z to view the best times on Mario Raceway (Time Trial mode)."
+            }
+        },
+        championship: {
+            title: "Championship",
+            content: {
+                rules: `<div>
+                    <h2>🇬🇧 Mario Kart 64 on NSO (Nintendo Switch Online)</h2>
+                    <p>🏁 <strong>Here are our rules for over 25 years:</strong></p>
+                    <ul class="championshipRules">
+                        <li class="championshipRulesItem">🎮 4-player matches:
+                            <ul class="championshipRulesSublist">
+                                <li>Martin plays Yoshi.</li>
+                                <li>Romain plays Bowser.</li>
+                                <li>Bryan plays Donkey Kong.</li>
+                                <li>I play Wario, after playing Toad for about ten years.</li>
+                            </ul>
+                        </li>
+                        <li class="championshipRulesItem">🛞 Play on all <strong>16 tracks</strong> (in order) at 150CC.</li>
+                        <li class="championshipRulesItem">🏆 Scoring system:
+                            <ul class="championshipRulesSublist">
+                                <li>1st: 5 points.</li>
+                                <li>2nd: 3 points.</li>
+                                <li>3rd: 1 point.</li>
+                                <li>4th: 0 points.</li>
+                            </ul>
+                        </li>
+                        <li class="championshipRulesItem">📊 At the end of the 16 tracks, add up the points from all races.
+                            <br>💡 Tip: To avoid losing track due to disconnections, you can take <strong>screenshots</strong> of the results screen after each race.
+                        </li>
+                        <li class="championshipRulesItem">⚔️ <strong>Tiebreaker:</strong>
+                            <ul class="championshipRulesSublist">
+                                <li>If two players have identical scores after the 16th track, replay the <strong>first 4 tracks</strong>, making it 20 races total.</li>
+                                <li>If the tie persists after the 20th track, continue with the next 4 tracks, and so on.</li>
+                            </ul>
+                        </li>
+                        <li class="championshipRulesItem">📜 Secret paths and glitches are <strong>allowed</strong>.</li>
+                        <li class="championshipRulesItem">⏱️ It takes about 1 hour to play all 16 tracks.</li>
+                    </ul>
+                </div>`,
+                link1: "https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=1796197462#gid=1796197462",
+                part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
+                part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
             }
         },
         beta: {
