@@ -8,4 +8,94 @@
         font-weight: 600;
         text-align: center;
     }
+
+    .contentTeam {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .teamMember {
+            text-align: center;
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            .profilePics {
+                position: relative;
+                width: 96px;
+                height: 96px;
+                margin: 0 auto 1rem;
+                perspective: 1000px;
+
+                /* Animation au survol */
+                &:hover {
+                    .main {
+                        //opacity: 0;
+                        transform: rotateY(180deg);
+                    }
+                }
+
+                .secondary {
+                    position: absolute;
+                    bottom: -14px;
+                    right: 0;
+                    top: inherit;
+                    left: inherit;
+                    z-index: 1000;
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .tertiary {
+                    position: absolute;
+                    bottom: -14px;
+                    right: 32px;
+                    top: inherit;
+                    left: inherit;
+                    z-index: 1000;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            
+            .profilePic {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: opacity 0.3s ease;
+
+                //backface-visibility: hidden;
+                transition: transform 0.6s;
+            }
+
+            .memberName {
+                font-size: 1.5rem;
+                margin: 0.5rem 0;
+
+                @media (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
+            }
+            
+            .memberRole {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    33%, 66% { opacity: 1; }
 }

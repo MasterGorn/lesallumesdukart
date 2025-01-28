@@ -1,4 +1,65 @@
 /********
+ * Gestion du LazyLoader
+ */
+
+class LazyLoader {
+    constructor() {
+        this.observer = new IntersectionObserver(this.handleIntersection.bind(this), {
+            root: null,
+            rootMargin: '50px',
+            threshold: 0.1
+        });
+        this.imageObserver = new IntersectionObserver(this.handleImageIntersection.bind(this), {
+            rootMargin: '50px'
+        });
+        this.init();
+    }
+
+    init() {
+        // Observer les images avec attribut loading="lazy"
+        document.querySelectorAll('img.lazy').forEach(img => {
+            this.imageObserver.observe(img);
+        });
+
+        // Observer les divs avec fond lazy
+        document.querySelectorAll('.lazyBackground').forEach(div => {
+            this.imageObserver.observe(div);
+        });
+    }
+
+    handleImageIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
+
+                if (element.tagName === 'IMG') {
+                    // Charger l'image
+                    element.src = element.dataset.src;
+                    element.classList.remove('lazy');
+                } else {
+                    // Charger l'image de fond
+                    element.style.backgroundImage = `url(${element.dataset.background})`;
+                    element.classList.remove('lazyBackground');
+                }
+                
+                observer.unobserve(element);
+            }
+        });
+    }
+
+    handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
+                this.loadSectionData(element);
+                observer.unobserve(element);
+            }
+        });
+    }
+}
+
+
+/********
  * Gestion du SoundManager
  */
 
@@ -12,6 +73,7 @@ class SoundManager {
             'beta': new Audio('public/sounds/yoshi.mp3')
         };
         this.button = document.querySelector('.soundBtn');
+        this.preloadSounds();
         this.init();
     }
 
@@ -67,6 +129,12 @@ class SoundManager {
             this.sounds[sectionId].currentTime = 0;
             this.sounds[sectionId].play();
         }
+    }
+
+    preloadSounds() {
+        Object.values(this.sounds).forEach(sound => {
+            sound.load();
+        });
     }
 }
 
@@ -315,7 +383,6 @@ function syncPinsSize() {
         function updatePinsSize() {
             const rect = img.getBoundingClientRect();
             const computedStyles = window.getComputedStyle(img);
-            console.log("rect", rect)
             pinsDiv.style.width = rect.width + 'px';
             pinsDiv.style.height = rect.height + 'px';
             pinsDiv.style.marginLeft = computedStyles.marginLeft;
@@ -345,11 +412,10 @@ function renderCircuits() {
     const container = document.getElementById('mapsContainer')
     const currentLang = window.languageManager.currentLang
 
-    //console.log("currentLang", currentLang)
     circuitsData = currentLang === 'fr' ? circuitsDataFR : circuitsDataEN
     container.innerHTML = circuitsData.map((circuit, index) => {
         const circuitTranslation = translations[currentLang]?.mapSecrets?.circuitsData[index] || {};
-console.log("circuitTranslation", circuitTranslation)
+
         return `
         <div class="imagepin">
             <h2 class="circuitTitle"><img class="circuitThumbnail" src="public/images/thumbnails/${circuit.thumbnail}" alt="Miniature de${circuit.alt}" data-i18n="circuitsData.${index}.alt"/>${circuit.alt}</h2>
@@ -480,6 +546,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Initialiser au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
+    // Précharger les ressources critiques
+    const criticalResources = [
+        'public/images/design/placeholder.webp'
+    ]
+    criticalResources.forEach(resource => {
+        const preloadLink = document.createElement('link');
+        preloadLink.rel = 'preload';
+        preloadLink.as = 'image';
+        preloadLink.href = resource;
+        document.head.appendChild(preloadLink);
+    })
+
     window.languageManager = new LanguageManager()
     renderCircuits()
     renderPinPopins()
@@ -498,4 +576,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', syncPinsSize);
 
     const parallaxManager = new ParallaxManager();
+    new LazyLoader();
 });

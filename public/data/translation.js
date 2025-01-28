@@ -145,11 +145,12 @@ const translations = {
             }
         },
         team: {
-            title: "👥 Le Team 👥",
+            title: "👥 L'équipe 👥",
             content: {
-                part1: "We are a team of 4 friends who have been playing Mario Kart 64 for over 25 years. We are all passionate about this game and we want to share our passion with you.",
-                part2: "We are all very different, but we share the same passion for this game. We are all very different, but we share the same passion for this game.",
-                part3: "We are all very different, but we share the same passion for this game."
+                part1: "Martin",
+                part2: "Pierre",
+                part3: "Bryan",
+                part4: "Romain"
             }
         },
         footer: {
@@ -309,9 +310,10 @@ const translations = {
         team: {
             title: "👥 The Team 👥",
             content: {
-                part1: "We are a team of 4 friends who have been playing Mario Kart 64 for over 25 years. We are all passionate about this game and we want to share our passion with you.",
-                part2: "We are all very different, but we share the same passion for this game. We are all very different, but we share the same passion for this game.",
-                part3: "We are all very different, but we share the same passion for this game."
+                part1: "Martin",
+                part2: "Pierre",
+                part3: "Bryan",
+                part4: "Romain"
             }
         },
         footer: {

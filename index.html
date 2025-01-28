@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Favicon -->
-    <link rel="icon" href="public/images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/images/design/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/design/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/design/favicon-16x16.png">
+    <link rel="manifest" href="public/images/design/site.webmanifest">
     <!-- Open Graph -->
     <meta property="og:title" content="Les allumés du kart - Fans de Mario Kart 64">
     <meta property="og:description" content="Retrouvez tous les allumés du kart de Mario Kart 64, avec leurs descriptions, vidéos, modes et gains.">
@@ -199,10 +202,18 @@
         <span data-i18n="championship.title" class="titleChampionship"></span>
         <div class="contentChampionship">
             <div data-i18n="championship.content.intro" class="championshipIntro"></div>
-            <img src="public/images/championship/mario-kart-championnat-01.jpg" alt="image d'un championnat de Mario Kart 64" class="championshipImage">
+            <img src="public/images/design/placeholder.webp" 
+                data-src="public/images/championship/mario-kart-championnat-01.jpg" 
+                loading="lazy" 
+                class="championshipImage lazy" 
+                alt="image d'un championnat de Mario Kart 64">
             <div data-i18n="championship.content.rules" class="championshipRulesSection"></div>
             <a href="https://docs.google.com/spreadsheets/d/1V36CXA8sAwXWd9L5uCtKBBC7t18V0mh0l6_Oqk4387Y/edit?gid=39949723#gid=39949723" target="_blank" class="linkChampionship">
-                <img src="public/images/championship/tab-googlesheet-mariokart.jpg" alt="image de la table google sheet" class="GoogleSheetImage">
+                <img src="public/images/design/placeholder.webp" 
+                    data-src="public/images/championship/tab-googlesheet-mariokart.jpg" 
+                    loading="lazy" 
+                    class="GoogleSheetImage lazy" 
+                    alt="image de la table google sheet">
             </a>
             <div data-i18n="championship.content.googleSheet" class="championshipGoogleSheet"></div>
         </div>
@@ -214,17 +225,79 @@
             <span data-i18n="beta.content.part1"></span>
             <span data-i18n="beta.content.part2"></span>
             <span data-i18n="beta.content.part3"></span>
-            <img src="public/images/beta/item-beta.webp" alt="items in beta version" class="itemsImage"> 
+            <img src="public/images/design/placeholder.webp" 
+                data-src="public/images/beta/item-beta.webp" 
+                loading="lazy" 
+                class="itemsImage lazy"
+                alt="items in beta version"> 
         </p>
     </section>
     <!-- Section Team -->
     <section id="team" class="sectionContent team">
         <span data-i18n="team.title" class="titleTeam"></span>
-        <p class="contentTeam">
-            <span data-i18n="team.content.part1"></span>
-            <span data-i18n="team.content.part2"></span>
-            <span data-i18n="team.content.part3"></span>
-        </p>
+        <div class="contentTeam">
+            <div class="teamMember">
+                <div class="profilePics">
+                    <img src="public/images/design/placeholder.webp" 
+                        data-src="public/images/team/yoshi.webp" 
+                        loading="lazy" 
+                        alt="Personnage principal de Martin" class="profilePic main lazy">
+                </div>
+                <h3 class="memberName" data-i18n="team.content.part1">John Doe</h3>
+                <p class="memberRole">Fondateur</p>
+            </div>
+        
+            <div class="teamMember">
+                <div class="profilePics">
+                    <img 
+                        src="public/images/design/placeholder.webp" 
+                        data-src="public/images/team/wario.webp" 
+                        loading="lazy" 
+                        alt="Personnage principal de Pierre" class="profilePic main lazy">
+                    <img 
+                        src="public/images/design/placeholder.webp" 
+                        data-src="public/images/team/toad.webp" 
+                        loading="lazy" 
+                        alt="Personnage secondaire de Pierre" class="profilePic secondary lazy">
+                </div>
+                <h3 class="memberName" data-i18n="team.content.part2">Jane Smith</h3>
+                <p class="memberRole">Co-Fondatrice</p>
+            </div>
+        
+            <div class="teamMember">
+                <div class="profilePics">
+                    <img 
+                        src="public/images/design/placeholder.webp" 
+                        data-src="public/images/team/dk.webp" 
+                        loading="lazy" 
+                        alt="Personnage principal de Bryan" class="profilePic main lazy">
+                </div>
+                <h3 class="memberName" data-i18n="team.content.part3">Mike Johnson</h3>
+                <p class="memberRole">Développeur</p>
+            </div>
+        
+            <div class="teamMember">
+                <div class="profilePics">
+                    <img 
+                        src="public/images/design/placeholder.webp" 
+                        data-src="public/images/team/bowser.webp" 
+                        loading="lazy" 
+                        alt="Personnage principal de Romain" class="profilePic main lazy">
+                    <img 
+                        src="public/images/design/placeholder.webp" 
+                        data-src="public/images/team/peach.webp" 
+                        loading="lazy" 
+                        alt="Personnage secondaire de Romain" class="profilePic secondary lazy">
+                    <img 
+                        src="public/images/design/placeholder.webp" 
+                        data-src="public/images/team/toad.webp" 
+                        loading="lazy" 
+                        alt="Personnage tertiaire de Romain" class="profilePic tertiary lazy">
+                </div>
+                <h3 class="memberName" data-i18n="team.content.part4">Sarah Wilson</h3>
+                <p class="memberRole">Designer</p>
+            </div>
+        </div>
     </section>
     <!-- Sound Switch-->
     <div class="soundSwitch">
@@ -266,11 +339,9 @@
     8) Améliorer le design global
     9) Ajouter le titre des grands prix
     10) Mettre le bon lien du Google Sheet en fonction de la langue
-    11) Mettre sons et permettre de désactiver les sons
-    15) Loading image
     12) Mettre data par défaut dans le HTML pour le référencement
-    13) Retirer tous les console.log
     14) voir les images à ajouter : https://www.mariowiki.com/Gallery:Mario_Kart_64 (les gifs de nos persos clin d'oeil dans la section team)
+    15) cleaner le JS
     -->
 </body>
 
