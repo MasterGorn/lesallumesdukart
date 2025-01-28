@@ -262,6 +262,9 @@ class LanguageManager {
                 console.warn(`Error translating key: ${key}`, error);
             }
         })
+
+        const linkChampionship = document.querySelector('.linkChampionship')
+        linkChampionship.href = translations[this.currentLang]?.championship?.content?.linkGoogleSheet
     }
 
     addLanguageSwitch() {
