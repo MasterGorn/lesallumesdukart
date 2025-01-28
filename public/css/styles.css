@@ -155,7 +155,7 @@ body {
   top: 70%;
 }
 .kart3.animate {
-  animation: raceRightWave 2.2s ease-out forwards;
+  animation: raceZigZag 2.2s ease-out forwards;
 }
 .kart4 {
   left: -150px;
@@ -234,22 +234,6 @@ body {
     transform: translate(calc(100vw + 150px), 0) rotate(0deg);
   }
 }
-@keyframes raceRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-150px) rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(calc(100vw + 150px)) rotate(10deg);
-  }
-}
 .langSwitch {
   position: fixed;
   bottom: 12px;
@@ -264,7 +248,7 @@ body {
 .langSwitch .langBtn {
   width: 30px;
   height: 30px;
-  font-size: 14px;
+  font-size: 13px;
   color: white;
   border: none;
   background: transparent;
@@ -863,6 +847,43 @@ body {
 }
 .stars.positive .starEmpty {
   background: #ccc;
+}
+.soundSwitch {
+  position: fixed;
+  bottom: 12px;
+  right: 112px;
+  background: #333;
+  padding: 8px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+@media (max-width: 768px) {
+  .soundSwitch {
+    bottom: 70px;
+    right: 20px;
+  }
+}
+.soundSwitch .soundBtn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+.soundSwitch .soundBtn:hover {
+  background: #555;
+}
+.soundSwitch .soundBtn .active {
+  background: #e60012;
+}
+.soundSwitch .soundBtn i {
+  font-size: 16px;
 }
 .footer {
   background-color: #0a506b;

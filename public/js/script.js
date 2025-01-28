@@ -1,4 +1,77 @@
 /********
+ * Gestion du SoundManager
+ */
+
+class SoundManager {
+    constructor() {
+        this.isEnabled = false;
+        this.sounds = {
+            'mapSecrets': new Audio('public/sounds/bowser.mp3'),
+            'tips': new Audio('public/sounds/dk.mp3'),
+            'championship': new Audio('public/sounds/wario.mp3'),
+            'beta': new Audio('public/sounds/yoshi.mp3')
+        };
+        this.button = document.querySelector('.soundBtn');
+        this.init();
+    }
+
+    init() {
+        // Initialiser le volume à 0 pour tous les sons
+        Object.values(this.sounds).forEach(sound => {
+            sound.volume = 0;
+        });
+
+        this.button.addEventListener('click', () => this.toggleSound());
+        
+        // Charger la préférence utilisateur depuis localStorage
+        const savedPreference = localStorage.getItem('soundPreference');
+        if (savedPreference === 'on') {
+            this.enableSound();
+        }
+    }
+
+    toggleSound() {
+        if (this.isEnabled) {
+            this.disableSound();
+        } else {
+            this.enableSound();
+        }
+    }
+
+    enableSound() {
+        this.isEnabled = true;
+        this.button.classList.add('active');
+        this.button.innerHTML = `
+            <i class="fas fa-volume-up"></i>
+        `;
+        Object.values(this.sounds).forEach(sound => {
+            sound.volume = 1;
+        });
+        localStorage.setItem('soundPreference', 'on');
+    }
+
+    disableSound() {
+        this.isEnabled = false;
+        this.button.classList.remove('active');
+        this.button.innerHTML = `
+            <i class="fas fa-volume-mute"></i>
+        `;
+        Object.values(this.sounds).forEach(sound => {
+            sound.volume = 0;
+        });
+        localStorage.setItem('soundPreference', 'off');
+    }
+
+    playSound(sectionId) {
+        if (this.isEnabled && this.sounds[sectionId]) {
+            this.sounds[sectionId].currentTime = 0;
+            this.sounds[sectionId].play();
+        }
+    }
+}
+
+
+/********
  * Gestion du parallax
  */
 
@@ -14,6 +87,7 @@ class ParallaxManager {
             'championship': 2,
             'beta': 3,
         };
+        this.soundManager = new SoundManager();
         this.init();
     }
 
@@ -57,6 +131,8 @@ class ParallaxManager {
                 kart.classList.remove('animate');
             }, 3000);
         }
+
+        this.soundManager.playSound(sectionId);
     }
 }
 

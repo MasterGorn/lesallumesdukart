@@ -1,0 +1,40 @@
+.soundSwitch {
+    position: fixed;
+    bottom: 12px;
+    right: 112px;
+    background: #333;
+    padding: 8px;
+    border-radius: 50%;
+    z-index: 1000;
+
+    @media (max-width: 768px) {
+        bottom: 70px;
+        right: 20px;
+    }
+
+    .soundBtn {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: transparent;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background: #555;
+        }
+
+        .active {
+            background: #e60012;
+        }
+
+        i {
+            font-size: 16px;
+        }
+    }
+}
