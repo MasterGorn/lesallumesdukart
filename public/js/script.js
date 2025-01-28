@@ -411,12 +411,31 @@ function syncPinsSize() {
 function renderCircuits() {
     const container = document.getElementById('mapsContainer')
     const currentLang = window.languageManager.currentLang
+    let cupBegin = ''
+    let cupClose = ''
+    let cupImage = ['intro-mushroom-cup','intro-flower-cup','intro-star-cup','intro-special-cup']
+    let indexCup = 0
 
     circuitsData = currentLang === 'fr' ? circuitsDataFR : circuitsDataEN
     container.innerHTML = circuitsData.map((circuit, index) => {
         const circuitTranslation = translations[currentLang]?.mapSecrets?.circuitsData[index] || {};
 
-        return `
+        if(index%4 === 0) {
+            cupBegin = `<div class="cup">
+                    <img src="public/images/design/placeholder.webp" data-src="public/images/circuits/${cupImage[indexCup]}.webp" class="cupImage lazy" alt="image de la coupe de Mario Kart 64" />
+                    <img src="public/images/design/placeholder.webp" data-src="public/images/circuits/${cupImage[indexCup]}-mobile.webp" class="cupImage mobile lazy" alt="image de la coupe de Mario Kart 64" />
+                <div class="cupContent">`
+            indexCup++
+        } else {
+            cupBegin = ''
+        }
+        if(index%4 === 3) {
+            cupClose = `</div></div>`
+        } else {
+            cupClose = ''
+        }
+
+        return `${cupBegin}
         <div class="imagepin">
             <h2 class="circuitTitle"><img class="circuitThumbnail" src="public/images/thumbnails/${circuit.thumbnail}" alt="Miniature de${circuit.alt}" data-i18n="circuitsData.${index}.alt"/>${circuit.alt}</h2>
             <img src="public/images/circuits/${circuit.image}" alt="${circuit.alt}" class="circuitImage" />
@@ -424,6 +443,7 @@ function renderCircuits() {
                 ${generatePins(circuit.pins)}
             </div>
         </div>
+        ${cupClose}
     `
     }).join('')
 
