@@ -425,8 +425,8 @@ function renderCircuits() {
 
         if(index%4 === 0) {
             cupBegin = `<div class="cup">
-                    <img src="public/images/design/placeholder.webp" data-src="public/images/circuits/${cupImage[indexCup]}.webp" class="cupImage lazy" alt="image de la coupe de Mario Kart 64" />
-                    <img src="public/images/design/placeholder.webp" data-src="public/images/circuits/${cupImage[indexCup]}-mobile.webp" class="cupImage mobile lazy" alt="image de la coupe de Mario Kart 64" />
+                    <img src="public/images/circuits/${cupImage[indexCup]}.webp" class="cupImage" alt="image de la coupe de Mario Kart 64" />
+                    <img src="public/images/circuits/${cupImage[indexCup]}-mobile.webp" class="cupImage mobile" alt="image de la coupe de Mario Kart 64" />
                 <div class="cupContent">`
             indexCup++
         } else {
