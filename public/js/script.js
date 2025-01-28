@@ -8,6 +8,12 @@ class ParallaxManager {
         this.sections = document.querySelectorAll('.sectionContent');
         this.lastSection = null;
         this.animationTimeout = null;
+        this.sectionKartMap = {
+            'mapSecrets': 0,  
+            'tips': 1,        
+            'championship': 2,
+            'beta': 3,
+        };
         this.init();
     }
 
@@ -19,42 +25,38 @@ class ParallaxManager {
         const currentScroll = window.scrollY;
         const windowHeight = window.innerHeight;
         
-        // Détecter la section courante
-        this.sections.forEach((section, index) => {
+        this.sections.forEach(section => {
             const sectionTop = section.offsetTop - windowHeight/3;
             const sectionBottom = sectionTop + section.offsetHeight;
             
             if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
-                if (this.lastSection !== index) {
-                    this.triggerAnimation();
-                    this.lastSection = index;
+                const sectionId = section.id;
+                if (this.lastSection !== sectionId) {
+                    this.triggerAnimation(sectionId);
+                    this.lastSection = sectionId;
                 }
             }
         });
     }
 
-    triggerAnimation() {
+    triggerAnimation(sectionId) {
         // Nettoyer l'animation précédente
         if (this.animationTimeout) {
             clearTimeout(this.animationTimeout);
-            this.karts.forEach(kart => {
-                kart.classList.remove('animate');
-            });
+            this.karts.forEach(kart => kart.classList.remove('animate'));
         }
 
-        // Déclencher les animations avec un léger décalage
-        this.karts.forEach((kart, index) => {
-            setTimeout(() => {
-                kart.classList.add('animate');
-            }, index * 200);
-        });
+        // Animer uniquement le kart correspondant à la section
+        const kartIndex = this.sectionKartMap[sectionId];
+        if (kartIndex !== undefined) {
+            const kart = this.karts[kartIndex];
+            kart.classList.add('animate');
 
-        // Nettoyer les classes après l'animation
-        this.animationTimeout = setTimeout(() => {
-            this.karts.forEach(kart => {
+            // Nettoyer l'animation après qu'elle soit terminée
+            this.animationTimeout = setTimeout(() => {
                 kart.classList.remove('animate');
-            });
-        }, 3000);
+            }, 3000);
+        }
     }
 }
 

@@ -140,30 +140,99 @@ body {
   left: -150px;
   top: 30%;
 }
+.kart1.animate {
+  animation: raceRightWave 2s ease-out forwards;
+}
 .kart2 {
-  right: -150px;
+  left: -150px;
   top: 50%;
+}
+.kart2.animate {
+  animation: raceJump 2.5s ease-out forwards;
 }
 .kart3 {
   left: -150px;
   top: 70%;
 }
+.kart3.animate {
+  animation: raceRightWave 2.2s ease-out forwards;
+}
 .kart4 {
-  right: -150px;
+  left: -150px;
   top: 20%;
 }
-/* Classes d'animation */
-.kart1.animate {
-  animation: raceRight 2s ease-out forwards;
-}
-.kart2.animate {
-  animation: raceLeft 2s ease-out forwards;
-}
-.kart3.animate {
-  animation: raceDiagonal 2.5s ease-out forwards;
-}
 .kart4.animate {
-  animation: raceDiagonalRight 2s ease-out forwards;
+  animation: raceJump 2s ease-out forwards;
+}
+/* Animations personnalisées pour chaque kart */
+@keyframes raceRightWave {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px) translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(calc(50vw - 75px)) translateY(-50px);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 150px)) translateY(0);
+  }
+}
+@keyframes raceZigZag {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 150px)) translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(calc(75vw)) translateY(-50px);
+  }
+  50% {
+    transform: translateX(calc(50vw)) translateY(50px);
+  }
+  75% {
+    transform: translateX(calc(25vw)) translateY(-50px);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-150px) translateY(0);
+  }
+}
+@keyframes raceJump {
+  0% {
+    opacity: 0;
+    transform: translate(-150px, 0) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    transform: translate(calc(25vw), -100px) rotate(15deg);
+  }
+  50% {
+    transform: translate(calc(50vw), 0) rotate(0deg);
+  }
+  75% {
+    transform: translate(calc(75vw), -100px) rotate(-15deg);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(100vw + 150px), 0) rotate(0deg);
+  }
 }
 @keyframes raceRight {
   0% {
@@ -179,54 +248,6 @@ body {
   100% {
     opacity: 0;
     transform: translateX(calc(100vw + 150px)) rotate(10deg);
-  }
-}
-@keyframes raceLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(calc(100vw + 150px)) rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-150px) rotate(-10deg);
-  }
-}
-@keyframes raceDiagonal {
-  0% {
-    opacity: 0;
-    transform: translate(-150px, 100px) rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(calc(100vw + 150px), -100px) rotate(15deg);
-  }
-}
-@keyframes raceDiagonalRight {
-  0% {
-    opacity: 0;
-    transform: translate(-150px, 100px) rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(calc(100vw - 550px), -100px) rotate(15deg);
   }
 }
 .langSwitch {
