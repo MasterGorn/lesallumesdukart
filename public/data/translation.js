@@ -134,6 +134,10 @@ const translations = {
                     </ul>
                     <p>Cliquez sur l'image du tableau ci-dessus pour accéder au Google Sheet.</p>
                 </div>`,
+                instagram: `<div>
+                    <p>👥 <strong>Suivez-nous sur Instagram</strong> pour suivre l'avancée du championnat et les vidéos de passages secrets et belles actions.</p>
+                    <p>Cliquez sur l'image du tableau ci-dessus pour accéder notre compte Instagram.</p>
+                </div>`
             }
         },
         beta: {
@@ -297,6 +301,10 @@ const translations = {
                     </ul>
                     <p>Click on the table image above to access the Google Sheet.</p>
                 </div>`,
+                instagram: `<div>
+                    <p>👥 <strong>Follow us on Instagram</strong> to follow the progress of the championship and see videos of secret passages and beautiful actions.</p>
+                    <p>Click on the image of the table above to access our Instagram account.</p>
+                </div>`
             }
         },
         beta: {

@@ -712,7 +712,8 @@ body {
 }
 .championship .championshipIntro,
 .championship .championshipRulesSection,
-.championship .championshipGoogleSheet {
+.championship .championshipGoogleSheet,
+.championship .championshipInstagram {
   margin-bottom: 64px;
 }
 .championship .championshipRules {
@@ -738,7 +739,8 @@ body {
   margin: 32px auto;
   max-width: 640px;
 }
-.championship .linkChampionship .GoogleSheetImage {
+.championship .linkChampionship .GoogleSheetImage,
+.championship .linkChampionship .instagramImage {
   width: 100%;
   height: auto;
   border-radius: 16px;
