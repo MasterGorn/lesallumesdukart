@@ -921,7 +921,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .footer {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 8rem;
   }
   .footer .sociallink {
     margin: 0 0.5rem;
