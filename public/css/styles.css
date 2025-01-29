@@ -52,6 +52,92 @@ body {
     background-position: 200% 0;
   }
 }
+/* Feedback des touches */
+.konami-feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #e60012;
+  pointer-events: none;
+  transition: all 1s ease;
+  z-index: 9999;
+}
+/* Effet d'étoiles */
+.konami-star {
+  position: fixed;
+  top: -20px;
+  width: 20px;
+  height: 20px;
+  background: url('../images/star.png') no-repeat center / contain;
+  animation: starFall 3s linear forwards;
+  pointer-events: none;
+  z-index: 9998;
+}
+@keyframes starFall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Message secret */
+.konami-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 2em;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 10000;
+  animation: messageAppear 0.5s ease;
+}
+@keyframes messageAppear {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.konami-message h2 {
+  color: #e60012;
+  margin-bottom: 1em;
+}
+.konami-close {
+  background: #e60012;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.konami-close:hover {
+  background: #ff1a1a;
+}
+/* Effet global */
+.konami-active {
+  animation: rainbow 5s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -275,6 +361,7 @@ body {
 .langSwitch .langBtn {
   width: 30px;
   height: 30px;
+  padding: 0;
   font-size: 13px;
   color: white;
   border: none;
@@ -300,6 +387,7 @@ body {
 .legendWrapper .legendToggle {
   width: 100%;
   padding: 15px;
+  font-size: 16px;
   background: #023c53;
   border: none;
   color: white;
@@ -784,10 +872,41 @@ body {
   font-weight: 600;
   text-align: center;
 }
-.beta .itemsImage {
+.beta .imageGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.beta .imageGrid .itemBetaWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beta .imageGrid .itemBetaWrapper .itemBetaExplain {
   display: block;
-  max-width: 100%;
+  width: 360px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+.beta .imageWrapper {
+  position: relative;
+  display: inline-flex;
+  height: max-content;
+  width: 100%;
+  max-width: 360px;
+  height: 360px;
+  margin: 64px auto 32px;
+  background: #000;
+}
+.beta .imageWrapper img {
+  display: block;
   margin: auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 .team {
   color: white;
@@ -927,6 +1046,7 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 1px 6px;
   background: #333;
   font-size: 24px;
   color: white;
@@ -1004,6 +1124,7 @@ body {
 .soundSwitch .soundBtn {
   width: 30px;
   height: 30px;
+  padding: 0;
   border: none;
   background: transparent;
   color: white;
@@ -1011,6 +1132,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   transition: background-color 0.3s ease;
 }
@@ -1089,6 +1211,7 @@ body {
 .sizeControls .sizeBtn {
   width: 30px;
   height: 30px;
+  padding: 0;
   border-radius: 50%;
   border: none;
   background: #555;

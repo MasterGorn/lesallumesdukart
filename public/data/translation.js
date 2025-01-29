@@ -6,6 +6,11 @@ const translations = {
             championship: "Championnat",
             beta: "Version Beta"
         },
+        konamiCode: {
+            rainbowRoad: "🌟 Thème Route Arc-en-ciel Activé ! 🌟",
+            message: "Vous avez découvert le Konami Code !",
+            close: "Fermer"
+        },
         mapSecrets: {
             title: "📍 Secrets des maps 📍",
             content: "Découvrez les secrets des 16 circuits de Mario Kart 64.",
@@ -143,18 +148,32 @@ const translations = {
         beta: {
             title: "🏗️ Version Beta 🏗️",
             content: {
-                part1: "The game is currently in beta. We are working hard to make it perfect for you. ",
-                part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
-                part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
+                intro: "Les datas et images de la version beta de Mario Kart 64 sont disponibles ci-dessous. Elles témoignent des avancées et changements du jeu en cours de développement. Elles nous permettent de s'imaginer le jeu avec des options en plus, des personnages différents, une vue différente, etc.",
+                items: "On peut voir que l'oeuf de Yoshi avait été imaginé, tout comme des billes. On y voit des champignons mécontents, peut être empoisonnés. Il y a également la plume surement supprimée car le saut se fait grâce à un bouton et le poids 10t aurait pu avoir le même effet qu'un Thwomp.",
+                debugMode: "Le mode debug est présent, comme dans beaucoup de jeux, il permet de paramétrer des options et faire des tests pendant le développement du jeu.",
+                drivers: "On voit un look bien différent pour les pilotes, vue de face, avec Kamek à la place de Donkey Kong.",
+                kamek: "Kamek est présent sur la route (au loin près de Peach) et en 3ème position sur la gauche.",
+                titleScreen: "Le premier écran titre nous montre le premier nom du jeu, mais aussi les anciens looks des personnages que l'on retrouve dans l'écran de sélection des pilotes.",
+                ui: "La première interface utilisateur est présente et plutôt grossière par rapport au rendu final.",
+                box: "La caisse d'objets a un look très différent de la version finale. Elle était sombre et plus carrée.",
+                feather: "Preuve que la plume a été prévue pendant longtemps, le design des caisses d'objets avait déjà changée alors que la plume était encore présente.",
+                kart: "Le stage Pont Ligubre est présent, avec des pentes.",
+                town: "Une course dans la ville était prévue, avec des passages entre les batiments et dans un tunnel.",
+                verticalScreen: "À deux joueurs, l'écran était séparé en deux par la verticalité de la caméra.",
+                verticalBattle: "L'écran séparé par la vertical en mode battle. Il est encore plus flagrant ici que la visibilité est bien réduite par rapport à l'écran séparé par l'horizontale.",
             }
         },
         team: {
             title: "👥 L'équipe 👥",
             content: {
-                part1: "Martin",
-                part2: "Pierre",
-                part3: "Bryan",
-                part4: "Romain"
+                name1: "Martin",
+                name2: "Pierre",
+                name3: "Bryan",
+                name4: "Romain",
+                role1: "La victime",
+                role2: "Le rageux",
+                role3: "Le chanceux",
+                role4: "Le bourrin"
             }
         },
         footer: {
@@ -172,6 +191,11 @@ const translations = {
             tips: "Tips",
             championship: "Championship",
             beta: "Beta"
+        },
+        konamiCode: {
+            rainbowRoad: "🌟 Rainbow Road Theme Activated ! 🌟",
+            message: "You have discovered the Konami Code !",
+            close: "Close"
         },
         mapSecrets: {
             title: "📍  Map Secrets 📍",
@@ -310,18 +334,33 @@ const translations = {
         beta: {
             title: "🏗️ Beta version 🏗️",
             content: {
-                part1: "The game is currently in beta. We are working hard to make it perfect for you. ",
-                part2: "We are working on the multiplayer mode and the online mode. We are also working on the AI to make it more realistic.",
-                part3: "We are also working on the graphics and the sound. We are also working on the physics to make it more realistic."
+                intro: "The data and images from the beta version of Mario Kart 64 are available below. They showcase the game's progress and changes during development. They allow us to imagine the game with additional options, different characters, a different perspective, and more.",
+                items: "We can see that Yoshi's egg was envisioned, as well as marbles. There are also grumpy mushrooms, possibly poisoned. The feather is also present, likely removed because jumping is done via a button, and the 10t weight might have had the same effect as a Thwomp.",
+                debugMode: "The debug mode is present, as in many games, allowing developers to configure options and run tests during the game's development.",
+                drivers: "The drivers have a very different look, seen from the front, with Kamek replacing Donkey Kong.",
+                kamek: "Kamek appears on the track (far away near Peach) and is in 3rd position on the left.",
+                titleScreen: "The first title screen shows us the game's original name, as well as the early looks of the characters that appear in the driver selection screen.",
+                ui: "The first user interface is present and rather crude compared to the final version.",
+                box: "The item box has a very different look from the final version. It was dark and more square.",
+                feather: "Proof that the feather was planned for a long time, the design of the item boxes had already changed when the feather was still present.",
+                kart: "The Banshee Boardwalk stage is present, featuring slopes.",
+                town: "A city race was planned, with passages between buildings and in a tunnel.",
+                verticalScreen: "In two-player mode, the screen was split vertically by the camera perspective.",
+                verticalBattle: "The screen was split vertically in battle mode. It is even more evident here that visibility was significantly reduced compared to the horizontally split screen.",
+                
             }
         },
         team: {
             title: "👥 The Team 👥",
             content: {
-                part1: "Martin",
-                part2: "Pierre",
-                part3: "Bryan",
-                part4: "Romain"
+                name1: "Martin",
+                name2: "Pierre",
+                name3: "Bryan",
+                name4: "Romain",
+                role1: "The victim",
+                role2: "The rageful",
+                role3: "The lucky one",
+                role4: "The braggart"
             }
         },
         footer: {

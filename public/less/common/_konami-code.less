@@ -1,0 +1,91 @@
+/* Feedback des touches */
+.konami-feedback {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #e60012;
+    pointer-events: none;
+    transition: all 1s ease;
+    z-index: 9999;
+}
+
+/* Effet d'étoiles */
+.konami-star {
+    position: fixed;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    background: url('../images/star.png') no-repeat center/contain;
+    animation: starFall 3s linear forwards;
+    pointer-events: none;
+    z-index: 9998;
+}
+
+@keyframes starFall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Message secret */
+.konami-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 2em;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 10000;
+    animation: messageAppear 0.5s ease;
+}
+
+@keyframes messageAppear {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.konami-message h2 {
+    color: #e60012;
+    margin-bottom: 1em;
+}
+
+.konami-close {
+    background: #e60012;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.konami-close:hover {
+    background: #ff1a1a;
+}
+
+/* Effet global */
+.konami-active {
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}

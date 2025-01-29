@@ -10,9 +10,44 @@
         text-align: center;
     }
 
-    .itemsImage {
-        display: block;
-        max-width: 100%;
-        margin: auto;
+    .imageGrid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+
+        .itemBetaWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .itemBetaExplain {
+                display: block;
+                width: 360px;
+                padding: 0 24px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .imageWrapper {
+        position: relative;
+        display: inline-flex;
+        height: max-content;
+        width: 100%;
+        max-width: 360px;
+        height: 360px;
+        margin: 64px auto 32px;
+        background: #000;
+
+        img {
+            display: block;
+            margin: auto;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
     }
 }

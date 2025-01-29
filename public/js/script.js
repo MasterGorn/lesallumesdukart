@@ -528,6 +528,133 @@ function createStarRating(difficulty) {
     return starsContainer;
 }
 
+/********
+ * Gestion du Konami Code
+ */
+    
+class KonamiCode {
+    constructor() {
+        this.sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 
+                        'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 
+                        'b', 'a'];
+        this.currentIndex = 0;
+        this.isActivated = false;
+        this.victorySound = new Audio('public/sounds/victory.mp3');
+        this.init();
+    }
+
+    init() {
+        document.addEventListener('keydown', (e) => {
+            // Vérifier si la touche correspond à la séquence
+            if (e.key === this.sequence[this.currentIndex]) {
+                this.currentIndex++;
+                
+                // Jouer un son de validation pour chaque touche correcte
+                this.playKeySound();
+
+                // Afficher un feedback visuel
+                this.showKeyFeedback(e.key);
+
+                // Si la séquence est complète
+                if (this.currentIndex === this.sequence.length) {
+                    this.activate();
+                    this.currentIndex = 0;
+                }
+            } else {
+                // Réinitialiser si mauvaise touche
+                this.currentIndex = 0;
+                // Jouer un son d'erreur
+                this.playErrorSound();
+            }
+        });
+    }
+
+    playKeySound() {
+        const keySound = new Audio('public/sounds/key-press.wav');
+        keySound.volume = 0.2;
+        keySound.play();
+    }
+
+    playErrorSound() {
+        const errorSound = new Audio('public/sounds/error.wav');
+        errorSound.volume = 0.2;
+        errorSound.play();
+    }
+
+    showKeyFeedback(key) {
+        const feedback = document.createElement('div');
+        feedback.className = 'konami-feedback';
+        feedback.textContent = key;
+        document.body.appendChild(feedback);
+
+        // Animation de l'élément
+        requestAnimationFrame(() => {
+            feedback.style.transform = 'translateY(-100px) scale(1.5)';
+            feedback.style.opacity = '0';
+        });
+
+        // Supprimer l'élément après l'animation
+        setTimeout(() => {
+            feedback.remove();
+        }, 1000);
+    }
+
+    activate() {
+        if (this.isActivated) return;
+        this.isActivated = true;
+
+        // Jouer le son de victoire
+        this.victorySound.volume = 0.3;
+        this.victorySound.play();
+
+        // Ajouter la classe pour les effets spéciaux
+        document.body.classList.add('konami-active');
+
+        // Créer l'effet de pluie d'étoiles
+        this.createStarRain();
+
+        // Afficher le message secret
+        this.showSecretMessage();
+    }
+
+    createStarRain() {
+        for (let i = 0; i < 50; i++) {
+            const star = document.createElement('div');
+            star.className = 'konami-star';
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.animationDelay = `${Math.random() * 2}s`;
+            document.body.appendChild(star);
+
+            // Nettoyer après l'animation
+            setTimeout(() => {
+                star.remove();
+            }, 3000);
+        }
+    }
+
+    showSecretMessage() {
+        const currentLang = window.languageManager.currentLang
+        const konamiCode = translations[currentLang]?.konamiCode || {}
+    
+        const message = document.createElement('div');
+        message.className = 'konami-message';
+        message.innerHTML = `
+            <h2>${konamiCode.rainbowRoad}</h2>
+            <p>${konamiCode.message}</p>
+            <button class="konami-close">${konamiCode.close}</button>
+        `;
+        document.body.appendChild(message);
+
+        // Gérer la fermeture
+        message.querySelector('.konami-close').addEventListener('click', () => {
+            message.remove();
+            document.body.classList.remove('konami-active');
+            this.isActivated = false;
+            this.victorySound.volume = 0
+        });
+    }
+}
+
 
 // Gestion de la navigation
 document.addEventListener('DOMContentLoaded', function() {
@@ -595,9 +722,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Écouteurs d'événements pour la synchronisation des pins
-    document.addEventListener('DOMContentLoaded', syncPinsSize);
-    window.addEventListener('resize', syncPinsSize);
+    document.addEventListener('DOMContentLoaded', syncPinsSize)
+    window.addEventListener('resize', syncPinsSize)
 
-    const parallaxManager = new ParallaxManager();
-    new LazyLoader();
+    new KonamiCode()
+    new ParallaxManager()
+    new LazyLoader()
 });
