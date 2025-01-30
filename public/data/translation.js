@@ -176,6 +176,13 @@ const translations = {
                 role4: "Le bourrin"
             }
         },
+        links: {
+            title: "🔗 Liens 🔗",
+            name1: "Classement mondial",
+            name2: "% apparition objets",
+            name3: "Magazines",
+            name4: "Assets"
+        },
         footer: {
             copyright: {
                 year: "2025 Les Allumés du Kart. © ",
@@ -362,6 +369,13 @@ const translations = {
                 role3: "The lucky one",
                 role4: "The braggart"
             }
+        },
+        links: {
+            title: "🔗 Links 🔗",
+            name1: "World Records",
+            name2: "% appearance of items",
+            name3: "Magazines",
+            name4: "Assets"
         },
         footer: {
             copyright: {
