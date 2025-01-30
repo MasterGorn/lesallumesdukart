@@ -332,9 +332,69 @@ const circuitsDataFR = [
             { top: "42%", left: "73%", text: "Beautiful." },
             { top: "30%", left: "82%", text: "Exit." },
             { top: "38%", left: "87%", text: "Exit." },
-            { top: "83%", left: "73%", text: "Exit." },
-            { top: "71%", left: "66%", text: "Exit." },
-            { top: "57%", left: "20%", text: "Exit." }
+            {
+                top: "83%",
+                left: "73%",
+                type: "shortcut",
+                title: "Couper le fromage 2",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "Pv9EkC8BoE4",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
+            {
+                top: "71%",
+                left: "66%",
+                type: "shortcut",
+                title: "Couper le fromage 3",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur le sable !</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "Z14AmSNYH54",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
+            {
+                top: "57%",
+                left: "20%",
+                type: "shortcut",
+                title: "Couper le fromage 4",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "aXGXGXvHHWk",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
         ]
     },
     {

@@ -329,9 +329,69 @@ const circuitsDataEN = [
             { top: "42%", left: "73%", text: "Beautiful." },
             { top: "30%", left: "82%", text: "Exit." },
             { top: "38%", left: "87%", text: "Exit." },
-            { top: "83%", left: "73%", text: "Exit." },
-            { top: "71%", left: "66%", text: "Exit." },
-            { top: "57%", left: "20%", text: "Exit." }
+            {
+                top: "83%",
+                left: "73%",
+                type: "shortcut",
+                title: "Take a shortcut  2",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the grass! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
+                video: "Pv9EkC8BoE4",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
+            {
+                top: "71%",
+                left: "66%",
+                type: "shortcut",
+                title: "Take a shortcut  3",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the sand!</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
+                video: "Z14AmSNYH54",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
+            {
+                top: "57%",
+                left: "20%",
+                type: "shortcut",
+                title: "Take a shortcut 4",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the grass! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
+                video: "aXGXGXvHHWk",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
         ]
     },
     {
