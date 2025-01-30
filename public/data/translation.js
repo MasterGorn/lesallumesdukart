@@ -181,7 +181,7 @@ const translations = {
                 year: "2025 Les Allumés du Kart. © ",
                 company: "Culture Games",
                 rights: ". - Tous droits réservés.",
-                nintendo: "Les personnages et éléments des jeux de ce site sont les propriétés de la société Nintendo."
+                nintendo: `Les personnages et éléments des jeux de ce site sont les propriétés de la société <span class="konamiCode">Nintendo</span>.`
             }
         }
     },
@@ -368,7 +368,7 @@ const translations = {
                 year: "2025 The Kart Fanatics. © ",
                 company: "Culture Games",
                 rights: ". - All rights reserved.",
-                nintendo: "The characters and elements of the games on this site are the properties of the Nintendo company."
+                nintendo: `The characters and elements of the games on this site are the properties of the <span class="konamiCode">Nintendo</span> company.`
             }
         }
     }

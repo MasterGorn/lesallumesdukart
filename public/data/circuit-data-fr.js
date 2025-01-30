@@ -537,8 +537,26 @@ const circuitsDataFR = [
         alt: "Circuit Vallée Yoshi",
         thumbnail: "yoshi-valley-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
             { top: "60%", left: "80%", text: "Beautiful." },
+            {
+                top: "62%",
+                left: "60%",
+                title: "Attention aux crabes !",
+                description: `<div>
+                    <p>🇫On connaît tous le premier bug de la vallée Yoshi où il faut sauter par-dessus la barrière. Mais celui dont on va vous parler ici est beaucoup plus simple !</p>
+                    <ul>
+                        <li>🎯 <strong>L'endroit :</strong> Dès les premiers embranchements, prenez tout à droite. Le chemin contourne un volcan 🌋 par la droite, puis une longue allée vous rapproche physiquement de la ligne d’arrivée 🏁. Un ravin vous en sépare : placez-vous <strong>juste à gauche de la barrière</strong> et sautez pour toucher le mur à droite de la ligne d’arrivée. Avec le bon angle, vous tomberez à gauche de la ligne pendant votre chute et obtiendrez un passage de tour. 🎉</li>
+                        <li>🍄 <strong>Option facile :</strong> Utilisez un 🍄 pour effectuer cette manœuvre sans difficulté.</li>
+                        <li>⚡ <strong>Attention aux pièges :</strong> Une carapace, un ⚡ ou une mauvaise trajectoire peuvent vous faire perdre du temps précieux. Restez concentré !</li>
+                        <li>🚜 <strong>Bonus Lakitu :</strong> Lakitu vous replace plus loin dans le niveau, ce qui vous permet de gagner plus d’un tour. 🏆</li>
+                    </ul>
+                </div>`,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "2",
+                text: "Short cut"
+            },
             { top: "40%", left: "10%", text: "Exit." }
         ]
     },

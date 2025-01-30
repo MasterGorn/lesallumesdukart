@@ -36,17 +36,29 @@
 
 /* Message secret */
 .konami-message {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: sticky;
+    bottom: 16px;
+    padding: 1em 2em;
+    margin: 16px;
     background: rgba(0, 0, 0, 0.9);
     color: white;
-    padding: 2em;
     border-radius: 15px;
     text-align: center;
     z-index: 10000;
     animation: messageAppear 0.5s ease;
+
+    p {
+        display: inline-block;
+    }
+
+    @media (min-width: 768px) {
+        width: 450px;
+        padding: 2em;
+
+        p {
+            display: block;
+        }
+    }
 }
 
 @keyframes messageAppear {
@@ -62,7 +74,11 @@
 
 .konami-message h2 {
     color: #e60012;
-    margin-bottom: 1em;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        margin-bottom: 1em;
+    }
 }
 
 .konami-close {
@@ -72,8 +88,13 @@
     padding: 0.5em 1em;
     border-radius: 5px;
     margin-top: 1em;
+    margin-left: 24px;
     cursor: pointer;
     transition: background 0.3s ease;
+
+    @media (min-width: 768px) {
+        margin-left: 0;
+    }
 }
 
 .konami-close:hover {

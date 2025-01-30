@@ -567,6 +567,10 @@ class KonamiCode {
                 this.playErrorSound();
             }
         });
+
+        document.getElementsByClassName('konamiCode')[0].addEventListener('click', (e) => {
+            this.activate()
+        })
     }
 
     playKeySound() {
