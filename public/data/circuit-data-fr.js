@@ -53,7 +53,7 @@ const circuitsDataFR = [
                     </ol>
                     <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "BztbD-8JOsM",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
@@ -111,7 +111,7 @@ const circuitsDataFR = [
                     </ol>
                     <p>Ce raccourci est idéal pour le Time Trial où la question de le prendre ou non ne se pose même pas ! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "WYtoWjSrKUk",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
@@ -174,7 +174,7 @@ const circuitsDataFR = [
                     </ol>
                     <p>Ce passage est idéal pour jouer la sécurité et garder une bonne position dans la course. Bonne chance ! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "067wAtgtXRs",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
@@ -213,11 +213,21 @@ const circuitsDataFR = [
                 top: "50%",
                 left: "73%",
                 title: "La marée basse",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                description: `<div>
+                    <p>🏝️ <strong>Le dernier raccourci de la Plage Koopa mélange la plupart des composantes connues jusqu'ici :</strong></p>
+                    <ol>
+                        <li>🎯 <strong>Privilégiez la trajectoire :</strong> Ignorez les caisses d'objets sur la rampe de tremplin pour une meilleure ligne droite.</li>
+                        <li>🦀 <strong>Méfiez-vous des crabes :</strong> Ils se trouvent juste avant la ligne d’arrivée et peuvent ruiner votre final.</li>
+                        <li>🌊 <strong>Surveillez la marée :</strong> La marée basse permet de passer sans être ralenti par l’eau.</li>
+                        <li>🍄 <strong>Anticipez la marée haute :</strong> Si l’eau est haute, il vaut mieux avoir un <strong>champignon</strong> ou une <strong>étoile</strong> pour garder votre vitesse.</li>
+                    </ol>
+                    <p>⚡ Maintenant, foncez vers l’arrivée, c’est souvent sur la ligne que la victoire se joue !</p>
+                </div>`,
+                video: "S6WYtLtCU74",
+                mode: "🥇 / 🎮 x 4",
                 difficulty: "1",
-                text: "Shorcut"
+                gain: "1",
+                text: "Shorcut !"
             }
         ]
     },
@@ -249,22 +259,62 @@ const circuitsDataFR = [
             {
                 top: "44%",
                 left: "31%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Couper le fromage 1",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur la terre !</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                text: "Short cut"
+                gain: "1",
+                text: "Shorcut !"
             },
             {
                 top: "87%",
                 left: "21%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                title: "Couper le fromage 2",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur la terre !</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "EioEJgzTSos",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                text: "Short cut"
+                gain: "1",
+                text: "Shorcut !"
+            },
+            {
+                top: "66%",
+                left: "78%",
+                title: "Couper le fromage 3",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur la terre !</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Shorcut !"
             },
         ]
     },
@@ -304,11 +354,27 @@ const circuitsDataFR = [
             {
                 top: "71%",
                 left: "56%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "3",
+                title: "Du pont à la neige",
+                description: `<div>
+                    <p>S’il y a bien une course que l’on ne connaît plus, c’est celle-ci !</p>
+                    <ul>
+                        <li>🔄 Dès le début, faites <strong>demi-tour</strong> et allez sur le pont.</li>
+                        <li>➡️ Remettez-vous dans le sens de la marche et roulez jusqu’au côté droit du pont.</li>
+                        <li>⛷️ Lorsque vous arrivez à l’intersection entre le pont et la route, sautez pour arriver sur la neige sans toucher la route.</li>
+                        <li>🚩 Enfin, allez vous planter dans le décor en faisant bien attention à dépasser la <strong>ligne d’arrivée</strong> pour valider les tours.</li>
+                        <li>🔁 Répétez l’opération jusqu’à finir la course.</li>
+                    </ul>
+                    <p>⚠️ <strong>Attention :</strong> Le joueur 2 a un bug dans le bug. Il est placé à la jonction parfaite entre la route et le pont et tombe à travers pour atterrir dans l’eau.</p>
+                    <ul>
+                        <li>⏱️ En sautant au bon timing, il est possible de sauver sa peau, mais l’opération n’est pas évidente.</li>
+                        <li>💥 Parfois, un autre joueur peut tomber si l’un de ses adversaires est déposé pile poil dessus par Lakitu.</li>
+                    </ul>
+                    <p>🎲 Impossible de prédire le résultat à l’avance ! À part la défaîte du joueur 2 !</p>
+                </div>`,
+                video: "NMkCNhI51ro",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "5",
                 text: "Short cut - Bug"
             }
         ]
@@ -442,6 +508,31 @@ const circuitsDataFR = [
                 gain: "4",
                 text: "Short cut - Bug"
             },
+            { top: "84%", left: "52%", text: "À gauche toute" },
+            {
+                top: "67%",
+                left: "80%",
+                title: "Dernière barrière",
+                description: `<div>
+                    <p>🚀 <strong>Dernier passage secret du Stade Wario, c'est un peu la dernière chance :</strong></p>
+                    <ul>
+                        <li>⚡ <strong>Assurez-vous d’avoir suffisamment de vitesse :</strong> Conduisez bien droit après le saut et ne vous souciez pas des caisses d'objets.</li>
+                        <li>💥 <strong>Tapez contre le mur :</strong> Visez le mur, appuyez sur <strong>R</strong> pour sauter par-dessus et atteindre l’autre côté.</li>
+                        <li>🎯 <strong>Quand tenter ce passage ?</strong></li>
+                        <ul>
+                            <li>Si vos adversaires sont au dernier tour et essaient le passage secret de mi-parcours.</li>
+                            <li>Si un adversaire est juste devant vous et si la réussite de ce passage vous ferait passer devant.</li>
+                            <li>Si échouer ici permettrait à un adversaire derrière vous de vous dépasser.</li>
+                        </ul>
+                    </ul>
+                    <p>⚠️ Ce passage comporte des risques ! Ne l’utilisez qu’en fonction de la situation.</p>
+                </div>`,
+                video: "-5d1QoId-GY",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "2",
+                text: "Short cut - Bug"
+            },
         ]
     },
     {
@@ -478,6 +569,7 @@ const circuitsDataFR = [
         alt: "Circuit Autodrome Royal",
         thumbnail: "royal-raceway-thumbnail.png",
         pins: [
+            { top: "59%", left: "65%", text: "A FAIRE carapace rouge" },
             { top: "46%", left: "61%", text: "A FAIRE" },
             {
                 top: "45%",
@@ -502,6 +594,17 @@ const circuitsDataFR = [
                 text: "Short cut - Bug"
             },
             { top: "50%", left: "51%", text: "A FAIRE" },
+            {
+                top: "69%",
+                left: "21%",
+                title: "Vers le château de Peach",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "0",
+                gain: "0",
+                text: "Secret"
+            },
             { top: "89%", left: "43%", text: "A FAIRE" },
         ]
     },
@@ -510,6 +613,37 @@ const circuitsDataFR = [
         alt: "Circuit Château de Bowser",
         thumbnail: "bowsers-castle-thumbnail.png",
         pins: [
+            {
+                top: "38%",
+                left: "26%",
+                title: "Couper le fromage 1",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>⭐️ Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes. Mais surtout, attention aux buissons !</li>
+                        <li><strong>🍄 Le cas d'usage</strong> : C'est finalement avec un champignon atomique qu'il est le plus intéressant car vous n'avez pas la possibilité d'obtenir un nouvel objet tant que celui-ci est en cours.</li>
+                    </ol>
+                    <p>Rappelez-vous que ce raccourci n'est pas très rentable, qu'il comporte des pièges et évite les caisses d'objets.</p>
+                </div>`,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Short cut "
+            },
+            {
+                top: "57%",
+                left: "67%",
+                title: "Dans les marches",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "2",
+                text: "Short cut - Bug"
+            },
             {
                 top: "72%",
                 left: "16.2%",
@@ -569,6 +703,17 @@ const circuitsDataFR = [
                 text: "Short cut"
             },
             {
+                top: "88%",
+                left: "35%",
+                title: "Couper le fromage 1",
+                description: "Ce panneau emblématique marque l'entrée du circuit",
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
+            {
                 top: "81%",
                 left: "42%",
                 title: "La caverne de la chance",
@@ -597,27 +742,70 @@ const circuitsDataFR = [
         alt: "Circuit Vallée Yoshi",
         thumbnail: "yoshi-valley-thumbnail.png",
         pins: [
-            { top: "60%", left: "80%", text: "Beautiful." },
             {
-                top: "62%",
-                left: "60%",
-                title: "Attention aux crabes !",
-                description: `<div>
-                    <p>🇫On connaît tous le premier bug de la vallée Yoshi où il faut sauter par-dessus la barrière. Mais celui dont on va vous parler ici est beaucoup plus simple !</p>
-                    <ul>
-                        <li>🎯 <strong>L'endroit :</strong> Dès les premiers embranchements, prenez tout à droite. Le chemin contourne un volcan 🌋 par la droite, puis une longue allée vous rapproche physiquement de la ligne d’arrivée 🏁. Un ravin vous en sépare : placez-vous <strong>juste à gauche de la barrière</strong> et sautez pour toucher le mur à droite de la ligne d’arrivée. Avec le bon angle, vous tomberez à gauche de la ligne pendant votre chute et obtiendrez un passage de tour. 🎉</li>
-                        <li>🍄 <strong>Option facile :</strong> Utilisez un 🍄 pour effectuer cette manœuvre sans difficulté.</li>
-                        <li>⚡ <strong>Attention aux pièges :</strong> Une carapace, un ⚡ ou une mauvaise trajectoire peuvent vous faire perdre du temps précieux. Restez concentré !</li>
-                        <li>🚜 <strong>Bonus Lakitu :</strong> Lakitu vous replace plus loin dans le niveau, ce qui vous permet de gagner plus d’un tour. 🏆</li>
-                    </ul>
-                </div>`,
+                top: "54%",
+                left: "80%",
+                title: "À droite du sapin",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "5",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "31.5%",
+                left: "40%",
+                title: "Chemin optimisé",
+                description: ``,
                 video: "yzgzKIlijqQ",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
+                text: "Secret"
+            },
+            {
+                top: "60%",
+                left: "60%",
+                title: "Un tour facile",
+                description: `<div>
+                    <p>🚀 Le second gros raccourci de la Vallée Yoshi est bien plus simple à prendre que le premier :</p>
+                    <ol>
+                        <li><strong>🎯 Beaucoup plus facile</strong>, il permet de gagner un tour mais ne se prend qu'à la moitié du circuit.</li>
+                        <li><strong>🛑 Positionnement clé</strong> : Placez-vous bien proche de la rembarde, puis sautez pour toucher le mur à droite tout en tombant le long du mur en dépassant la ligne d’arrivée.</li>
+                        <li><strong>🍄 Boost recommandé</strong> : Utilisez un champignon pour faciliter la manœuvre.</li>
+                        <li><strong>🔄 Changement de direction</strong> : Vous serez replacé plus loin sur la route, mais en sens inverse.</li>
+                    </ol>
+                    <p>🔥 C'est encore un <strong>game changer</strong> sur ce circuit !</p>
+                </div>`,
+                video: "R-mLrq1Tdhw",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "5",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "34%",
+                left: "26%",
+                title: "Au dessus du ravin",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "2",
                 text: "Short cut"
             },
-            { top: "40%", left: "10%", text: "Exit." }
+            {
+                top: "73%",
+                left: "69%",
+                title: "Couper le fromage 1",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "3",
+                text: "Short cut"
+            },
         ]
     },
     {
@@ -656,11 +844,25 @@ const circuitsDataFR = [
             {
                 top: "54%",
                 left: "61%",
-                title: "Rainbow Road",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                title: "Le grand saut !",
+                description: `<div>
+                    <p>🌈 L'un des passages secrets les plus célèbres du jeu, sur l'une des courses les plus emblématiques de la série : <strong>la Route Arc-en-ciel</strong> !</p>
+                    <ol>
+                        <li><strong>🚀 Technique</strong> : Avancez jusqu'au début de la descente, puis virez à gauche et sautez pour passer au-dessus de la rembarde.</li>
+                        <li><strong>🎯 Précision</strong> : Plus vous tournez à gauche, plus vous gagnez de temps.</li>
+                        <li><strong>⚠️ Dangers</strong> :
+                            <ul>
+                                <li>Attention aux <strong>Chomps</strong> qui peuvent gêner la manœuvre.</li>
+                                <li>Ne ratez pas votre saut, car le retard qui s’en suivra sera phénoménal ! ⏳</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>🏁 <strong>Prendre (et réussir) ce passage peut souvent déterminer l'issue de la course !</strong> 🏆</p>
+                </div>`,
+                video: "yhkKbf2Wd4E",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
+                gain: "4",
                 text: "Short cut"
             },
             {

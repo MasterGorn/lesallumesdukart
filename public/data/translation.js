@@ -13,7 +13,7 @@ const translations = {
         },
         mapSecrets: {
             title: "📍 Secrets des maps 📍",
-            content: "Découvrez les secrets des 16 circuits de Mario Kart 64.",
+            content: "Découvrez les 64 secrets des 16 circuits de Mario Kart 64.",
             legend: {
                 show: "Afficher la légende",
                 hide: "Masquer la légende",
@@ -206,7 +206,7 @@ const translations = {
         },
         mapSecrets: {
             title: "📍  Map Secrets 📍",
-            content: "Discover the secrets of the 16 tracks of Mario Kart 64.",
+            content: "Discover the 64 secrets of the 16 tracks of Mario Kart 64.",
             legend: {
                 show: "Show legend",
                 hide: "Hide legend",

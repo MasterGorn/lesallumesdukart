@@ -52,7 +52,7 @@ const circuitsDataEN = [
                     </ol>
                     <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "BztbD-8JOsM",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
@@ -108,7 +108,7 @@ const circuitsDataEN = [
                     </ol>
                     <p>This shortcut is ideal for the Time Trial where the question of taking it or not does not even arise! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "WYtoWjSrKUk",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
@@ -171,7 +171,7 @@ const circuitsDataEN = [
                         </ol>
                     <p>This shortcut is perfect for playing it safe and maintaining a good position in the race. Good luck! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "067wAtgtXRs",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
@@ -209,12 +209,22 @@ const circuitsDataEN = [
             {
                 top: "50%",
                 left: "73%",
-                title: "La marée basse",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                title: "Low tide",
+                description: `<div>
+                    <p>🏝️ <strong>The last shortcut on Koopa Troopa Beach combines most of the techniques you've learned so far:</strong></p>
+                    <ol>
+                        <li>🎯 <strong>Prioritize your trajectory:</strong> Skip the item boxes on the ramp for a better straight-line approach.</li>
+                        <li>🦀 <strong>Watch out for crabs:</strong> They appear near the finish line and can mess up your final stretch.</li>
+                        <li>🌊 <strong>Check the tide:</strong> Low tide allows you to pass without being slowed down by water.</li>
+                        <li>🍄 <strong>Prepare for high tide:</strong> If the water is high, having a <strong>mushroom</strong> or a <strong>star</strong> will help you maintain speed.</li>
+                    </ol>
+                    <p>⚡ Now, race to the finish—victory is often decided at the very last moment!</p>
+                </div>`,
+                video: "S6WYtLtCU74",
+                mode: "🥇 / 🎮 x 4",
                 difficulty: "1",
-                text: "Shorcut"
+                gain: "1",
+                text: "Shorcut !"
             }
         ]
     },
@@ -246,22 +256,62 @@ const circuitsDataEN = [
             {
                 top: "44%",
                 left: "31%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
+                title: "Take a shortcut 1",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the dirt!</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
                 video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                text: "Short cut"
+                gain: "1",
+                text: "Shorcut !"
             },
             {
                 top: "87%",
                 left: "21%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                title: "Take a shortcut 2",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the dirt!</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
+                video: "EioEJgzTSos",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                text: "Short cut"
+                gain: "1",
+                text: "Shorcut !"
+            },
+            {
+                top: "66%",
+                left: "78%",
+                title: "Take a shortcut 3",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the dirt!</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Shorcut !"
             },
         ]
     },
@@ -301,11 +351,27 @@ const circuitsDataEN = [
             {
                 top: "71%",
                 left: "56%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "3",
+                title: "From the bridge to the snow",
+                description: `<div>
+                    <p>If there’s one race we barely recognize anymore, it’s this one!</p>
+                    <ul>
+                        <li>🔄 At the very start, <strong>turn around</strong> and head to the bridge.</li>
+                        <li>➡️ Get back on track and drive to the right side of the bridge.</li>
+                        <li>⛷️ When you reach the intersection between the bridge and the road, jump to land on the snow without touching the road.</li>
+                        <li>🚩 Finally, crash into the scenery, making sure to pass the <strong>finish line</strong> to validate the laps.</li>
+                        <li>🔁 Repeat the process until the race is complete.</li>
+                    </ul>
+                    <p>⚠️ <strong>Warning:</strong> Player 2 has a bug within the bug. They’re positioned perfectly at the junction between the road and the bridge and fall through, landing in the water.</p>
+                    <ul>
+                        <li>⏱️ By timing their jump, they can save themselves, but it’s tricky to pull off.</li>
+                        <li>💥 Sometimes, another player might fall if one of their opponents is dropped directly on top of them by Lakitu.</li>
+                    </ul>
+                    <p>🎲 The outcome is impossible to predict! Except that it’s often a lost race for Player 2!</p>
+                </div>`,
+                video: "NMkCNhI51ro",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "5",
                 text: "Short cut - Bug"
             }
         ]
@@ -438,7 +504,32 @@ const circuitsDataEN = [
                 difficulty: "3",
                 gain: "4",
                 text: "Short cut - Bug"
-            }
+            },
+            { top: "84%", left: "52%", text: "À gauche toute" },
+            {
+                top: "67%",
+                left: "80%",
+                title: "Last barrier",
+                description: `<div>
+                    <p>🚀 <strong>Last secret shortcut in Wario Stadium, this is your final chance:</strong></p>
+                    <ul>
+                        <li>⚡ <strong>Make sure you have enough speed:</strong> Drive straight after the jump and ignore the item boxes.</li>
+                        <li>💥 <strong>Hit the wall:</strong> Aim for the wall, press <strong>R</strong> to jump over it and land on the other side.</li>
+                        <li>🎯 <strong>When should you attempt this shortcut?</strong></li>
+                        <ul>
+                            <li>If your opponents are on the final lap and trying the mid-race shortcut.</li>
+                            <li>If an opponent is ahead of you and making this jump would put you in front.</li>
+                            <li>If failing the attempt would allow a rival behind you to overtake.</li>
+                        </ul>
+                    </ul>
+                    <p>⚠️ This shortcut is risky! Use it wisely depending on the situation.</p>
+                </div>`,
+                video: "-5d1QoId-GY",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "2",
+                text: "Short cut - Bug"
+            },
         ]
     },
     {
@@ -475,6 +566,7 @@ const circuitsDataEN = [
         alt: "Circuit Royal Raceway",
         thumbnail: "royal-raceway-thumbnail.png",
         pins: [
+            { top: "59%", left: "65%", text: "A FAIRE carapace rouge" },
             { top: "46%", left: "61%", text: "A FAIRE" },
             {
                 top: "45%",
@@ -499,6 +591,17 @@ const circuitsDataEN = [
                 text: "Short cut - Bug"
             },
             { top: "50%", left: "51%", text: "A FAIRE" },
+            {
+                top: "69%",
+                left: "21%",
+                title: "To Peach's Castle",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "0",
+                gain: "0",
+                text: "Secret"
+            },
             { top: "89%", left: "43%", text: "A FAIRE" },
         ]
     },
@@ -507,6 +610,37 @@ const circuitsDataEN = [
         alt: "Circuit Bowser's Castle",
         thumbnail: "bowsers-castle-thumbnail.png",
         pins: [
+            {
+                top: "38%",
+                left: "26%",
+                title: "Take a shortcut 1",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and drive through the grass! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Experienced players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>⭐️ Easy option</strong>: The simplest way is to use a 🍄 or a ⭐️ to get through this section.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or ⚡ while off-road, as it could cost you precious seconds. But most importantly, beware of the bushes!</li>
+                        <li><strong>🍄 Best use case</strong>: This shortcut is most effective with a mega mushroom, as you won't be able to get a new item while it's active.</li>
+                    </ol>
+                    <p>Remember, this shortcut isn’t very profitable, has its own risks, and skips item boxes.</p>
+                </div>`,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Short cut "
+            },
+            {
+                top: "57%",
+                left: "67%",
+                title: "In the steps",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "2",
+                text: "Short cut - Bug"
+            },
             {
                 top: "72%",
                 left: "16.2%",
@@ -566,6 +700,17 @@ const circuitsDataEN = [
                 text: "Short cut"
             },
             {
+                top: "88%",
+                left: "35%",
+                title: "Take a shortcut 1",
+                description: "Ce panneau emblématique marque l'entrée du circuit",
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
+            {
                 top: "81%",
                 left: "42%",
                 title: "La caverne de la chance",
@@ -594,9 +739,70 @@ const circuitsDataEN = [
         alt: "Circuit Yoshi Valley",
         thumbnail: "yoshi-valley-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
-            { top: "60%", left: "80%", text: "Beautiful." },
-            { top: "40%", left: "10%", text: "Exit." }
+            {
+                top: "54%",
+                left: "80%",
+                title: "À droite du sapin",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "5",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "31.5%",
+                left: "40%",
+                title: "Optimized path",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "2",
+                text: "Secret"
+            },
+            {
+                top: "60%",
+                left: "60%",
+                title: "An easy lap",
+                description: `<div>
+                    <p>🚀 The second major shortcut in Yoshi Valley is much easier to pull off than the first one:</p>
+                    <ol>
+                        <li><strong>🎯 Much simpler</strong>, it allows you to gain a lap but can only be taken halfway through the track.</li>
+                        <li><strong>🛑 Key positioning</strong>: Position yourself very close to the railing, then jump to touch the wall on the right while falling along it, making sure to cross the finish line.</li>
+                        <li><strong>🍄 Recommended boost</strong>: Use a mushroom to make the trick easier.</li>
+                        <li><strong>🔄 Direction change</strong>: You’ll be placed further down the track, but facing the wrong way.</li>
+                    </ol>
+                    <p>🔥 This is another <strong>game changer</strong> on this track!</p>
+                </div>`,
+                video: "R-mLrq1Tdhw",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "5",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "34%",
+                left: "26%",
+                title: "Above the ravine",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "2",
+                text: "Short cut"
+            },
+            {
+                top: "73%",
+                left: "69%",
+                title: "Take a shortcut 1",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "3",
+                text: "Short cut"
+            },
         ]
     },
     {
@@ -635,11 +841,25 @@ const circuitsDataEN = [
             {
                 top: "54%",
                 left: "61%",
-                title: "Rainbow Road",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                title: "The big jump!",
+                description: `<div>
+                    <p>🌈 One of the most famous shortcuts in the game, on one of the most iconic tracks in the series: <strong>Rainbow Road</strong>!</p>
+                    <ol>
+                        <li><strong>🚀 Technique</strong>: Drive until the start of the downhill section, then turn left and jump over the railing.</li>
+                        <li><strong>🎯 Precision</strong>: The sharper your turn to the left, the more track you skip.</li>
+                        <li><strong>⚠️ Dangers</strong>:
+                            <ul>
+                                <li>Watch out for <strong>Chain Chomps</strong> that can interfere with your jump.</li>
+                                <li>Don’t miss your jump, or the time loss will be massive! ⏳</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>🏁 <strong>Taking (and landing) this shortcut often decides the outcome of the race!</strong> 🏆</p>
+                </div>`,
+                video: "yhkKbf2Wd4E",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
+                gain: "4",
                 text: "Short cut"
             },
             {
