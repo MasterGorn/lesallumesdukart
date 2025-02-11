@@ -59,15 +59,25 @@ const circuitsDataEN = [
                 text: "Short cut"
             },
             {
-                top: "75%",
-                left: "66%",
+                top: "74%",
+                left: "61%",
                 type: "shortcutbug",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                gain: "2",
-                difficulty: "4",
+                title: "At the exit of the tunnel",
+                description: `<div>
+                    <p>Why not gain half a lap on your opponents? ⏩</p>
+                    <ol>
+                        <li><strong>🛞 Preparation</strong>: After exiting the tunnel, turn left to hit the brick wall just to the right of the last tree.</li>
+                        <li><strong>🎯 Technique</strong>: Jump at the same time! You'll bounce off the wall and land on the other side of the gray wall, giving you a comfortable lead.</li>
+                        <li><strong>🍄 Recommended tools</strong>: Use mushrooms or a star to increase your chances of success.</li>
+                        <li><strong>⚠️ Difficulty</strong>: Be careful, this shortcut is tricky, and a mistake can be costly.</li>
+                        <li><strong>⏳ Risks</strong>: Failing means losing time and wasting your item—a double penalty!</li>
+                    </ol>
+                    <p>A game-changing shortcut when executed correctly, but we only recommend it as a last resort or if you have total mastery. 🏎️✨</p>
+                </div>`,
+                video: "JemdskMQqHE",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "4",
+                difficulty: "5",
                 text: "Short cut - Bug"
             }
         ]
@@ -130,7 +140,7 @@ const circuitsDataEN = [
                     </ol>
                     <p>This shortcut often makes the difference. Good luck! 🎮✨</p>
                 </div>`,
-                video: "ghUCyIOjp8E",
+                video: "Eyl7mT4yCus",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "3",
@@ -256,11 +266,12 @@ const circuitsDataEN = [
             {
                 top: "44%",
                 left: "31%",
+                type: "shortcut",
                 title: "Take a shortcut 1",
                 description: `<div>
                     <p>Nothing could be easier here—just go off-road and cut through the dirt!</p>
                     <ol>
-                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🎯 The goal</strong>: You need to take it in a straight line and diagonally to save the most time.</li>
                         <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
                         <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
                         <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
@@ -276,6 +287,7 @@ const circuitsDataEN = [
             {
                 top: "87%",
                 left: "21%",
+                type: "shortcut",
                 title: "Take a shortcut 2",
                 description: `<div>
                     <p>Nothing could be easier here—just go off-road and cut through the dirt!</p>
@@ -296,11 +308,12 @@ const circuitsDataEN = [
             {
                 top: "66%",
                 left: "78%",
+                type: "shortcut",
                 title: "Take a shortcut 3",
                 description: `<div>
                     <p>Nothing could be easier here—just go off-road and cut through the dirt!</p>
                     <ol>
-                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🎯 The goal</strong>: You need to take it in a straight line and diagonally to save the most time.</li>
                         <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
                         <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
                         <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
@@ -381,7 +394,27 @@ const circuitsDataEN = [
         alt: "Circuit Choco Mountain",
         thumbnail: "choco-mountain-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
+            {
+                top: "94%",
+                left: "62%",
+                title: "Jump the wall",
+                description: `<div>
+                    <p>🏎️ A useful shortcut on Choco Mountain!</p>
+                    <ol>
+                        <li><strong>🛞 Initial route</strong>: Follow the track as usual until you reach the section where you can see the viaduct on your left.</li>
+                        <li><strong>🎯 Landmark</strong>: In Time Trial mode, look for the guardrail on your left, just before the start of the descent.</li>
+                        <li><strong>↩️ Critical turn</strong>: Make a sharp 90-degree turn to the left.</li>
+                        <li><strong>🌀 Execution</strong>: Drive into the wall and jump (<strong>R button</strong>) just as you hit it to leap over.</li>
+                        <li><strong>⏳ Advantages</strong>: This shortcut saves you precious seconds and helps you avoid the falling boulders. 🚨</li>
+                    </ol>
+                    <p>A great time-saver and a way to dodge hazards... worth trying to gain the edge! 🚀</p>
+                </div>`,
+                video: "M0rWBoi1Eig",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
             { top: "60%", left: "80%", text: "Beautiful." },
             { top: "40%", left: "10%", text: "Exit." }
         ]
@@ -602,7 +635,27 @@ const circuitsDataEN = [
                 gain: "0",
                 text: "Secret"
             },
-            { top: "89%", left: "43%", text: "A FAIRE" },
+            { 
+                top: "89%", 
+                left: "43%",
+                type: "shortcut",
+                title: "Take a shorcut 2",
+                description: `<div>
+                    <p>Nothing could be easier here, just go off-road by driving on the grass! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Pros/Cons</strong>: This shortcut shortens the track to the finish line but skips the last item boxes. However, it also avoids the risk of falling into the water.</li>
+                        <li><strong>🍄 Easy option</strong>: The simplest way is to use a 🍄 or a ⭐️ to cross this area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or ⚡ while off-road, as it could cost you precious seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: For characters like Donkey Kong, Wario, and Bowser, recovering after an off-road mistake is even harder. Be cautious!</li>
+                    </ol>
+                    <p>Use this trick wisely based on your opponents' strategies! 🏎️✨</p>
+                </div>`,
+                video: "8kbIJzeN_Cc",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            }
         ]
     },
     {
@@ -702,13 +755,23 @@ const circuitsDataEN = [
             {
                 top: "88%",
                 left: "35%",
+                type: "shortcut",
                 title: "Take a shortcut 1",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>Nothing could be easier here, just go off-road by driving on the dirt during the climb!</p>
+                    <ol>
+                        <li><strong>🎯 Advanced technique</strong>: Skilled players can chain multiple drifts to cross efficiently.</li>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
+                video: "dzZ6iEtsxkc",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
-                gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                gain: "1",
+                text: "Shorcut !"
             },
             {
                 top: "81%",

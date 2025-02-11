@@ -6,7 +6,7 @@ const circuitsDataFR = [
         pins: [
             {
                 top: "61.3%",
-                left: "70%",
+                left: "79%",
                 type: "shortcutbug",
                 title: "Tour express",
                 description: `<div>
@@ -18,8 +18,8 @@ const circuitsDataFR = [
                 text: "Short cut - Bug"
             },
             {
-                top: "9%",
-                left: "57%",
+                top: "14%",
+                left: "73%",
                 type: "shortcut",
                 title: "Couper le fromage 1",
                 description: `<div>
@@ -39,8 +39,8 @@ const circuitsDataFR = [
                 text: "Short cut"
             },
             {
-                top: "90%",
-                left: "42%",
+                top: "87%",
+                left: "35%",
                 type: "shortcut",
                 title: "Couper le fromage 2",
                 description: `<div>
@@ -63,13 +63,22 @@ const circuitsDataFR = [
                 top: "74%",
                 left: "61%",
                 type: "shortcutbug",
-                title: "Foncer dans le mur",
+                title: "À la sortie du tunnel",
                 description: `<div>
+                    <p>Pourquoi ne pas gagner un demi-tour sur ses adversaires ? ⏩</p>
+                    <ol>
+                        <li><strong>🛞 Préparation</strong> : À la sortie du tunnel, tournez à gauche de façon à cogner le mur en brique juste à droite du dernier arbre.</li>
+                        <li><strong>🎯 Technique</strong> : Sautez en même temps ! Vous ricocherez contre le mur et passerez de l'autre côté du mur gris, vous créant une avance confortable.</li>
+                        <li><strong>🍄 Outils recommandés</strong> : Prenez le passage avec des champignons ou une étoile pour maximiser vos chances.</li>
+                        <li><strong>⚠️ Difficulté</strong> : Attention, ce passage n'est pas évident à prendre et une erreur peut coûter cher.</li>
+                        <li><strong>⏳ Risques</strong> : Échouer signifie perdre du temps et gaspiller l'objet utilisé, une double peine !</li>
+                    </ol>
+                    <p>Un passage qui change tout lorsqu'il est réussi, mais que l'on conseillerait uniquement en cas de dernière chance ou de parfaite maîtrise. 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "JemdskMQqHE",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
-                gain: "2",
-                difficulty: "4",
+                gain: "4",
+                difficulty: "5",
                 text: "Short cut - Bug"
             }
         ]
@@ -133,7 +142,7 @@ const circuitsDataFR = [
                     </ol>
                     <p>Ce passage secret fait souvent la différence. Bonne chance ! 🎮✨</p>
                 </div>`,
-                video: "ghUCyIOjp8E",
+                video: "Eyl7mT4yCus",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "3",
@@ -259,11 +268,12 @@ const circuitsDataFR = [
             {
                 top: "44%",
                 left: "31%",
+                type: "shortcut",
                 title: "Couper le fromage 1",
                 description: `<div>
                     <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur la terre !</p>
                     <ol>
-                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🎯 le but</strong> : Il faut bien le prendre en ligne droite et en diagonale pour gagner le plus de temps.</li>
                         <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
                         <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
                         <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
@@ -279,6 +289,7 @@ const circuitsDataFR = [
             {
                 top: "87%",
                 left: "21%",
+                type: "shortcut",
                 title: "Couper le fromage 2",
                 description: `<div>
                     <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur la terre !</p>
@@ -299,11 +310,12 @@ const circuitsDataFR = [
             {
                 top: "66%",
                 left: "78%",
+                type: "shortcut",
                 title: "Couper le fromage 3",
                 description: `<div>
                     <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur la terre !</p>
                     <ol>
-                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🎯 le but</strong> : Il faut bien le prendre en ligne droite et en diagonale pour gagner le plus de temps.</li>
                         <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
                         <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
                         <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
@@ -384,7 +396,27 @@ const circuitsDataFR = [
         alt: "Circuit Montagne Choco",
         thumbnail: "choco-mountain-thumbnail.png",
         pins: [
-            { top: "14%", left: "10%", text: "Nice sign!" },
+            {
+                top: "94%",
+                left: "62%",
+                title: "Sauter le mur",
+                description: `<div>
+                    <p>🏎️ Un raccourci bien utile sur Choco Mountain !</p>
+                    <ol>
+                        <li><strong>🛞 Parcours initial</strong> : Suivez la course normalement jusqu'à atteindre la section où vous apercevez le viaduc sur votre gauche.</li>
+                        <li><strong>🎯 Point de repère</strong> : En mode contre-la-montre, repérez le garde-corps à gauche, juste avant le début de la descente.</li>
+                        <li><strong>↩️ Virage décisif</strong> : Tournez brusquement à 90 degrés vers la gauche.</li>
+                        <li><strong>🌀 Exécution</strong> : Roulez contre le mur, puis sautez (<strong>touche R</strong>) au moment où vous le touchez pour passer par-dessus.</li>
+                        <li><strong>⏳ Avantages</strong> : Ce raccourci vous fait gagner de précieuses secondes et évite le danger des rochers tombants. 🚨</li>
+                    </ol>
+                    <p>Un gain de temps efficace et un risque en moins... mais vraiment pas évident à prendre ! 🚀</p>
+                </div>`,
+                video: "M0rWBoi1Eig",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
             { top: "60%", left: "80%", text: "Beautiful." },
             { top: "40%", left: "10%", text: "Exit." }
         ]
@@ -605,7 +637,27 @@ const circuitsDataFR = [
                 gain: "0",
                 text: "Secret"
             },
-            { top: "89%", left: "43%", text: "A FAIRE" },
+            { 
+                top: "89%", 
+                left: "43%",
+                type: "shortcut",
+                title: "Couper le fromage 2",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</p>
+                    <ol>
+                        <li><strong>🎯 Intérêts/inconvénients</strong> : Il permet de raccourcir le tracé jusqu'à la ligne d'arrivée. Mais évite les dernières caisses d'objets. Cependant il évite aussi les risques de tomber à la flotte.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "8kbIJzeN_Cc",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            }
         ]
     },
     {
@@ -705,13 +757,23 @@ const circuitsDataFR = [
             {
                 top: "88%",
                 left: "35%",
+                type: "shortcut",
                 title: "Couper le fromage 1",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur la terre au moment de la montée !</p>
+                    <ol>
+                        <li><strong>🎯 Technique avancée</strong> : Les joueurs expérimentés peuvent enchaîner plusieurs dérapages pour traverser efficacement.</li>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "dzZ6iEtsxkc",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
-                gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                gain: "1",
+                text: "Shorcut !"
             },
             {
                 top: "81%",
