@@ -140,7 +140,7 @@ const circuitsDataEN = [
                     </ol>
                     <p>This shortcut often makes the difference. Good luck! 🎮✨</p>
                 </div>`,
-                video: "Eyl7mT4yCus",
+                video: "0z0vkmnbGjc",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "3",
@@ -209,11 +209,21 @@ const circuitsDataEN = [
             {
                 top: "33%",
                 left: "73%",
-                title: "L'option du dernier !",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "1",
+                title: "The last option!",
+                description: `<div>
+                    <p>🤫 No secret passage here, but a secret nonetheless! The last-place trick!</p>
+                    <ol>
+                        <li><strong>🏁 Immediate dive</strong>: When taking the final ramp option, you must immediately go into the water.</li>
+                        <li><strong>⚠️ Do not press Z</strong>: Avoid pressing Z to get the item quickly. The item wheel must spin until you are far enough into the water.</li>
+                        <li><strong>🎭 Trick the game</strong>: In the water, if you are far enough, the console assumes you are in last place, causing a rapid position change (even though you’re still leading).</li>
+                        <li><strong>💫 Powerful items</strong>: The game will give you an item meant for the last-place player, often a ⭐️ or a ⚡.</li>
+                    </ol>
+                    <p>🏆 A clever way to get a strong item, no matter your actual position! 🚀</p>
+                </div>`,
+                video: "Usm63_38pHs",
+                mode: "🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
                 text: "Secret !"
             },
             {
@@ -386,6 +396,25 @@ const circuitsDataEN = [
                 difficulty: "2",
                 gain: "5",
                 text: "Short cut - Bug"
+            },
+            {
+                top: "90%",
+                left: "32%",
+                title: "Take a shortcut 2",
+                description: `<div>
+                    <p>❄️ Sherbet Land is famous for its iconic shortcut at the bridge, but for those who race it normally, there are a few hidden paths. Like this one:</p>
+                    <ol>
+                        <li><strong>🏎️ Cut through the snow</strong>: In the turns before heading into the mountains, drive straight through the snow to save some time.</li>
+                        <li><strong>🍄 Use a speed boost</strong>: A mushroom or a star is required to avoid slowing down too much.</li>
+                        <li><strong>⛄ Watch out for obstacles</strong>: Be careful of the snowmen that can block your way!</li>
+                    </ol>
+                    <p>⏳ This shortcut won't save a huge amount of time, but it's always good to know!</p>
+                </div>`,
+                video: "lUsizpoRsck",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
             }
         ]
     },
@@ -394,6 +423,49 @@ const circuitsDataEN = [
         alt: "Circuit Choco Mountain",
         thumbnail: "choco-mountain-thumbnail.png",
         pins: [
+            {
+                top: "91%",
+                left: "26%",
+                type: "shortcut-bug",
+                title: "Climb the mountain",
+                description: `<div>
+                    <p>⛰️ The slopes of Choco Mountain are a treat for speedrunners!</p>
+                    <ol>
+                        <li><strong>🚀 Gain speed</strong>: Drift to build up as much speed as possible.</li>
+                        <li><strong>🎮 Spam the jump button</strong>: When hitting the hill, mash the jump button.</li>
+                        <li><strong>⚠️ Stay on track</strong>: At the top of the hill, stay on the wall section to avoid a disastrous fall.</li>
+                        <li><strong>🌀 Controlled descent</strong>: Once at the top, your kart will roll down to the other side.</li>
+                        <li><strong>⏳ Time and efficiency</strong>: This shortcut is tricky and takes time to execute. The distance gain is significant, but opponents may catch up while you perform it.</li>
+                    </ol>
+                    <p>🏆 Victory! You’ve just skipped the entire loop. 🏎️💨</p>
+                </div>`,
+                video: "T_0z0p2WQ5E",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "94%",
+                left: "46%",
+                title: "Jump with the mound",
+                description: `<div>
+                    <p>⛰️ The Choco Mountain bump is a great opportunity to save time!</p>
+                    <ol>
+                        <li><strong>💨 Build up speed</strong>: Drift to accelerate before reaching the incline.</li>
+                        <li><strong>🍄 Use a mushroom</strong>: At the top of the bump, activate a mushroom for an extra boost.</li>
+                        <li><strong>⚡ Hit and bounce</strong>: You’ll hit the edge of the hill and bounce over it.</li>
+                        <li><strong>🎢 Landing</strong>: Once over, your kart will roll down to the ground on the other side.</li>
+                        <li><strong>⚠️ Watch out for the risk</strong>: This shortcut is tricky and can waste a mushroom if you fail.</li>
+                    </ol>
+                    <p>🏆 Victory! You just skipped the entire loop. 🚀</p>
+                </div>`,
+                video: "94OY2Rukp7o",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
             {
                 top: "94%",
                 left: "62%",
@@ -415,7 +487,6 @@ const circuitsDataEN = [
                 gain: "3",
                 text: "Short cut - Bug"
             },
-            { top: "60%", left: "80%", text: "Beautiful." },
             { top: "40%", left: "10%", text: "Exit." }
         ]
     },
@@ -425,14 +496,74 @@ const circuitsDataEN = [
         thumbnail: "mario-raceway-thumbnail.png",
         pins: [
             { top: "35%", left: "17%", text: "Nice sign!" },
-            { top: "42%", left: "73%", text: "Beautiful." },
-            { top: "30%", left: "82%", text: "Exit." },
-            { top: "38%", left: "87%", text: "Exit." },
+            {
+                top: "42%",
+                left: "73%",
+                type: "shortcut-bug",
+                title: "Above the wall",
+                description: `
+                <div>
+                    <p>🏎️ Mario Raceway has many shortcuts, including some that let you jump over walls!</p>
+                    <ol>
+                        <li><strong>🌲 Positioning</strong>: Place yourself on the left side of the road, facing the three pine trees.</li>
+                        <li><strong>🍄 Speed boost</strong>: Use a mushroom before crossing the road to gain extra speed.</li>
+                        <li><strong>⚡ The crucial jump</strong>: Jump as you reach the white line so your trajectory allows you to clear the wall.</li>
+                        <li><strong>🎯 Precision is key</strong>: Your angle will determine your landing. A mistake can get you stuck against the wall, and by the time you get back on track, your opponents will have gained a big advantage!</li>
+                    </ol>
+                    <p>🔥 A secret shortcut for pros or time trial enthusiasts!</p>
+                </div>`,
+                video: "BacsQ7nxHVg",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "2",
+                difficulty: "4",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "30%",
+                left: "82%",
+                type: "shortcut",
+                title: "Next to the mushroom",
+                description: `<div>
+                    <p>🏎️ Mario Raceway has many shortcuts, including one of the smallest in the game!</p>
+                    <ol>
+                        <li><strong>🍄 A narrow passage</strong>: There is a small gap between the giant mushroom and the wall that you can slip through.</li>
+                        <li><strong>🌿 Immediate danger</strong>: Watch out for the many Piranha Plants that won’t hesitate to stop you in your tracks!</li>
+                        <li><strong>⏳ Minimal gain</strong>: The time saved is small, especially considering the risk involved.</li>
+                        <li><strong>⭐ Securing the route</strong>: Using a star or a golden mushroom will help you recover quickly if you fail.</li>
+                    </ol>
+                    <p>🔥 A secret shortcut, mainly useful for shaving off a few hundredths of a second in time trials!</p>
+                </div>`,
+                video: "HeZ4RNbarMU",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "3",
+                text: "Short cut"
+            },
+            {
+                top: "38%",
+                left: "87%",
+                type: "shortcut",
+                title: "Take a shortcut 1",
+                description: `<div>
+                    <p>Nothing could be easier here—just go off-road and cut through the grass! 🌱</p>
+                    <ol>
+                        <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
+                        <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
+                        <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                    </ol>
+                    <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
+                </div>`,
+                video: "7tz1d4IqD-0",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
             {
                 top: "83%",
                 left: "73%",
                 type: "shortcut",
-                title: "Take a shortcut  2",
+                title: "Take a shortcut 2",
                 description: `<div>
                     <p>Nothing could be easier here—just go off-road and cut through the grass! 🌱</p>
                     <ol>
@@ -453,7 +584,7 @@ const circuitsDataEN = [
                 top: "71%",
                 left: "66%",
                 type: "shortcut",
-                title: "Take a shortcut  3",
+                title: "Take a shortcut 3",
                 description: `<div>
                     <p>Nothing could be easier here—just go off-road and cut through the sand!</p>
                     <ol>
@@ -623,17 +754,46 @@ const circuitsDataEN = [
                 gain: "4",
                 text: "Short cut - Bug"
             },
-            { top: "50%", left: "51%", text: "A FAIRE" },
+            {
+                top: "50%",
+                left: "51%",
+                type: "shortcut-bug",
+                title: "Negotiate the springboard well",
+                description: `<div>
+                    <p>🏎️ Royal Raceway has a shortcut that is as useless as it is difficult.</p>
+                    <ol>
+                        <li><strong>🎯 Precise execution</strong>: To succeed, you must take the ramp properly by power sliding.</li>
+                        <li><strong>⚠️ A tricky angle</strong>: The angle is very precise. If you touch the left edge of the ramp, you will fall. If you don’t turn enough, you’ll hit the mountain.</li>
+                        <li><strong>📍 Impact point</strong>: The key is to hit the edge at the brown-green marking as far as possible.</li>
+                        <li><strong>⏳ No real time gain</strong>: By looking at the opponent’s icon, you’ll notice the gap remains the same. This shortcut doesn’t actually save time.</li>
+                    </ol>
+                    <p>🏁 A secret shortcut worth knowing for the glory, but not really useful!</p>
+                </div>`,
+                video: "VdDiZw0ycWY",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "2",
+                text: "Shorcut - Bug !"
+            },
             {
                 top: "69%",
                 left: "21%",
+                type: "secret",
                 title: "To Peach's Castle",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>🏎️ Here’s a not-so-secret trick!</p>
+                    <ol>
+                        <li><strong>🏆 Peach’s Castle</strong>: You know that the award ceremony at the end of a Grand Prix takes place in front of Peach’s Castle.</li>
+                        <li><strong>🏰 Accessible during a race</strong>: This castle is actually accessible in one of the tracks, and it’s on Royal Raceway (which likely explains its name).</li>
+                        <li><strong>📍 How to reach it?</strong>: To access it, simply fall directly to the right after the ramp.</li>
+                    </ol>
+                    <p>🎉 A fun secret, but it offers no advantage in a race!</p>
+                </div>`,
+                video: "14y5wTxWNlI",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "0",
                 gain: "0",
-                text: "Secret"
+                text: "Secret!"
             },
             { 
                 top: "89%", 
@@ -735,12 +895,24 @@ const circuitsDataEN = [
             {
                 top: "48%",
                 left: "82%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
-                difficulty: "1",
-                text: "Short cut"
+                type: "shortcut",
+                title: "Take the springboard well",
+                description: `<div>
+                    <p>🌴 The DK Jungle ramp is an obvious shortcut, but it also comes with drawbacks.</p>
+                    <ol>
+                        <li><strong>🚀 Anticipate your trajectory</strong>: Plan your turn carefully before reaching the ramp.</li>
+                        <li><strong>⚠️ Don't be too greedy</strong>: A poorly calculated jump could send you into the water... and that's a disaster!</li>
+                        <li><strong>🎁 No item for you</strong>: You will miss an item box. Make sure you have a good lead, or risk getting hit by red shells or ⚡.</li>
+                        <li><strong>🐒 Watch out for the Coconuts</strong>: If struck by lightning, you’ll be vulnerable to coconuts crushing you when you're small.</li>
+                        <li><strong>⛑️ Pro tip</strong>: On the ramp, you are invincible to ⚡.</li>
+                    </ol>
+                    <p>This shortcut, while easy to execute, comes with risks. Be careful! 🏎️💨</p>
+                </div>`,
+                video: "TcxfcWOc93k",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Shorcut !"
             },
             {
                 top: "48%",

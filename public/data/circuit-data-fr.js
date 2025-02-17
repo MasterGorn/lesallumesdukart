@@ -142,7 +142,7 @@ const circuitsDataFR = [
                     </ol>
                     <p>Ce passage secret fait souvent la différence. Bonne chance ! 🎮✨</p>
                 </div>`,
-                video: "Eyl7mT4yCus",
+                video: "0z0vkmnbGjc",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "3",
@@ -212,10 +212,20 @@ const circuitsDataFR = [
                 top: "33%",
                 left: "73%",
                 title: "L'option du dernier !",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "1",
+                description: `<div>
+                    <p>🤫 Ici, pas de passage secret, mais un secret tout de même ! L'option du dernier !</p>
+                    <ol>
+                        <li><strong>🏁 Plongée immédiate</strong> : En prenant l'option du dernier tremplin, il faut immédiatement aller dans l'eau.</li>
+                        <li><strong>⚠️ Ne pas appuyer sur Z</strong> : N'appuyez surtout pas sur Z pour obtenir l'objet rapidement, la roue doit tourner jusqu'à ce que vous soyez suffisamment loin dans l'eau.</li>
+                        <li><strong>🎭 Leurrer le jeu</strong> : Dans l'eau, si vous êtes assez éloigné, la console pense que vous êtes dernier, ce qui entraîne un changement rapide de position (alors que vous êtes encore premier).</li>
+                        <li><strong>💫 Objets avantageux</strong> : Le jeu vous donnera l'objet réservé aux derniers. Vous obtiendrez donc souvent une ⭐️ ou un ⚡.</li>
+                    </ol>
+                    <p>🏆 Une belle façon d'obtenir un excellent objet, peu importe votre position ! 🚀</p>
+                </div>`,
+                video: "Usm63_38pHs",
+                mode: "🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
                 text: "Secret !"
             },
             {
@@ -388,6 +398,25 @@ const circuitsDataFR = [
                 difficulty: "2",
                 gain: "5",
                 text: "Short cut - Bug"
+            },
+            {
+                top: "90%",
+                left: "32%",
+                title: "Couper le fromage 2",
+                description: `<div>
+                    <p>❄️ La Route Glagla est connue pour son passage secret emblématique au niveau du pont, mais pour ceux qui la parcourent normalement, elle recèle quelques petits raccourcis. Dont celui-ci :</p>
+                    <ol>
+                        <li><strong>🏎️ Coupez à travers la neige</strong> : Dans les virages avant d’entrer dans les montagnes, il suffit de traverser la neige pour gagner du temps.</li>
+                        <li><strong>🍄 Utilisez un accélérateur</strong> : Un champignon ou une étoile est nécessaire pour éviter de trop ralentir.</li>
+                        <li><strong>⛄ Attention aux obstacles</strong> : Faites attention aux bonhommes de neige qui peuvent vous ralentir !</li>
+                    </ol>
+                    <p>⏳ Ce passage ne vous fera pas gagner un temps phénoménal, mais il reste toujours bon à connaître !</p>
+                </div>`,
+                video: "lUsizpoRsck",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
             }
         ]
     },
@@ -396,6 +425,49 @@ const circuitsDataFR = [
         alt: "Circuit Montagne Choco",
         thumbnail: "choco-mountain-thumbnail.png",
         pins: [
+            {
+                top: "91%",
+                left: "26%",
+                type: "shortcut-bug",
+                title: "Escalader la montagne",
+                description: `<div>
+                    <p>⛰️ Les pentes de la Montagne Choco sont un régal pour les speedrunners !</p>
+                    <ol>
+                        <li><strong>🚀 Prenez de la vitesse</strong> : Dérapez pour accumuler un maximum de vitesse.</li>
+                        <li><strong>🎮 Enchaînez les sauts</strong> : Au moment de l’impact avec la colline, mitraillez le bouton de saut.</li>
+                        <li><strong>⚠️ Restez sur le bon chemin</strong> : Tout en haut de la colline, restez bien sur le pan de mur pour éviter une chute dramatique.</li>
+                        <li><strong>🌀 Descente contrôlée</strong> : Une fois en haut, votre kart glissera en roulé-boulé jusqu’au sol de l’autre côté.</li>
+                        <li><strong>⏳ Temps et efficacité</strong> : Ce passage est difficile et long à exécuter. Son gain en distance est relatif, car vos adversaires peuvent en rattraper une partie pendant ce temps.</li>
+                    </ol>
+                    <p>🏆 Victoire ! Vous venez de gagner toute la boucle. 🏎️💨</p>
+                </div>`,
+                video: "T_0z0p2WQ5E",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "94%",
+                left: "46%",
+                title: "Sauter avec la butte",
+                description: `<div>
+                    <p>⛰️ La butte de la Montagne Choco est une belle opportunité de gagner du temps !</p>
+                    <ol>
+                        <li><strong>💨 Prenez de la vitesse</strong> : Dérapez pour accélérer avant d’atteindre la montée.</li>
+                        <li><strong>🍄 Utilisez un champignon</strong> : Au sommet de la butte, déclenchez un champignon pour encore plus de vitesse.</li>
+                        <li><strong>⚡ Frappez et rebondissez</strong> : Vous allez heurter le bord de la colline, puis rebondir par-dessus.</li>
+                        <li><strong>🎢 Atterrissage</strong> : Une fois en haut, votre kart glissera en roulé-boulé jusqu’au sol de l’autre côté.</li>
+                        <li><strong>⚠️ Attention au risque</strong> : Ce passage est difficile à exécuter et peut gâcher un champignon si vous le ratez.</li>
+                    </ol>
+                    <p>🏆 Victoire ! Vous venez de gagner toute la boucle. 🚀</p>
+                </div>`,
+                video: "94OY2Rukp7o",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
             {
                 top: "94%",
                 left: "62%",
@@ -417,7 +489,6 @@ const circuitsDataFR = [
                 gain: "3",
                 text: "Short cut - Bug"
             },
-            { top: "60%", left: "80%", text: "Beautiful." },
             { top: "40%", left: "10%", text: "Exit." }
         ]
     },
@@ -427,9 +498,68 @@ const circuitsDataFR = [
         thumbnail: "mario-raceway-thumbnail.png",
         pins: [
             { top: "35%", left: "17%", text: "Nice sign!" },
-            { top: "42%", left: "73%", text: "Beautiful." },
-            { top: "30%", left: "82%", text: "Exit." },
-            { top: "38%", left: "87%", text: "Exit." },
+            {
+                top: "42%",
+                left: "73%",
+                type: "shortcut-bug",
+                title: "Au dessus du mur",
+                description: `<div>
+                    <p>🏎️ L’Autodrome Mario comprend de nombreux raccourcis, dont certains en passant au-dessus des murs !</p>
+                    <ol>
+                        <li><strong>🌲 Positionnement</strong> : Placez-vous sur le bord gauche de la route, face aux trois sapins.</li>
+                        <li><strong>🍄 Accélération</strong> : Utilisez un champignon avant de traverser la route pour prendre de la vitesse.</li>
+                        <li><strong>⚡ Le saut crucial</strong> : Au niveau de la ligne blanche, sautez pour que votre trajectoire vous permette de franchir le mur.</li>
+                        <li><strong>🎯 Précision obligatoire</strong> : Votre orientation est essentielle pour bien atterrir. Une erreur pourrait vous coincer contre le mur, et le temps de revenir en piste, vos adversaires auront pris un sérieux avantage !</li>
+                    </ol>
+                    <p>🔥 Un passage secret réservé aux pros ou aux adeptes du contre-la-montre !</p>
+                </div>`,
+                video: "BacsQ7nxHVg",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "2",
+                difficulty: "4",
+                text: "Short cut - Bug"
+            },
+            {
+                top: "30%",
+                left: "82%",
+                type: "shortcut",
+                title: "À côté du champignon",
+                description: `<div>
+                    <p>🏎️ L’Autodrome Mario comprend de nombreux raccourcis, dont l’un des plus petits du jeu !</p>
+                    <ol>
+                        <li><strong>🍄 Un passage étroit</strong> : Il existe un petit espace entre le champignon géant et le mur dans lequel vous pouvez vous faufiler.</li>
+                        <li><strong>🌿 Danger imminent</strong> : Attention aux nombreuses plantes piranhas qui n’hésiteront pas à vous stopper net !</li>
+                        <li><strong>⏳ Un gain minime</strong> : Le temps gagné est faible, surtout au vu du risque encouru.</li>
+                        <li><strong>⭐ Sécuriser le passage</strong> : Le prendre avec une étoile ou un champignon atomique vous permettra de repartir rapidement en cas d’échec.</li>
+                    </ol>
+                    <p>🔥 Un passage secret intéressant avant tout pour gratter quelques centièmes de seconde en contre-la-montre !</p>
+                </div>`,
+                video: "HeZ4RNbarMU",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "3",
+                text: "Short cut"
+            },
+            {
+                top: "38%",
+                left: "87%",
+                type: "shortcut",
+                title: "Couper le fromage 1",
+                description: `<div>
+                    <p>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</p>
+                    <ol>
+                        <li><strong>🍄 Option facile</strong> : Le plus simple reste d’utiliser un 🍄 ou une ⭐️ pour franchir cette zone.</li>
+                        <li><strong>⚡ Attention aux pièges</strong> : Évitez de vous prendre une carapace ou un ⚡ pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li><strong>🏋️ Personnages lourds</strong> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
+                </div>`,
+                video: "7tz1d4IqD-0",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Short cut"
+            },
             {
                 top: "83%",
                 left: "73%",
@@ -625,17 +755,46 @@ const circuitsDataFR = [
                 gain: "4",
                 text: "Short cut - Bug"
             },
-            { top: "50%", left: "51%", text: "A FAIRE" },
+            {
+                top: "50%",
+                left: "51%",
+                type: "shortcut-bug",
+                title: "Bien négocier le tremplin",
+                description: `<div>
+                    <p>🏎️ L’Autodrome Royal comprend un raccourci aussi inutile que compliqué.</p>
+                    <ol>
+                        <li><strong>🎯 Une exécution précise</strong> : Pour réussir, il faut bien négocier le tremplin grâce à un dérapage.</li>
+                        <li><strong>⚠️ Un angle délicat</strong> : L’angle est très précis. Si vous touchez la bordure gauche du tremplin, vous tombez. Si vous ne tournez pas assez, vous heurtez la montagne.</li>
+                        <li><strong>📍 Point d’impact</strong> : L’important est de toucher le rebord au niveau de la démarcation marron-vert, et ce, le plus loin possible.</li>
+                        <li><strong>⏳ Un gain de temps inexistant</strong> : En observant l’icône du joueur adverse, on remarque que l’écart reste le même. Autant dire que ce passage ne fait pas vraiment gagner de temps.</li>
+                    </ol>
+                    <p>🏁 Un passage secret à connaître pour la gloire, mais qui n’apporte aucun réel avantage !</p>
+                </div>`,
+                video: "VdDiZw0ycWY",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "2",
+                text: "Shorcut - Bug !"
+            },
             {
                 top: "69%",
                 left: "21%",
+                type: "secret",
                 title: "Vers le château de Peach",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>🏎️ Voici un secret très peu gardé !</p>
+                    <ol>
+                        <li><strong>🏆 Le château de Peach</strong> : Vous savez que la remise des prix à la fin d'un Grand Prix se déroule devant le château de Peach.</li>
+                        <li><strong>🏰 Accessible en course</strong> : Ce château est en réalité accessible dans l’une des courses, et c'est sur l'Autodrome Royal (d’où son nom, très certainement).</li>
+                        <li><strong>📍 Comment l’atteindre ?</strong> : Pour y accéder, il suffit de tomber directement à droite après le tremplin.</li>
+                    </ol>
+                    <p>🎉 Un secret amusant, mais qui n'offre aucun avantage en course !</p>
+                </div>`,
+                video: "14y5wTxWNlI",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "0",
                 gain: "0",
-                text: "Secret"
+                text: "Secret !"
             },
             { 
                 top: "89%", 
@@ -737,12 +896,24 @@ const circuitsDataFR = [
             {
                 top: "48%",
                 left: "82%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
-                difficulty: "1",
-                text: "Short cut"
+                type: "shortcut",
+                title: "Bien prendre le tremplin",
+                description: `<div>
+                    <p>🌴 Le tremplin de la Jungle DK est un passage secret évident, mais il comporte aussi des désavantages.</p>
+                    <ol>
+                        <li><strong>🚀 Anticipez votre trajectoire</strong> : Préparez bien votre virage avant d'atteindre le tremplin.</li>
+                        <li><strong>⚠️ Ne soyez pas trop gourmand</strong> : Un saut mal calculé peut vous envoyer dans l'eau... et là, c'est le drame !</li>
+                        <li><strong>🎁 Pas d’objet pour vous</strong> : Vous manquerez une caisse d'objets. Assurez-vous d'avoir une bonne avance, sinon gare aux carapaces rouges ou aux ⚡.</li>
+                        <li><strong>🐒 Attention aux Cocos</strong> : En cas d’éclair, vous serez vulnérable aux noix de coco qui peuvent vous écraser si vous êtes petit.</li>
+                        <li><strong>⛑️ Petite astuce</strong> : Sur le tremplin, vous êtes invincible face aux ⚡.</li>
+                    </ol>
+                    <p>Ce passage, bien que simple à exécuter, comporte des risques. Faites attention ! 🏎️💨</p>
+                </div>`,
+                video: "TcxfcWOc93k",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Shorcut !"
             },
             {
                 top: "48%",
