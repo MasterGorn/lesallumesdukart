@@ -18,6 +18,18 @@ const circuitsDataFR = [
                 text: "Short cut - Bug"
             },
             {
+                top: "22%",
+                left: "80.5%",
+                type: "secret",
+                title: "Carapaces bleues à foisin !",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Secret !"
+            },
+            {
                 top: "14%",
                 left: "73%",
                 type: "shortcut",
@@ -290,10 +302,10 @@ const circuitsDataFR = [
                     </ol>
                     <p>Utilisez cette astuce à bon escient en fonction des options de vos adversaires ! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "1xJPem18j_Q",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                gain: "1",
+                gain: "2",
                 text: "Shorcut !"
             },
             {
@@ -314,7 +326,7 @@ const circuitsDataFR = [
                 video: "EioEJgzTSos",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                gain: "1",
+                gain: "2",
                 text: "Shorcut !"
             },
             {
@@ -335,7 +347,7 @@ const circuitsDataFR = [
                 video: "yzgzKIlijqQ",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                gain: "1",
+                gain: "2",
                 text: "Shorcut !"
             },
         ]
@@ -400,6 +412,25 @@ const circuitsDataFR = [
                 text: "Short cut - Bug"
             },
             {
+                top: "14%",
+                left: "56%",
+                title: "Couper le fromage 1",
+                description: `<div>
+                    <p>❄️ La Route Glagla est connue pour son passage secret emblématique au niveau du pont, mais pour ceux qui la parcourent normalement, elle recèle quelques petits raccourcis, dont celui-ci :</p>
+                    <ul>
+                        <li><strong>🏎️ Coupez à travers la neige</strong> : Dans les virages avant les bosses, il suffit de traverser la neige pour gagner du temps.</li>
+                        <li><strong>🍄 Utilisez un accélérateur</strong> : Un champignon ou une étoile est nécessaire pour éviter de trop ralentir.</li>
+                        <li><strong>⛄ Attention aux obstacles</strong> : Faites attention aux bonhommes de neige qui peuvent vous ralentir !</li>
+                    </ul>
+                    <p>⏳ Ce passage ne vous fera pas gagner un temps phénoménal, mais il reste toujours bon à connaître !</p>
+                </div>`,
+                video: "YiqUxy6xNDI",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
+            },
+            {
                 top: "90%",
                 left: "32%",
                 title: "Couper le fromage 2",
@@ -425,6 +456,7 @@ const circuitsDataFR = [
         alt: "Circuit Montagne Choco",
         thumbnail: "choco-mountain-thumbnail.png",
         pins: [
+            { top: "46%", left: "61%", title: "Sur la ligne", text: "Short cut - Bug" },
             {
                 top: "91%",
                 left: "26%",
@@ -488,8 +520,7 @@ const circuitsDataFR = [
                 difficulty: "4",
                 gain: "3",
                 text: "Short cut - Bug"
-            },
-            { top: "40%", left: "10%", text: "Exit." }
+            }
         ]
     },
     {
@@ -634,6 +665,7 @@ const circuitsDataFR = [
                 top: "49%",
                 left: "81%",
                 title: "Profitez des bosses",
+                type: "shortcut-bug",
                 description: `<div>
                     <p>2 passages secrets dans cette vidéo ! 🕵️‍♂️</p>
                     <p><strong>Wario Stadium</strong> est l’endroit idéal pour tricher, regorgeant de passages secrets ! Voici le premier :</p>
@@ -654,6 +686,7 @@ const circuitsDataFR = [
                 top: "55%",
                 left: "80%",
                 title: "Vers la ligne d'arrivée",
+                type: "shortcut-bug",
                 description: `<div>
                     <p>Comme vous aurez très certainement pris le premier passage secret de ce circuit, pourquoi s’arrêter en si bon chemin ? 🚀</p>
                     <p>Pour ce deuxième passage secret :</p>
@@ -670,11 +703,31 @@ const circuitsDataFR = [
                 gain: "4",
                 text: "Short cut - Bug"
             },
-            { top: "84%", left: "52%", text: "À gauche toute" },
+            {
+                top: "84%",
+                left: "52%",
+                title: "À gauche toute",
+                type: "shortcut-bug",
+                description: `<div>
+                    <p>🏁 Comme les premiers passages secrets du Stade Wario, il va falloir se prendre un mur :</p>
+                    <ul>
+                        <li><strong>⚡ Assurez-vous d’avoir suffisamment de vitesse</strong> : Conduisez bien droit après les bosses, le mur est au bout.</li>
+                        <li><strong>💥 Tapez contre le mur</strong> : Visez le mur au niveau des premières bandes blanches et rouges, appuyez sur R pour sauter par-dessus et atteindre l’autre côté.</li>
+                        <li><strong>⚠️ Le plus compliqué des quatre</strong> : Ce passage est le plus difficile à réaliser.</li>
+                    </ul>
+                    <p>Si vous prenez les 2 premiers passages, celui-ci ne vous concerne pas ! Et tant mieux car il est difficile !</p>
+                </div>`,
+                video: "3Ay6sRwz6B8",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
             {
                 top: "67%",
                 left: "80%",
                 title: "Dernière barrière",
+                type: "shortcut-bug",
                 description: `<div>
                     <p>🚀 <strong>Dernier passage secret du Stade Wario, c'est un peu la dernière chance :</strong></p>
                     <ul>
@@ -702,7 +755,27 @@ const circuitsDataFR = [
         alt: "Circuit Royaume Sorbet",
         thumbnail: "sherbet-land-thumbnail.png",
         pins: [
-            { top: "89%", left: "18%", text: "A FAIRE" },
+            { top: "38%", left: "95%", text: "A FAIRE" },
+            { 
+                top: "9%", 
+                left: "70%", 
+                title: "Les angles",
+                type: "shortcut",
+                description: `<div>
+                    <p>🏔️ Grattez les angles sur Royaume Sorbet.</p>
+                    <ol>
+                        <li><strong>🏎️ Optimisation des virages</strong> : Sur cette course, plusieurs endroits permettent de prendre les virages de façon plus serrée.</li>
+                        <li><strong>⏩ Saut stratégique</strong> : Sauter au bon moment permet de couper la trajectoire et de passer de l'autre côté de la route plus rapidement.</li>
+                        <li><strong>⚠️ Attention aux risques</strong> : Ne soyez pas trop gourmand, une erreur et c'est la chute dans l'eau !</li>
+                    </ol>
+                    <p>🔍 Plus une astuce qu'un passage secret. Cela dit, bien appliquée sur plusieurs virages et sur trois tours, elle peut faire la différence !</p>
+                </div>`,
+                video: "39nixAA3Hgg",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Short cut"
+            },
             { 
                 top: "23%", 
                 left: "37%", 
@@ -723,7 +796,47 @@ const circuitsDataFR = [
                 gain: "1",
                 text: "Short cut"
             },
-            { top: "38%", left: "95%", text: "A FAIRE" }
+            { 
+                top: "89%", 
+                left: "18%", 
+                title: "La caverne",
+                type: "shortcut",
+                description: `<div>
+                    <p>🏔️ Royaume Sorbet est peuplé de pingouins. Certains glissent, d'autres marchent.</p>
+                    <ol>
+                        <li><strong>🏁 Un tracé optimisé</strong> : Dans la caverne, vous pouvez longer le mur de gauche pour gagner un peu de temps par rapport à vos adversaires.</li>
+                        <li><strong>🐧 Attention aux pingouins</strong> : Ils sont imprévisibles et peuvent bloquer votre trajectoire à tout moment.</li>
+                        <li><strong>🎁 Choix stratégique</strong> : Ce raccourci vous prive des objets, car ils ne sont accessibles qu'en prenant l'extérieur de la boucle.</li>
+                    </ol>
+                    <p>⏱️ Un passage plus intéressant en contre-la-montre qu'en mode versus !</p>
+                </div>`,
+                video: "CLlmYDJdDiQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "1",
+                text: "Short cut"
+            },
+            { 
+                top: "73%", 
+                left: "73%", 
+                title: "Les angles",
+                type: "shortcut",
+                description: `<div>
+                    <p>🏔️ Grattez les angles sur Royaume Sorbet.</p>
+                    <ol>
+                        <li><strong>🏎️ Optimisation des virages</strong> : Sur cette course, plusieurs endroits permettent de prendre les virages de façon plus serrée.</li>
+                        <li><strong>⏩ Saut stratégique</strong> : Sauter au bon moment permet de couper la trajectoire et de passer de l'autre côté de la route plus rapidement.</li>
+                        <li><strong>⚠️ Attention aux risques</strong> : Ne soyez pas trop gourmand, une erreur et c'est la chute dans l'eau !</li>
+                        <li><strong>🐧 Bonus</strong> : Cette technique permet aussi d’éviter les derniers pingouins, qui peuvent être une vraie frustration, surtout au 3ᵉ tour !</li>
+                    </ol>
+                    <p>🔍 Plus une astuce qu'un passage secret. Ceci dit, bien appliquée sur tous les angles de la course et sur trois tours, elle peut faire la différence !</p>
+                </div>`,
+                video: "39nixAA3Hgg",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Short cut"
+            }
         ]
     },
     {
@@ -732,7 +845,26 @@ const circuitsDataFR = [
         thumbnail: "royal-raceway-thumbnail.png",
         pins: [
             { top: "59%", left: "65%", text: "A FAIRE carapace rouge" },
-            { top: "46%", left: "61%", text: "A FAIRE" },
+            {
+                top: "46%",
+                left: "61%",
+                title: "Couper le fromage 1",
+                description: `<div>
+                    <p><b>Rien de plus simple ici, il suffit de faire du hors-piste en passant sur l’herbe ! 🌱</b></p>
+                    <ol>
+                        <li>🎯 <b>Intérêts/Inconvénients</b> : Ce passage permet de raccourcir le tracé jusqu'à la ligne d'arrivée, mais il évite les caisses d'objets et comporte le risque de tomber à l’eau.</li>
+                        <li>🍄 <b>Option facile</b> : Le plus simple reste d’utiliser un <b>🍄</b> ou une <b>⭐️</b> pour franchir cette zone. Attention tout de même, les champignons sont très précieux sur cette course.</li>
+                        <li>⚡ <b>Attention aux pièges</b> : Évitez de vous faire toucher par une carapace ou un <b>⚡</b> pendant le hors-piste, cela pourrait vous coûter de précieuses secondes.</li>
+                        <li>🏋️ <b>Personnages lourds</b> : Pour les personnages comme Donkey Kong, Wario et Bowser, il est encore plus difficile de regagner la route après un incident. Prenez des précautions !</li>
+                    </ol>
+                    <p>🏎️✨ Utilisez cette astuce à bon escient en fonction des options de vos adversaires !</p>
+                </div>`,
+                video: "8_9O3XfVZ-Q",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
+            },
             {
                 top: "45%",
                 left: "40%",
@@ -838,7 +970,7 @@ const circuitsDataFR = [
                     </ol>
                     <p>Rappelez-vous que ce raccourci n'est pas très rentable, qu'il comporte des pièges et évite les caisses d'objets.</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "ELKbednxwLw",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
@@ -886,11 +1018,22 @@ const circuitsDataFR = [
             {
                 top: "58%",
                 left: "76%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
-                difficulty: "2",
+                type: "shortcutbug",
+                title: "Chemin alternatif",
+                description: `<div>
+                    <p>🌴 Pourquoi ne pas éviter la boucle de la Jungle DK ?</p>
+                    <ol>
+                        <li><strong>➡️ Prendre le raccourci</strong> : Avant d'arriver à la boucle, foncez sur votre droite à travers l’herbe pour atteindre la barrière.</li>
+                        <li><strong>🥥 Impact inévitable</strong> : Vous vous prendrez forcément une noix de coco. Utilisez un champignon pour regagner rapidement de la vitesse.</li>
+                        <li><strong>💥 Traversée de la barrière</strong> : Foncez dans la rembarde pour la traverser.</li>
+                        <li><strong>⚠️ Attention aux pièges</strong> : Tournez suffisamment pour atterrir dans le bon sens de la boucle ! Faites aussi attention aux arbres qui peuvent vous bloquer.</li>
+                    </ol>
+                    <p>🔍 Ce passage n'est pas très difficile à exécuter, mais il comporte des risques et son gain reste limité.</p>
+                </div>`,
+                video: "fObBDemafss",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "1",
                 text: "Short cut - Bug"
             },
             {
@@ -976,11 +1119,40 @@ const circuitsDataFR = [
         thumbnail: "yoshi-valley-thumbnail.png",
         pins: [
             {
+                top: "58%",
+                left: "80%",
+                type: "shortcut-bug",
+                title: "Top départ !",
+                description: `<div>
+                    <p>Ça attaque direct dans la Vallée Yoshi :</p>
+                    <ol>
+                        <li>📢 <b>Dès le top départ</b> : Faites un super départ puis foncez à gauche en appuyant sur A + B en même temps.</li>
+                        <li>🎯 <b>Positionnement</b> : Visez afin de toucher la falaise au bon endroit et surtout sautez avant la descente au niveau de l'herbe de façon à passer au-dessus de la rambarde.</li>
+                        <li>🍄 <b>Économie</b> : Vous économisez un champignon car l'accélération nécessaire a été fournie par le super départ.</li>
+                    </ol>
+                    <p>🏁 Encore moins facile que de le tenter en prenant le temps de se placer et avec un champignon, mais il permet de faire la différence si vos potes tentent la technique plus aisée.</p>
+                </div>`,
+                video: "py05yQMneIE?start=150",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "5",
+                text: "Short cut - Bug"
+            },
+            {
                 top: "54%",
                 left: "80%",
+                type: "shortcut-bug",
                 title: "À droite du sapin",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>Pourquoi faire la course Vallée Yoshi quand on peut la zapper directement !</p>
+                    <ol>
+                        <li>📍 <b>Positionnement</b> : Placez-vous un peu plus loin que la ligne de départ. Tournez à gauche et passez derrière le sapin. Restez bien à droite du sapin.</li>
+                        <li>🎯 <b>Précision</b> : Visez afin de toucher la falaise au bon endroit et surtout sautez avant la descente au niveau de l'herbe pour passer au-dessus de la rambarde.</li>
+                        <li>🏆 <b>Gain</b> : Vous tombez à l'arrière du circuit, et le jeu pensera que vous étiez près de la ligne d'arrivée. Il vous replacera donc derrière la ligne, mais avec un tour comptabilisé !</li>
+                    </ol>
+                    <p>🏁 Plus facile qu'au démarrage, il nécessitera tout de même l'utilisation forcée d'un champignon.</p>
+                </div>`,
+                video: "t1cMMI1FY6s",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "5",
@@ -989,7 +1161,18 @@ const circuitsDataFR = [
             {
                 top: "31.5%",
                 left: "40%",
-                title: "Chemin optimisé",
+                title: "Chemin optimisé à plusieurs",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "2",
+                text: "Secret"
+            },
+            {
+                top: "31.5%",
+                left: "56.5%",
+                title: "Chemin optimisé seul",
                 description: ``,
                 video: "yzgzKIlijqQ",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
@@ -1061,7 +1244,7 @@ const circuitsDataFR = [
                     <p>Ce raccourci est idéal pour les perfectionnistes en solo, mais reste une prise de risque en compétition. Bonne chance ! 🏎️✨</p>
                 </div>
                 `,
-                video: "yzgzKIlijqQ",
+                video: "dX1nNuA27Wg",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "3",

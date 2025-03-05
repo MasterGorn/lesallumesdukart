@@ -17,6 +17,18 @@ const circuitsDataEN = [
                 text: "Short cut - Bug"
             },
             {
+                top: "22%",
+                left: "80.5%",
+                type: "secret",
+                title: "Blue shells galore!",
+                description: ``,
+                video: "yzgzKIlijqQ",
+                mode: "🥇 / 🎮 x 4",
+                gain: "1",
+                difficulty: "1",
+                text: "Secret !"
+            },
+            {
                 top: "14%",
                 left: "73%",
                 type: "shortcut",
@@ -288,10 +300,10 @@ const circuitsDataEN = [
                     </ol>
                     <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "1xJPem18j_Q",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                gain: "1",
+                gain: "2",
                 text: "Shorcut !"
             },
             {
@@ -312,7 +324,7 @@ const circuitsDataEN = [
                 video: "EioEJgzTSos",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                gain: "1",
+                gain: "2",
                 text: "Shorcut !"
             },
             {
@@ -333,7 +345,7 @@ const circuitsDataEN = [
                 video: "yzgzKIlijqQ",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
-                gain: "1",
+                gain: "2",
                 text: "Shorcut !"
             },
         ]
@@ -398,6 +410,25 @@ const circuitsDataEN = [
                 text: "Short cut - Bug"
             },
             {
+                top: "14%",
+                left: "56%",
+                title: "Take a shortcut 1",
+                description: `<div>
+                    <p>❄️ Glagla Pass is known for its iconic shortcut at the bridge, but for those who race normally, it hides a few small shortcuts, including this one:</p>
+                    <ul>
+                        <li><strong>🏎️ Cut through the snow</strong>: In the turns before the bumps, simply drive through the snow to save time.</li>
+                        <li><strong>🍄 Use a speed boost</strong>: A mushroom or a star is necessary to avoid slowing down too much.</li>
+                        <li><strong>⛄ Watch out for obstacles</strong>: Be careful of the snowmen that can slow you down!</li>
+                    </ul>
+                    <p>⏳ This shortcut won't save you a huge amount of time, but it's always good to know!</p>
+                </div>`,
+                video: "YiqUxy6xNDI",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
+            },
+            {
                 top: "90%",
                 left: "32%",
                 title: "Take a shortcut 2",
@@ -423,6 +454,7 @@ const circuitsDataEN = [
         alt: "Circuit Choco Mountain",
         thumbnail: "choco-mountain-thumbnail.png",
         pins: [
+            { top: "46%", left: "61%", title: "Sur la ligne", text: "Short cut - Bug" },
             {
                 top: "91%",
                 left: "26%",
@@ -486,8 +518,7 @@ const circuitsDataEN = [
                 difficulty: "4",
                 gain: "3",
                 text: "Short cut - Bug"
-            },
-            { top: "40%", left: "10%", text: "Exit." }
+            }
         ]
     },
     {
@@ -669,7 +700,26 @@ const circuitsDataEN = [
                 gain: "4",
                 text: "Short cut - Bug"
             },
-            { top: "84%", left: "52%", text: "À gauche toute" },
+            {
+                top: "84%",
+                left: "52%",
+                title: "To the left",
+                type: "shortcut-bug",
+                description: `<div>
+                    <p>🏁 Like the first secret paths in Wario Stadium, you'll need to hit a wall:</p>
+                    <ul>
+                        <li><strong>⚡ Make sure you have enough speed</strong>: Drive straight after the bumps, the wall is at the end.</li>
+                        <li><strong>💥 Hit the wall</strong>: Aim for the wall at the first red and white stripes, press R to jump over and reach the other side.</li>
+                        <li><strong>⚠️ The hardest of the four</strong>: This shortcut is the most difficult to execute.</li>
+                    </ul>
+                    <p>If you take the first two shortcuts, this one doesn’t concern you! And that’s a good thing because it’s tough!</p>
+                </div>`,
+                video: "3Ay6sRwz6B8",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "3",
+                text: "Short cut - Bug"
+            },
             {
                 top: "67%",
                 left: "80%",
@@ -701,10 +751,31 @@ const circuitsDataEN = [
         alt: "Circuit Sherbet Land",
         thumbnail: "sherbet-land-thumbnail.png",
         pins: [
-            { top: "89%", left: "18%", text: "A FAIRE" },
+            { top: "38%", left: "95%", text: "A FAIRE" },
+            { 
+                top: "9%", 
+                left: "70%", 
+                title: "The angles",
+                type: "shortcut",
+                description: `<div>
+                    <p>🏔️ Shaving corners in Sherbet Land.</p>
+                    <ol>
+                        <li><strong>🏎️ Optimizing turns</strong>: Several spots on this track allow for sharper cornering.</li>
+                        <li><strong>⏩ Strategic jump</strong>: Jumping at the right moment lets you cut the track and take the tightest turn possible.</li>
+                        <li><strong>⚠️ Watch out for risks</strong>: Don't get too greedy, or you might fall into the water!</li>
+                    </ol>
+                    <p>🔍 More of a tip than a secret shortcut. However, applying it consistently over three laps can give you a solid advantage!</p>
+                </div>`,
+                video: "39nixAA3Hgg",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Short cut"
+            },
             { 
                 top: "23%", 
-                left: "37%", 
+                left: "37%",
+                type: "shortcut",
                 title: "Tranquility assured",
                 description: `<div>
                     <p>You can’t really call this a secret shortcut. 🤷‍♂️</p>
@@ -722,7 +793,47 @@ const circuitsDataEN = [
                 gain: "1",
                 text: "Short cut"
             },
-            { top: "38%", left: "95%", text: "A FAIRE" }
+            { 
+                top: "89%", 
+                left: "18%", 
+                title: "The cave",
+                type: "shortcut",
+                description: `<div>
+                    <p>🏔️ Sherbet Land is filled with penguins. Some slide, others walk.</p>
+                    <ol>
+                        <li><strong>🏁 Optimized path</strong>: In the cave, you can hug the left wall to gain some time over your opponents.</li>
+                        <li><strong>🐧 Watch out for penguins</strong>: They are unpredictable and can block your path at any moment.</li>
+                        <li><strong>🎁 Strategic choice</strong>: This shortcut prevents you from getting items, as they are only available on the outer loop.</li>
+                    </ol>
+                    <p>⏱️ A more useful shortcut in time trials than in versus mode!</p>
+                </div>`,
+                video: "CLlmYDJdDiQ",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "1",
+                text: "Short cut"
+            },
+            { 
+                top: "73%", 
+                left: "73%", 
+                title: "The angles",
+                type: "shortcut",
+                description: `<div>
+                    <p>🏔️ Shaving corners in Sherbet Land.</p>
+                    <ol>
+                        <li><strong>🏎️ Optimizing turns</strong>: Several spots on this track allow for tighter cornering.</li>
+                        <li><strong>⏩ Strategic jump</strong>: Jumping at the right moment helps cut the track and take the sharpest turn possible.</li>
+                        <li><strong>⚠️ Watch out for risks</strong>: Don't get too greedy, or you might fall into the water!</li>
+                        <li><strong>🐧 Bonus</strong>: This technique also helps avoid the last penguins, a major frustration—especially on lap 3!</li>
+                    </ol>
+                    <p>🔍 More of a tip than a secret shortcut. However, applying it consistently on every turn over three laps can give you a solid boost!</p>
+                </div>`,
+                video: "39nixAA3Hgg",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "1",
+                text: "Short cut"
+            }
         ]
     },
     {
@@ -731,11 +842,30 @@ const circuitsDataEN = [
         thumbnail: "royal-raceway-thumbnail.png",
         pins: [
             { top: "59%", left: "65%", text: "A FAIRE carapace rouge" },
-            { top: "46%", left: "61%", text: "A FAIRE" },
+            {
+                top: "46%",
+                left: "61%",
+                title: "Take a shortcut 1",
+                description: `<div>
+                    <p><b>Nothing could be easier here, just go off-road by driving over the grass! 🌱</b></p>
+                    <ol>
+                        <li>🎯 <b>Pros/Cons</b>: This shortcut shortens the route to the finish line, but it skips item boxes and carries the risk of falling into the water.</li>
+                        <li>🍄 <b>Easy option</b>: The simplest way is to use a <b>🍄</b> or a <b>⭐️</b> to cross this section. Be careful, though, as mushrooms are extremely valuable on this track.</li>
+                        <li>⚡ <b>Watch out for traps</b>: Avoid getting hit by a shell or a <b>⚡</b> while off-road, as it could cost you precious seconds.</li>
+                        <li>🏋️ <b>Heavy characters</b>: For characters like Donkey Kong, Wario, and Bowser, recovering after an incident is even harder. Take precautions!</li>
+                    </ol>
+                    <p>🏎️✨ Use this trick wisely depending on your opponents' options!</p>
+                </div>`,
+                video: "8_9O3XfVZ-Q",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "1",
+                gain: "1",
+                text: "Short cut"
+            },
             {
                 top: "45%",
                 left: "40%",
-                title: "Les champignons font la différence",
+                title: "Mushrooms make the difference",
                 description: `<div>
                     <p>On Royal Raceway, the race is no longer traditional, and luck plays a big role! 🎲</p>
                     <p>Here’s how to take advantage of this glitch:</p>
@@ -837,7 +967,7 @@ const circuitsDataEN = [
                     </ol>
                     <p>Remember, this shortcut isn’t very profitable, has its own risks, and skips item boxes.</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "ELKbednxwLw",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
@@ -885,11 +1015,22 @@ const circuitsDataEN = [
             {
                 top: "58%",
                 left: "76%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
-                difficulty: "2",
+                type: "shortcutbug",
+                title: "Alternative path",
+                description: `<div>
+                    <p>🌴 Why not skip the DK Jungle loop?</p>
+                    <ol>
+                        <li><strong>➡️ Taking the shortcut</strong>: Before reaching the loop, speed to your right through the grass to hit the barrier.</li>
+                        <li><strong>🥥 Inevitable impact</strong>: You will get hit by a coconut. Use a mushroom to quickly regain speed.</li>
+                        <li><strong>💥 Breaking through</strong>: Dash into the railing to pass through it.</li>
+                        <li><strong>⚠️ Watch out for obstacles</strong>: Turn enough to land in the correct direction! Also, beware of trees that can block your path.</li>
+                    </ol>
+                    <p>🔍 This shortcut is not too difficult to execute, but it carries risks and doesn’t provide a huge advantage.</p>
+                </div>`,
+                video: "fObBDemafss",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "1",
                 text: "Short cut - Bug"
             },
             {
@@ -975,11 +1116,40 @@ const circuitsDataEN = [
         thumbnail: "yoshi-valley-thumbnail.png",
         pins: [
             {
+                top: "58%",
+                left: "80%",
+                type: "shortcut-bug",
+                title: "Top départ !",
+                description: `<div>
+                    <p>It starts right away in Yoshi Valley:</p>
+                    <ol>
+                        <li>📢 <b>Right from the start</b>: Perform a perfect boost and immediately head left while pressing A + B at the same time.</li>
+                        <li>🎯 <b>Positioning</b>: Aim to hit the cliff at the right spot and, most importantly, jump before the descent near the grass to clear the railing.</li>
+                        <li>🍄 <b>Efficiency</b>: You save a mushroom since the necessary acceleration was provided by the perfect boost.</li>
+                    </ol>
+                    <p>🏁 Even harder than taking the time to position yourself and using a mushroom, but it makes a difference if your friends use the easier method.</p>
+                </div>`,
+                video: "py05yQMneIE?start=150",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "5",
+                text: "Short cut - Bug"
+            },
+            {
                 top: "54%",
                 left: "80%",
+                type: "shortcut-bug",
                 title: "À droite du sapin",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>Why race through Yoshi Valley when you can skip it entirely!</p>
+                    <ol>
+                        <li>📍 <b>Positioning</b>: Place yourself a little past the starting line. Turn left and go behind the tree. Stay to the right of the tree.</li>
+                        <li>🎯 <b>Precision</b>: Aim to hit the cliff at the right spot and, most importantly, jump before the descent near the grass to clear the railing.</li>
+                        <li>🏆 <b>Advantage</b>: You fall to the back of the track, and the game will think you were near the finish line. It will place you behind the line, but with a lap counted!</li>
+                    </ol>
+                    <p>🏁 Easier than at the start, but it still requires the mandatory use of a mushroom.</p>
+                </div>`,
+                video: "t1cMMI1FY6s",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "5",
@@ -1060,7 +1230,7 @@ const circuitsDataEN = [
                     <p>This shortcut is perfect for solo perfectionists but remains a gamble in competitive play. Good luck! 🏎️✨</p>
                 </div>
                 `,
-                video: "yzgzKIlijqQ",
+                video: "dX1nNuA27Wg",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "3",
