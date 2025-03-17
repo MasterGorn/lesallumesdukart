@@ -564,6 +564,9 @@ body {
   margin: 0 24px;
   color: white;
 }
+.mapSecrets {
+  /* Responsive */
+}
 .mapSecrets .titleMapSecrets {
   display: block;
   margin: 0 auto 64px;
@@ -576,7 +579,58 @@ body {
   font-weight: 400;
   color: #fff;
   text-align: center;
+}
+.mapSecrets .pinCounters {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
   margin-bottom: 32px;
+  /* Styles spécifiques pour chaque type */
+}
+.mapSecrets .pinCounters .counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: transform 0.2s ease;
+}
+.mapSecrets .pinCounters .counter:hover {
+  transform: translateY(-2px);
+}
+.mapSecrets .pinCounters .counter i {
+  font-size: 1.2rem;
+}
+.mapSecrets .pinCounters .counter .count {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+.mapSecrets .pinCounters .counter .label {
+  color: white;
+}
+.mapSecrets .pinCounters .counter.shortcut-bug i {
+  color: #ff4444;
+}
+.mapSecrets .pinCounters .counter.shortcut i {
+  color: #00C851;
+}
+.mapSecrets .pinCounters .counter.secret i {
+  color: #ffbb33;
+}
+.mapSecrets .pinCounters .counter .count.updated {
+  animation: countUpdate 0.3s ease;
+}
+@media (max-width: 768px) {
+  .mapSecrets .pinCounters {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .mapSecrets .counter {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .mapSecrets .maps {
   display: flex;
@@ -645,6 +699,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  /*Test*/
+  pointer-events: none;
 }
 .imagepin img {
   display: block;
@@ -668,6 +724,15 @@ body {
   align-items: center;
   border: 2px solid transparent;
   text-decoration: none;
+  pointer-events: auto;
+  cursor: pointer;
+  isolation: isolate;
+  /* Crée un nouveau contexte d'empilement */
+  mix-blend-mode: normal;
+  /* Évite les problèmes de rendu avec certains effets */
+  touch-action: manipulation;
+  /* Optimise pour le tactile */
+  -webkit-tap-highlight-color: transparent;
   /*   &.shortcut {
             background: rgba(255,215,0,0.2);
         
@@ -746,6 +811,9 @@ body {
   top: -20px;
   width: fit-content;
 }
+.imagepin .pin:hover:before {
+  pointer-events: none;
+}
 .imagepin .pin:active {
   border-color: #ffaa67;
 }
@@ -762,6 +830,8 @@ body {
   position: relative;
   display: block;
   border-radius: 100%;
+  pointer-events: none;
+  z-index: 1;
 }
 .imagepin .pin:before {
   content: "";
@@ -772,6 +842,9 @@ body {
   right: 0;
   border-radius: 50%;
   animation: shockwave 2s 0.5s ease-out infinite;
+  pointer-events: none;
+  /* Désactiver les événements sur le pseudo-élément */
+  z-index: 1;
 }
 @keyframes shockwave {
   0% {
@@ -813,6 +886,18 @@ body {
 }
 .imagepin .pin:nth-of-type(9):before {
   animation-delay: 2.2s;
+}
+/* Animation lors de la mise à jour */
+@keyframes countUpdate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .tips {
   color: white;

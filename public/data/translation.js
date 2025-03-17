@@ -6,6 +6,11 @@ const translations = {
             championship: "Championnat",
             beta: "Version Beta"
         },
+        counters: {
+            shortcutBug: "Raccourcis avec bug",
+            shortcut: "Raccourcis",
+            secret: "Secrets"
+        },
         konamiCode: {
             rainbowRoad: "🌟 Thème Route Arc-en-ciel Activé ! 🌟",
             message: "Vous avez découvert le Konami Code !",
@@ -13,7 +18,7 @@ const translations = {
         },
         mapSecrets: {
             title: "📍 Secrets des maps 📍",
-            content: "Découvrez les 64 secrets des 16 circuits de Mario Kart 64.",
+            content: "Découvrez les 72 secrets des 16 circuits de Mario Kart 64.",
             legend: {
                 show: "Afficher la légende",
                 hide: "Masquer la légende",
@@ -87,6 +92,26 @@ const translations = {
             tip10: {
                 title: "🏁 Voir les records de Mario Raceway",
                 content: "À l’écran titre, appuyez sur Z pour voir les meilleurs temps de Mario Raceway (mode Time Trial)."
+            },
+            tip11: {
+                title: "🍄 Toad, rapide mais léger",
+                content: "Toad est aussi rapide que Yoshi et Peach, mais il est plus léger."
+            },
+            tip12: {
+                title: "🎲 Comment sont attribués les objets",
+                content: "L’objet dépend de la position au moment où on l’obtient, et non au moment où l’on prend la caisse d’objet."
+            },
+            tip13: {
+                title: "⚡ Accélération rapide avec Triple A",
+                content: "Appuyer trois fois rapidement sur A permet de passer d’un arrêt total à la vitesse maximale."
+            },
+            tip14: {
+                title: "🤖 L’IA s’adapte à votre position",
+                content: "Les PNJ collent au train. Mais si vous êtes dernier, ils ralentissent pour vous laisser une chance de revenir. Hors écran, l’IA a des avantages : elle est moins pénalisée par une banane et peut même passer à travers certains murs, surtout sur Bowser Castle."
+            },
+            tip15: {
+                title: "🚀 Les turbos font leur apparition",
+                content: "Mario Kart 64 est le premier jeu de la série à intégrer les mini-turbos. Il faut maintenir le boost un instant avant d’en profiter pleinement, ce qui empêche le snaking. La clé réside dans le timing des mini-turbos pour optimiser la vitesse."
             }
         },
         championship: {
@@ -199,6 +224,11 @@ const translations = {
             championship: "Championship",
             beta: "Beta"
         },
+        counters: {
+            shortcutBug: "Glitch shortcuts",
+            shortcut: "Shortcuts",
+            secret: "Secrets"
+        },
         konamiCode: {
             rainbowRoad: "🌟 Rainbow Road Theme Activated ! 🌟",
             message: "You have discovered the Konami Code !",
@@ -206,7 +236,7 @@ const translations = {
         },
         mapSecrets: {
             title: "📍  Map Secrets 📍",
-            content: "Discover the 64 secrets of the 16 tracks of Mario Kart 64.",
+            content: "Discover the 72 secrets of the 16 tracks of Mario Kart 64.",
             legend: {
                 show: "Show legend",
                 hide: "Hide legend",
@@ -280,6 +310,26 @@ const translations = {
             tip10: {
                 title: "🏁 View Mario Raceway records",
                 content: "On the title screen, press Z to view the best times on Mario Raceway (Time Trial mode)."
+            },
+            tip11: {
+                title: "🍄 Toad: Fast but Light",
+                content: "Toad is as fast as Yoshi and Peach, but he is lighter."
+            },
+            tip12: {
+                title: "🎲 How Items Are Assigned",
+                content: "The item you get depends on your position when you receive it, not when you pick up the item box."
+            },
+            tip13: {
+                title: "⚡ Quick Acceleration with Triple A",
+                content: "Pressing A three times quickly allows you to go from a complete stop to maximum speed."
+            },
+            tip14: {
+                title: "🤖 AI Adjusts to Your Position",
+                content: "NPCs stick close to you. However, if you're in last place, they slow down to give you a chance to catch up. When off-screen, the AI has advantages: it is less affected by bananas and can even pass through walls, especially on Bowser Castle."
+            },
+            tip15: {
+                title: "🚀 The First Mario Kart with Turbos",
+                content: "Mario Kart 64 is the first in the series to feature mini-turbos. You must hold the boost briefly to fully benefit from the acceleration, making snaking ineffective. The key is to time mini-turbos properly to optimize speed."
             }
         },
         championship: {

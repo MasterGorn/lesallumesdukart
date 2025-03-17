@@ -306,6 +306,88 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+class PinCounter {
+    constructor() {
+        this.counts = {
+            'shortcut-bug': 0,
+            'shortcut': 0,
+            'secret': 0
+        };
+    }
+
+    countPins(circuitsData) {
+        // Réinitialiser les compteurs
+        Object.keys(this.counts).forEach(key => this.counts[key] = 0);
+        
+        // Compter les pins pour chaque circuit
+        circuitsData.forEach(circuit => {
+            circuit.pins.forEach(pin => {
+                if (this.counts.hasOwnProperty(pin.type)) {
+                    this.counts[pin.type]++;
+                }
+            });
+        });
+
+        return this.counts;
+    }
+
+    renderCounters() {
+        const countersHTML = `
+            <div class="pinCounters">
+                <div class="counter shortcut-bug">
+                    <i class="fas fa-bug"></i>
+                    <span class="count">${this.counts['shortcut-bug']}</span>
+                    <span class="label" data-i18n="counters.shortcutBug">Raccourcis avec bug</span>
+                </div>
+                <div class="counter shortcut">
+                    <i class="fas fa-cut"></i>
+                    <span class="count">${this.counts['shortcut']}</span>
+                    <span class="label" data-i18n="counters.shortcut">Raccourcis</span>
+                </div>
+                <div class="counter secret">
+                    <i class="fas fa-star"></i>
+                    <span class="count">${this.counts['secret']}</span>
+                    <span class="label" data-i18n="counters.secret">Secrets</span>
+                </div>
+            </div>
+        `;
+
+        // Insérer les compteurs après la navigation
+        const nav = document.querySelector('.contentMapSecrets');
+        nav.insertAdjacentHTML('afterend', countersHTML);
+        
+        // Mettre à jour les traductions
+        if (window.languageManager) {
+            window.languageManager.translate();
+        }
+    }
+
+    animateCount(element, newValue) {
+        const currentValue = parseInt(element.textContent);
+        if (currentValue === newValue) return;
+
+        element.classList.add('updated');
+        element.textContent = newValue;
+
+        setTimeout(() => {
+            element.classList.remove('updated');
+        }, 300);
+    }
+
+    update() {
+        const oldCounts = { ...this.counts };
+        this.countPins(circuitsData);
+        
+        document.querySelectorAll('.counter').forEach(counter => {
+            const type = counter.classList[1];
+            const countElement = counter.querySelector('.count');
+            if (countElement && this.counts[type] !== oldCounts[type]) {
+                this.animateCount(countElement, this.counts[type]);
+            }
+        });
+    }
+}
+
 /********
  * Gestion de la taille des cartes
  */
@@ -496,7 +578,7 @@ function renderPinPopins() {
             popinMode.innerHTML = `<div class="title">Mode</div> ${mode}`;
             popinGain.innerHTML = `<div class="title">Gain</div> ${createStarRating(gain).outerHTML}`;
             popinLevel.innerHTML = `<div class="title">Difficulté</div> ${createStarRating(difficulty).outerHTML}`;
-            popinVideo.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${video}?si=1234567890" class="videoIframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+            popinVideo.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${video}" class="videoIframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
             popin.style.display = 'flex';
         });
     });
@@ -504,12 +586,14 @@ function renderPinPopins() {
     // Fermeture de la popin
     closeButton.addEventListener('click', () => {
         popin.style.display = 'none'
+        popinVideo.innerHTML = ''
     });
 
     // Fermeture en cliquant en dehors
     popin.addEventListener('click', (e) => {
         if (e.target === popin) {
             popin.style.display = 'none'
+            popinVideo.innerHTML = ''
         }
     });
 }
@@ -717,11 +801,20 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPinPopins()
     updateSize()
 
+
+    // Initialiser le compteur de pins
+    pinCounter = new PinCounter();
+    
+    // Compter et afficher les pins initiaux
+    pinCounter.countPins(circuitsData);
+    pinCounter.renderCounters();
+
     document.querySelectorAll('.langBtn').forEach(btn => {
         btn.addEventListener('click', () => {
             renderCircuits()
             renderPinPopins()
             updateSize()
+            pinCounter.update();
         });
     });
 

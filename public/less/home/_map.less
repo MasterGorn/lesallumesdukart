@@ -12,7 +12,71 @@
         font-weight: 400;
         color: #fff;
         text-align: center;
+    }
+
+    .pinCounters {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 1rem;
         margin-bottom: 32px;
+
+        .counter {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            transition: transform 0.2s ease;
+        }
+        
+        .counter:hover {
+            transform: translateY(-2px);
+        }
+        
+        .counter i {
+            font-size: 1.2rem;
+        }
+        
+        .counter .count {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white;
+        }
+        
+        .counter .label {
+            color: white;
+        }
+        
+        /* Styles spécifiques pour chaque type */
+        .counter.shortcut-bug i {
+            color: #ff4444;
+        }
+        
+        .counter.shortcut i {
+            color: #00C851;
+        }
+        
+        .counter.secret i {
+            color: #ffbb33;
+        }
+
+        .counter .count.updated {
+            animation: countUpdate 0.3s ease;
+        }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .pinCounters {
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .counter {
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     .maps {
@@ -90,6 +154,9 @@
         top: 0;
         width: 100%;
         height: 100%;
+
+        /*Test*/
+        pointer-events: none;
     }
 
     img {
@@ -115,6 +182,12 @@
         align-items: center;
         border: 2px solid transparent;
         text-decoration: none;
+        pointer-events: auto;
+        cursor: pointer;
+        isolation: isolate; /* Crée un nouveau contexte d'empilement */
+        mix-blend-mode: normal; /* Évite les problèmes de rendu avec certains effets */
+        touch-action: manipulation; /* Optimise pour le tactile */
+        -webkit-tap-highlight-color: transparent;
         
         span {
             position: absolute;
@@ -148,6 +221,10 @@
                 top: -20px;
                 width: fit-content;
             }
+
+            &:before {
+                pointer-events: none;
+            }
         }
         
         &:active {
@@ -167,6 +244,8 @@
             position: relative;
             display: block;
             border-radius: 100%;
+            pointer-events: none;
+            z-index: 1; 
         }
         &:before {
             content: "";
@@ -177,6 +256,8 @@
             right: 0;
             border-radius: 50%;
             animation: shockwave 2s 0.5s ease-out infinite;
+            pointer-events: none; /* Désactiver les événements sur le pseudo-élément */
+            z-index: 1; 
         }
 
         @keyframes shockwave {
@@ -272,4 +353,11 @@
         animation-delay: 2.2s;
         }
     }
+}
+
+/* Animation lors de la mise à jour */
+@keyframes countUpdate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }

@@ -7,26 +7,62 @@ const circuitsDataEN = [
             {
                 top: "61.3%",
                 left: "79%",
-                type: "shortcutbug",
-                title: "Luigi Raceway Sign",
-                description: "description in English",
-                video: "yzgzKIlijqQ",
-                mode: "⏱️ / 🎮 x 4",
+                type: "shortcut-bug",
+                title: "Express tour",
+                description: `<div>
+                </div>`,
+                video: "t2usc2lfyS8?start=31",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "5",
                 difficulty: "5",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
+            },
+            {
+                top: "55%",
+                left: "79%",
+                type: "shortcut-bug",
+                title: "Red shell",
+                description: `<div>
+                    <p>You’ll see that <b>red shells</b> truly change the game’s meta! They allow you to gain an extra lap on multiple tracks:</p>
+                    <ol>
+                        <li>🔴 <b>Get a red shell</b>: Make sure you have <b>one or three red shells</b> as your first item! Drive slowly at the start to avoid being <b>first or last</b>.</li>
+                        <li>🎲 <b>Luck and decision</b>: If you haven’t gotten a red shell, decide whether to try again with new items. 
+                            - <b>1 in 20 chance</b> when <b>1st</b> 
+                            - <b>1 in 3</b> when <b>2nd</b> 
+                            - <b>1 in 4</b> when <b>3rd</b> 
+                            - <b>1 in 5</b> when <b>4th</b>. 
+                            It may be worth insisting.</li>
+                        <li>🎯 <b>Technique</b>: Drive <b>backwards</b> towards the <b>finish line</b> and fire your <b>red shell</b>. It will come back to you, and you need to collide with it at the right moment to get launched into the scenery.</li>
+                        <li>🏁 <b>Outcome</b>: You’ll be repositioned just before the finish line, so simply cross it to gain an extra lap! If you got <b>three red shells</b>, you can repeat the trick.</li>
+                    </ol>
+                    <p>🔥 A real <b>game changer</b> when you master the red shell technique!</p>
+                </div>`,
+                video: "0AMSg2VCzGc?start=114",
+                mode: "🥇 / 🎮 x 4",
+                gain: "5",
+                difficulty: "5",
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "22%",
                 left: "80.5%",
                 type: "secret",
                 title: "Blue shells galore!",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>A blue shell even when you're in first place? Yes, please!</p>
+                    <ol>
+                        <li>🎈 <b>Wait for the right moment</b>: Don’t look for it on the first lap—the hot air balloon isn't there yet.</li>
+                        <li>🔍 <b>Watch on the second lap</b>: After the first row of item boxes, a hot air balloon will descend with a box hanging under its basket. This box always contains a blue shell!</li>
+                        <li>⚠️ <b>Make sure you have no items</b>: To get the blue shell, you must not be holding an item. Avoid the first row of item boxes.</li>
+                        <li>💡 <b>Tip</b>: You can grab an item, use it quickly, and still have time to get a second one. Adjust this trick based on your position and strategy.</li>
+                    </ol>
+                    <p>🏎️ A great secret to keep in mind!</p>
+                </div>`,
+                video: "gRdv3FHhrvI",
                 mode: "🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
-                text: "Secret !"
+                text: "Secret 🌟"
             },
             {
                 top: "14%",
@@ -43,11 +79,33 @@ const circuitsDataEN = [
                     </ol>
                     <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "kvfdgabzfl8",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
+            },
+            {
+                top: "74%",
+                left: "61%",
+                type: "shortcut-bug",
+                title: "At the exit of the tunnel",
+                description: `<div>
+                    <p>Why not gain half a lap on your opponents? ⏩</p>
+                    <ol>
+                        <li><strong>🛞 Preparation</strong>: After exiting the tunnel, turn left to hit the brick wall just to the right of the last tree.</li>
+                        <li><strong>🎯 Technique</strong>: Jump at the same time! You'll bounce off the wall and land on the other side of the gray wall, giving you a comfortable lead.</li>
+                        <li><strong>🍄 Recommended tools</strong>: Use mushrooms or a star to increase your chances of success.</li>
+                        <li><strong>⚠️ Difficulty</strong>: Be careful, this shortcut is tricky, and a mistake can be costly.</li>
+                        <li><strong>⏳ Risks</strong>: Failing means losing time and wasting your item—a double penalty!</li>
+                    </ol>
+                    <p>A game-changing shortcut when executed correctly, but we only recommend it as a last resort or if you have total mastery. 🏎️✨</p>
+                </div>`,
+                video: "JemdskMQqHE",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "4",
+                difficulty: "5",
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "87%",
@@ -68,29 +126,20 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
-                top: "74%",
-                left: "61%",
-                type: "shortcutbug",
-                title: "At the exit of the tunnel",
+                top: "69%",
+                left: "69%",
+                type: "shortcut-bug",
+                title: "The double jump",
                 description: `<div>
-                    <p>Why not gain half a lap on your opponents? ⏩</p>
-                    <ol>
-                        <li><strong>🛞 Preparation</strong>: After exiting the tunnel, turn left to hit the brick wall just to the right of the last tree.</li>
-                        <li><strong>🎯 Technique</strong>: Jump at the same time! You'll bounce off the wall and land on the other side of the gray wall, giving you a comfortable lead.</li>
-                        <li><strong>🍄 Recommended tools</strong>: Use mushrooms or a star to increase your chances of success.</li>
-                        <li><strong>⚠️ Difficulty</strong>: Be careful, this shortcut is tricky, and a mistake can be costly.</li>
-                        <li><strong>⏳ Risks</strong>: Failing means losing time and wasting your item—a double penalty!</li>
-                    </ol>
-                    <p>A game-changing shortcut when executed correctly, but we only recommend it as a last resort or if you have total mastery. 🏎️✨</p>
                 </div>`,
-                video: "JemdskMQqHE",
+                video: "izJ5zGeH7ZY?start=1403",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "4",
                 difficulty: "5",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             }
         ]
     },
@@ -100,14 +149,24 @@ const circuitsDataEN = [
         thumbnail: "moomoofarm-thumbnail.png",
         pins: [
             {
-                top: "55%",
-                left: "70%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
-                difficulty: "1",
-                text: "Short cut"
+                top: "82%",
+                left: "59%",
+                type: "shortcut",
+                title: "Beware of moles!",
+                description: `<div>
+                    <p>The stingiest track when it comes to shortcuts! After some searching, here’s just a small one:</p>
+                    <ol>
+                        <li>🏎️ <b>Take the Inside</b>: On the final big turn, stick to the inside to save a few precious seconds.</li>
+                        <li>⚡ <b>Recommended Techniques</b>: You can pull this off by drifting, and it’s easier with a <b>mushroom</b>. But it’s best with a <b>star</b>, so you can avoid the numerous <b>moles</b> just waiting to pop out!</li>
+                    </ol>
+                    <p>🤷 That’s all we’ve got for this track...</p>
+                    <p>🎭 There is a trick to save time, but it requires <b>two players</b> and ramming into <b>Bowser</b> to use him as a springboard. Not really practical in a real race…</p>
+                </div>`,
+                video: "oL1MG731szs",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "3",
+                gain: "1",
+                text: "Shortcut ✂️"
             }
         ]
     },
@@ -119,6 +178,7 @@ const circuitsDataEN = [
             {
                 top: "23%",
                 left: "49%",
+                type: "shortcut",
                 title: "Item versus speed",
                 description: `<div>
                     <p>This secret shortcut on <strong>Koopa Beach</strong> trades items for speed. 🌊🐢</p>
@@ -134,11 +194,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "62%",
                 left: "51%",
+                type: "shortcut",
                 title: "Obvious stepping stone",
                 description: `<div>
                     <p>One of the most obvious and visible shortcuts! 🌟</p>
@@ -156,11 +217,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "3",
-                text: "Short cut "
+                text: "Shortcut ✂️"
             },
             {
                 top: "65%",
                 left: "52%",
+                type: "shortcut-bug",
                 title: "Springboard second chance",
                 description: `<div>
                     <p>Even though the ramp jump is accessible, mistakes happen—especially in multiplayer. 😅</p>
@@ -176,11 +238,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "3",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "64%",
                 left: "30%",
+                type: "shortcut",
                 title: "Watch out for crabs!",
                 description: `<div>
                     <p>Another obvious shortcut, but one that requires a decision! ⚠️</p>
@@ -197,11 +260,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "78%",
                 left: "67%",
+                type: "secret",
                 title: "A blue shell guaranteed!",
                 description: `<div>
                     <p>With all the shortcuts in this race, it’s not uncommon to see a player taking the lead. 🏎️💨</p>
@@ -216,11 +280,12 @@ const circuitsDataEN = [
                 mode: "🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
-                text: "Secret !"
+                text: "Secret 🌟"
             },
             {
                 top: "33%",
                 left: "73%",
+                type: "secret",
                 title: "The last option!",
                 description: `<div>
                     <p>🤫 No secret passage here, but a secret nonetheless! The last-place trick!</p>
@@ -236,11 +301,12 @@ const circuitsDataEN = [
                 mode: "🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
-                text: "Secret !"
+                text: "Secret 🌟"
             },
             {
                 top: "50%",
                 left: "73%",
+                type: "shortcut",
                 title: "Low tide",
                 description: `<div>
                     <p>🏝️ <strong>The last shortcut on Koopa Troopa Beach combines most of the techniques you've learned so far:</strong></p>
@@ -256,7 +322,7 @@ const circuitsDataEN = [
                 mode: "🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "1",
-                text: "Shorcut !"
+                text: "Shortcut ✂️"
             }
         ]
     },
@@ -268,22 +334,50 @@ const circuitsDataEN = [
             {
                 top: "30%",
                 left: "81%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Solo et Versus",
+                type: "shortcut-bug",
+                title: "Gain height",
+                description: `<div>
+                </div>`,
+                video: "p9cww0TtJ9Y",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "5",
-                text: "Short cut - Bug"
+                gain: "5",
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "4%",
                 left: "65%",
-                title: "L'étoile de la chance !",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Versus uniquement",
+                type: "shortcut-bug",
+                title: "The lucky star!",
+                description: `<div>
+                    <p>Kalimari Desert has some game-changing secret shortcuts, including this one!</p>
+                    <ol>
+                        <li>⭐ <b>Get a Star</b>: Make sure your first item is a Star! Drive slowly at the start to stay behind and increase your chances.</li>
+                        <li>🎲 <b>Luck and Decision</b>: If you don’t get a Star, you can try again with new item boxes. With a 1 in 5 chance in 4th place, 1 in 10 in 3rd, and 1 in 20 in 2nd, it might be worth trying.</li>
+                        <li>🚂 <b>Take the Railroad</b>: Once you have your Star, drive onto the railway track and head into the tunnel... in the wrong direction!</li>
+                        <li>🏁 <b>Use the Star at the Right Moment</b>: Once you've passed the finish line (backward), activate your Star and turn around.</li>
+                        <li>✨ <b>A Free Lap</b>: Cross the finish line again, and just like magic, an extra lap is counted!</li>
+                    </ol>
+                    <p>🔮 Thank you, Star! It's a secret planned by Miyamoto, an Easter eggs left in the game.</p>
+                </div>`,
+                video: "OprBcvUeBuM",
+                mode: "🥇 / 🎮 x 4",
                 difficulty: "1",
-                text: "Short cut - Bug"
+                gain: "5",
+                text: "Shortcut - Bug 🪲"
+            },
+            {
+                top: "25.5%",
+                left: "53%",
+                type: "shortcut-bug",
+                title: "Through the cliff",
+                description: `<div>
+                </div>`,
+                video: "wj2A57PLMe4",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "4",
+                gain: "4",
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "44%",
@@ -304,7 +398,29 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
-                text: "Shorcut !"
+                text: "Shortcut ✂️"
+            },
+            {
+                top: "52%",
+                left: "69%",
+                type: "shortcut-bug",
+                title: "Red shell",
+                description: `<div>
+                    <p>Kalimari Desert has some game-changing secret shortcuts, including this one!</p>
+                    <ol>
+                        <li>🔴 <b>Get a Red Shell</b>: Make sure your first item is a single or triple Red Shell! Drive slowly at the start to avoid being first or last.</li>
+                        <li>🎲 <b>Luck and Decision</b>: If you don’t get a Red Shell, decide whether to try again with new item boxes. With a 1 in 20 chance in 1st place, 1 in 3 in 2nd, 1 in 4 in 3rd, and 1 in 5 in 4th, it might be worth trying.</li>
+                        <li>🚂 <b>Take the Railroad</b>: Once you have your Red Shell, drive onto the railway track and head into the tunnel in the wrong direction.</li>
+                        <li>🎯 <b>Shoot and Position Yourself</b>: After exiting the tunnel, fire your Red Shell and move aside. It will bounce back and get stuck in the barrier.</li>
+                        <li>🏎️ <b>Cross the Barrier</b>: Drive into the Red Shell at the right angle to pass through the barrier and complete the lap.</li>
+                    </ol>
+                    <p>🔴 Thank you, Red Shell!</p>
+                </div>`,
+                video: "xTMPN6fFb4w",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "2",
+                gain: "4",
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "87%",
@@ -318,6 +434,7 @@ const circuitsDataEN = [
                         <li><strong>🍄 Easier option</strong>: The simplest way is to use a 🍄 or a ⭐️ to power through the area.</li>
                         <li><strong>⚡ Watch out for traps</strong>: Avoid getting hit by a shell or lightning while off-road, as it could cost you valuable seconds.</li>
                         <li><strong>🏋️ Heavy characters</strong>: Characters like Donkey Kong, Wario, and Bowser have a harder time recovering, so proceed with caution!</li>
+                        <li><strong>🏎️ Light characters</strong>: In this shortcut, Toad, Peach, and Yoshi can gain time even without using a mushroom if they make multiple drifts!</li>
                     </ol>
                     <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
                 </div>`,
@@ -325,7 +442,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
-                text: "Shorcut !"
+                text: "Shortcut ✂️"
             },
             {
                 top: "66%",
@@ -342,11 +459,11 @@ const circuitsDataEN = [
                     </ol>
                     <p>Use this shortcut wisely depending on your opponents' items! 🏎️✨</p>
                 </div>`,
-                video: "yzgzKIlijqQ",
+                video: "OvyKmcOL194",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "2",
-                text: "Shorcut !"
+                text: "Shortcut ✂️"
             },
         ]
     },
@@ -358,6 +475,7 @@ const circuitsDataEN = [
             {
                 top: "47%",
                 left: "43%",
+                type: "shortcut-bug",
                 title: "Go beyond the barrier",
                 description: `<div>
                     <p><strong>Toad’s Turnpike</strong> is shaped like a figure-eight. At the intersection, there’s a good chance to save time—and it’s true! 🛣️✨</p>
@@ -374,7 +492,20 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "4",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
+            },
+            {
+                top: "82%",
+                left: "48%",
+                type: "shortcut-bug",
+                title: "Reverse direction",
+                description: `<div>
+                </div>`,
+                video: "t2usc2lfyS8?start=373",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "5",
+                text: "Shortcut - Bug 🪲"
             },
         ]
     },
@@ -386,6 +517,7 @@ const circuitsDataEN = [
             {
                 top: "71%",
                 left: "56%",
+                type: "shortcut-bug",
                 title: "From the bridge to the snow",
                 description: `<div>
                     <p>If there’s one race we barely recognize anymore, it’s this one!</p>
@@ -407,11 +539,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "5",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "14%",
                 left: "56%",
+                type: "shortcut",
                 title: "Take a shortcut 1",
                 description: `<div>
                     <p>❄️ Glagla Pass is known for its iconic shortcut at the bridge, but for those who race normally, it hides a few small shortcuts, including this one:</p>
@@ -426,11 +559,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "90%",
                 left: "32%",
+                type: "shortcut",
                 title: "Take a shortcut 2",
                 description: `<div>
                     <p>❄️ Sherbet Land is famous for its iconic shortcut at the bridge, but for those who race it normally, there are a few hidden paths. Like this one:</p>
@@ -445,7 +579,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             }
         ]
     },
@@ -454,7 +588,19 @@ const circuitsDataEN = [
         alt: "Circuit Choco Mountain",
         thumbnail: "choco-mountain-thumbnail.png",
         pins: [
-            { top: "46%", left: "61%", title: "Sur la ligne", text: "Short cut - Bug" },
+            {
+                top: "29%",
+                left: "32.5%",
+                type: "shortcut-bug",
+                title: "On the line",
+                description: `<div>
+                </div>`,
+                video: "t2usc2lfyS8?start=546",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "5",
+                difficulty: "5",
+                text: "Shortcut - Bug 🪲"
+            },
             {
                 top: "91%",
                 left: "26%",
@@ -475,11 +621,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "3",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "94%",
                 left: "46%",
+                type: "shortcut-bug",
                 title: "Jump with the mound",
                 description: `<div>
                     <p>⛰️ The Choco Mountain bump is a great opportunity to save time!</p>
@@ -496,11 +643,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "3",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "94%",
                 left: "62%",
+                type: "shortcut-bug",
                 title: "Jump the wall",
                 description: `<div>
                     <p>🏎️ A useful shortcut on Choco Mountain!</p>
@@ -517,8 +665,21 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "3",
-                text: "Short cut - Bug"
-            }
+                text: "Shortcut - Bug 🪲"
+            },
+            {
+                top: "69%",
+                left: "95.5%",
+                type: "secret",
+                title: "Driving the rocks crazy",
+                description: `<div>
+                </div>`,
+                video: "8lNlByFLRjE?start=364",
+                mode: "🥇 / 🎮 x 4",
+                gain: "0",
+                difficulty: "3",
+                text: "Secret"
+            },
         ]
     },
     {
@@ -526,7 +687,18 @@ const circuitsDataEN = [
         alt: "Circuit Mario Raceway",
         thumbnail: "mario-raceway-thumbnail.png",
         pins: [
-            { top: "35%", left: "17%", text: "Nice sign!" },
+            {
+                top: "35%",
+                left: "17%",
+                type: "shortcut-bug",
+                title: "Red shell",
+                description: ``,
+                video: "t2usc2lfyS8?start=599",
+                mode: "🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "5",
+                text: "Shortcut - Bug 🪲"
+            },
             {
                 top: "42%",
                 left: "73%",
@@ -547,7 +719,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "2",
                 difficulty: "4",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "30%",
@@ -568,7 +740,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "3",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "38%",
@@ -588,7 +760,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "83%",
@@ -630,7 +802,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "57%",
@@ -651,7 +823,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
         ]
     },
@@ -663,6 +835,7 @@ const circuitsDataEN = [
             {
                 top: "49%",
                 left: "81%",
+                type: "shortcut-bug",
                 title: "Enjoy the bumps",
                 description: `<div>
                     <p>2 secret shortcuts in this video! 🕵️‍♂️</p>
@@ -678,11 +851,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "4",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "55%",
                 left: "80%",
+                type: "shortcut-bug",
                 title: "Towards the finish line",
                 description: `<div>
                     <p>If you’ve already taken the first shortcut on this track, why stop there? 🚀</p>
@@ -698,7 +872,7 @@ const circuitsDataEN = [
                 mode: " ⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "4",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "84%",
@@ -718,11 +892,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "3",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "67%",
                 left: "80%",
+                type: "shortcut-bug",
                 title: "Last barrier",
                 description: `<div>
                     <p>🚀 <strong>Last secret shortcut in Wario Stadium, this is your final chance:</strong></p>
@@ -742,7 +917,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "2",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
         ]
     },
@@ -751,7 +926,19 @@ const circuitsDataEN = [
         alt: "Circuit Sherbet Land",
         thumbnail: "sherbet-land-thumbnail.png",
         pins: [
-            { top: "38%", left: "95%", text: "A FAIRE" },
+            { 
+                top: "38%", 
+                left: "95%",     
+                type: "shortcut-bug",
+                title: "Thanks penguin",
+                description: `<div>
+                </div>`,
+                video: "NmrUkLXLSg4",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "5",
+                text: "Shortcut - Bug 🪲"
+            },
             { 
                 top: "9%", 
                 left: "70%", 
@@ -770,7 +957,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             { 
                 top: "23%", 
@@ -791,7 +978,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             { 
                 top: "89%", 
@@ -811,7 +998,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             { 
                 top: "73%", 
@@ -832,7 +1019,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             }
         ]
     },
@@ -841,10 +1028,36 @@ const circuitsDataEN = [
         alt: "Circuit Royal Raceway",
         thumbnail: "royal-raceway-thumbnail.png",
         pins: [
-            { top: "59%", left: "65%", text: "A FAIRE carapace rouge" },
+            {
+                top: "59%",
+                left: "65%",
+                type: "shortcut-bug",
+                title: "Red shell",
+                description: `<div>
+                    <p><b>Red shells</b> on <b>Royal Raceway</b>:</p>
+                    <ol>
+                        <li>🔴 <b>Get a red shell</b>: Make sure you have <b>one or three red shells</b> as your first item! Take the <b>first item boxes in reverse</b>, as they are the closest.</li>
+                        <li>🎲 <b>Luck and decision</b>: If you haven’t gotten a red shell, decide whether to try again with new items. 
+                            - <b>1 in 20 chance</b> when <b>1st</b> 
+                            - <b>1 in 3</b> when <b>2nd</b> 
+                            - <b>1 in 4</b> when <b>3rd</b> 
+                            - <b>1 in 5</b> when <b>4th</b>. 
+                            It may be worth insisting.</li>
+                        <li>🎯 <b>Technique</b>: Drive back toward the <b>finish line</b>, pass it, then turn around. Fire your <b>red shell backward</b>. It will come back to you, and you must collide with it at the right moment to be launched onto the <b>wall on your left</b>.</li>
+                        <li>🏁 <b>Outcome</b>: You’ll be repositioned <b>before</b> the finish line, so simply cross it again to gain an <b>extra lap</b>! If you got <b>three red shells</b>, you can repeat the trick.</li>
+                    </ol>
+                    <p>🔥 Much harder than the other shortcuts on this track, but <b>more rewarding</b>!</p>
+                </div>`,
+                video: "t2usc2lfyS8?start=829",
+                mode: "🥇 / 🎮 x 4",
+                difficulty: "5",
+                gain: "5",
+                text: "Shortcut - Bug 🪲"
+            },
             {
                 top: "46%",
                 left: "61%",
+                type: "shortcut",
                 title: "Take a shortcut 1",
                 description: `<div>
                     <p><b>Nothing could be easier here, just go off-road by driving over the grass! 🌱</b></p>
@@ -860,11 +1073,12 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "45%",
                 left: "40%",
+                type: "shortcut-bug",
                 title: "Mushrooms make the difference",
                 description: `<div>
                     <p>On Royal Raceway, the race is no longer traditional, and luck plays a big role! 🎲</p>
@@ -882,7 +1096,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "4",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "50%",
@@ -903,7 +1117,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "5",
                 gain: "2",
-                text: "Shorcut - Bug !"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "69%",
@@ -923,7 +1137,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "0",
                 gain: "0",
-                text: "Secret!"
+                text: "Secret 🌟"
             },
             { 
                 top: "89%", 
@@ -944,7 +1158,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "1",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             }
         ]
     },
@@ -956,6 +1170,7 @@ const circuitsDataEN = [
             {
                 top: "38%",
                 left: "26%",
+                type: "shortcut",
                 title: "Take a shortcut 1",
                 description: `<div>
                     <p>Nothing could be easier here—just go off-road and drive through the grass! 🌱</p>
@@ -971,23 +1186,26 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
-                text: "Short cut "
+                text: "Shortcut ✂️"
             },
             {
                 top: "57%",
                 left: "67%",
+                type: "shortcut-bug",
                 title: "In the steps",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                </div>`,
+                video: "qADtOq59Trs",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "5",
                 gain: "2",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "72%",
                 left: "16.2%",
-                title: "La double victoire",
+                type: "secret",
+                title: "The double victory",
                 description: `<div>
                     <p>The double victory is truly a game changer! 🏆✨</p>
                     <p>This completely improbable bug works only on <strong>Bowser’s Castle</strong> and allows the winning player to secure <strong>an additional victory</strong> if they cross the finish line backward. 🚗🔄</p>
@@ -1003,7 +1221,7 @@ const circuitsDataEN = [
                 mode: "🎮 x 4",
                 difficulty: "2",
                 gain: "5",
-                text: "Bug"
+                text: "Secret 🌟"
             },
         ]
     },
@@ -1031,7 +1249,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "1",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "48%",
@@ -1053,17 +1271,28 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "2",
                 gain: "1",
-                text: "Shorcut !"
+                text: "Shortcut ✂️"
             },
             {
                 top: "48%",
                 left: "28%",
-                title: "Banshee Boardwalk",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                type: "shortcut-bug",
+                title: "Jump on the bridge",
+                description: `<div>
+                    <p>A shortcut that must have made many players dream, and yes, it's possible!</p>
+                    <ol>
+                        <li>🌳 <b>Find the Entrance</b>: Look for the small gap to the left of the trees (at the point of interest on the map).</li>
+                        <li>⚠️ <b>Precision Needed</b>: This passage is very narrow. It’s easy to go too far right or fall into the river on the left.</li>
+                        <li>🚀 <b>Recommended Technique</b>: Don’t stop! Align yourself with the smallest grass section ahead and use a <b>mushroom</b> or a <b>star</b> to cross.</li>
+                        <li>🥥 <b>Watch out for coconuts</b>: They are annoying and can easily ruin your attempt. Using a star makes it a bit easier.</li>
+                    </ol>
+                    <p>🏁 You got it, it’s possible, but it’s tricky!</p>
+                </div>`,
+                video: "zJoNgAoFRfQ?start=62",
+                mode: "⏱️ / 🥇 / 🎮 x 4",
+                gain: "2",
                 difficulty: "5",
-                text: "Short cut"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "88%",
@@ -1084,12 +1313,13 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "1",
-                text: "Shorcut !"
+                text: "Shortcut ✂️"
             },
             {
                 top: "81%",
                 left: "42%",
-                title: "La caverne de la chance",
+                type: "shortcut-bug",
+                title: "The Cave of Luck",
                 description: `
                     <div>
                         <p>A clever glitch that lets you catch up! 🚀 Here's how to do it:</p>
@@ -1106,7 +1336,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "5",
                 difficulty: "4",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
         ]
     },
@@ -1119,7 +1349,7 @@ const circuitsDataEN = [
                 top: "58%",
                 left: "80%",
                 type: "shortcut-bug",
-                title: "Top départ !",
+                title: "Great start!",
                 description: `<div>
                     <p>It starts right away in Yoshi Valley:</p>
                     <ol>
@@ -1133,13 +1363,13 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "5",
                 gain: "5",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "54%",
                 left: "80%",
                 type: "shortcut-bug",
-                title: "À droite du sapin",
+                title: "To the right of the tree",
                 description: `<div>
                     <p>Why race through Yoshi Valley when you can skip it entirely!</p>
                     <ol>
@@ -1153,22 +1383,54 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "5",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "31.5%",
                 left: "40%",
-                title: "Optimized path",
-                description: ``,
-                video: "yzgzKIlijqQ",
-                mode: "⏱️ / 🥇 / 🎮 x 4",
+                type: "shortcut",
+                title: "Multi-optimized path",
+                description: `<div>
+                    <p>Yoshi Valley is a real maze with so many possible routes!</p>
+                    <ol>
+                        <li>🛤️ <b>Optimal Route</b>: Follow this path: <b>Right → Left → Right → Left</b>.</li>
+                        <li>⚠️ <b>Watch Out for Traps</b>: This route is very easy to take, but be careful of fake item boxes or traps that might be placed on the bridge.</li>
+                        <li>🎁 <b>Item Advantage</b>: It has two sets of item boxes, making it very useful.</li>
+                        <li>⏱️ <b>A Bit Slower</b>: This route takes about 2 seconds longer than the most optimized Time Trial path, but getting two items makes up for the lost time.</li>
+                    </ol>
+                    <p>🏁 Now you know the most optimized route for Grand Prix or Versus mode!</p>
+                </div>`,
+                video: "qDL1lARojIU",
+                mode: "🥇 / 🎮 x 4",
                 difficulty: "1",
-                gain: "2",
-                text: "Secret"
+                gain: "1",
+                text: "Shortcut ✂️"
+            },
+            {
+                top: "31.5%",
+                left: "56.5%",
+                type: "shortcut",
+                title: "Optimized path alone",
+                description: `<div>
+                    <p>Yoshi Valley is a real maze with so many possible routes!</p>
+                    <ol>
+                        <li>🍄 <b>Starting Boost</b>: At the beginning, use a mushroom and drift. This will position you well to take the left path.</li>
+                        <li>🛤️ <b>Optimal Route</b>: Follow this path: <b>Left → Right → Left → Right</b>.</li>
+                        <li>🦔 <b>Watch Out for Spiny</b>: This path is the hardest since it includes three groups of Spiny enemies.</li>
+                        <li>🎁 <b>No Item Boxes</b>: This route has no item boxes, making it more useful for solo Time Trials than multiplayer races.</li>
+                    </ol>
+                    <p>🏁 Now you know the most optimized route for Time Trials!</p>
+                </div>`,
+                video: "YcJcRywTy1g",
+                mode: "⏱️",
+                difficulty: "3",
+                gain: "1",
+                text: "Secret 🌟"
             },
             {
                 top: "60%",
                 left: "60%",
+                type: "shortcut-bug",
                 title: "An easy lap",
                 description: `<div>
                     <p>🚀 The second major shortcut in Yoshi Valley is much easier to pull off than the first one:</p>
@@ -1189,24 +1451,43 @@ const circuitsDataEN = [
             {
                 top: "34%",
                 left: "26%",
+                type: "shortcut",
                 title: "Above the ravine",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>Another fairly easy shortcut to find with a bit of testing.</p>
+                    <ol>
+                        <li>🏎️ <b>Speed up</b>: Gain some speed and position yourself on the right.</li>
+                        <li>🔄 <b>Sharp turn</b>: Turn quickly and don’t forget to jump before falling.</li>
+                        <li>🍄 <b>Optional boost</b>: No need to use a mushroom, but it makes the maneuver easier.</li>
+                    </ol>
+                    <p>⚠️ Another easy shortcut, but a mistake can be costly.</p>
+                </div>`,
+                video: "P8EnAy8_bJQ",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "2",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "73%",
                 left: "69%",
+                type: "shortcut",
                 title: "Take a shortcut 1",
-                description: ``,
-                video: "yzgzKIlijqQ",
+                description: `<div>
+                    <p>A smooth shortcut, quite useful for the lucky ones!</p>
+                    <ol>
+                        <li>🌉 <b>After the last bridge</b>: Cut through the grass using multiple mushrooms (one isn’t enough) or a star.</li>
+                        <li>🎯 <b>Pros & Cons</b>: It shortens the route to the finish line but skips the last item boxes.</li>
+                        <li>⚠️ <b>Watch out for traps</b>: Avoid getting hit by a shell or ⚡ while off-road, as it could cost you precious seconds.</li>
+                        <li>🏋️ <b>Heavy characters</b>: For Donkey Kong, Wario, and Bowser, recovering from an off-road mistake is even harder. Be careful!</li>
+                    </ol>
+                    <p>🏎️✨ Use this trick wisely depending on your opponents' items!</p>
+                </div>`,
+                video: "7qUaHqv9rPA",
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "1",
                 gain: "3",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
         ]
     },
@@ -1218,6 +1499,7 @@ const circuitsDataEN = [
             {
                 top: "58%",
                 left: "35%",
+                type: "shortcut",
                 title: "The star-shaped hole",
                 description: `<div>
                     <p>The only shortcut on this track is quite risky compared to its reward, making it less appealing. ⚠️</p>
@@ -1234,7 +1516,7 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 gain: "1",
                 difficulty: "3",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
         ]
     },
@@ -1246,6 +1528,7 @@ const circuitsDataEN = [
             {
                 top: "54%",
                 left: "61%",
+                type: "shortcut",
                 title: "The big jump!",
                 description: `<div>
                     <p>🌈 One of the most famous shortcuts in the game, on one of the most iconic tracks in the series: <strong>Rainbow Road</strong>!</p>
@@ -1265,21 +1548,38 @@ const circuitsDataEN = [
                 mode: "⏱️ / 🥇 / 🎮 x 4",
                 difficulty: "3",
                 gain: "4",
-                text: "Short cut"
+                text: "Shortcut ✂️"
             },
             {
                 top: "57%",
                 left: "61%",
-                title: "Luigi Raceway Sign",
-                description: "Ce panneau emblématique marque l'entrée du circuit",
-                video: "yzgzKIlijqQ",
-                mode: "Time Trial et Versus",
+                type: "shortcut-bug",
+                title: "Red shell",
+                description: `<div>
+                    <p>Again with <b>red shells</b>, but this time, it's on the <b>Rainbow Road</b> track:</p>
+                    <ol>
+                        <li>🔴 <b>Get a red shell</b>: Make sure you have <b>one or three red shells</b> as your first item! Take the <b>first item boxes in reverse</b>.</li>
+                        <li>🎲 <b>Luck and decision</b>: If you haven’t gotten a red shell, decide whether to try again with new items. 
+                            - <b>1 in 20 chance</b> when <b>1st</b> 
+                            - <b>1 in 3</b> when <b>2nd</b> 
+                            - <b>1 in 4</b> when <b>3rd</b> 
+                            - <b>1 in 5</b> when <b>4th</b>. 
+                            It may be worth insisting.</li>
+                        <li>🎯 <b>Technique</b>: Drive back toward the <b>finish line</b>, and once on it, fire your <b>red shell backward</b>. It will come back to you, and you must collide with it at the right moment to get launched <b>into the void</b> while crossing the finish line.</li>
+                        <li>🏁 <b>Outcome</b>: You’ll be repositioned <b>before</b> the finish line, so simply cross it again to gain an <b>extra lap</b>! If you got <b>three red shells</b>, you can repeat the trick.</li>
+                    </ol>
+                    <p>🔥 And that's how to <b>finish the final race</b> of the game in no time!</p>
+                </div>`,
+                video: "t2usc2lfyS8?start=1283",
+                mode: "🥇 / 🎮 x 4",
                 difficulty: "5",
-                text: "Short cut"
+                gain: "5",
+                text: "Shortcut - Bug 🪲"
             },
             {
                 top: "63%",
                 left: "61.5%",
+                type: "shortcut-bug",
                 title: "The rebound of green shells",
                 description: `<div>
                     <p>Why settle for half a lap when the barriers offer so much more potential! 🚀 Here's how to take advantage of it:</p>
@@ -1295,7 +1595,7 @@ const circuitsDataEN = [
                 mode: " 🥇 / 🎮 x 4",
                 difficulty: "4",
                 gain: "5",
-                text: "Short cut - Bug"
+                text: "Shortcut - Bug 🪲"
             }
         ]
     }
